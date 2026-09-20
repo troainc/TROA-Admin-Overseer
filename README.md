@@ -47,7 +47,7 @@ See [docs/COMMANDS.md](docs/COMMANDS.md) for the complete list and permissions.
 
 ## Install (coming soon)
 1. Download the release from this repository (published at launch).
-2. Drop it into `Torch/Plugins/`.
+2. Drop the release ZIP into `Torch/Plugins/`. Do not unpack or add native DLLs: Torch treats every DLL in a package as managed code; the release ZIP contains only `Overseer.dll` and `manifest.xml`.
 3. Start Torch — config files are created with defaults on first run under `Instance/`.
 4. Edit the config (add your Discord webhook URLs, etc.) and run `!ov reload`.
 

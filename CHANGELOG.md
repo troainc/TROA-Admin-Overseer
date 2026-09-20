@@ -5,6 +5,9 @@ All notable changes to Overseer are documented here. The format follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html). Dates are UTC.
 
 ## [Unreleased]
+### Fixed
+- Packaging now excludes native SQLite interop DLLs. Torch reflects every DLL in a plugin ZIP as managed code; including that native file caused a startup BadImageFormatException.
+
 ### Planned
 - Economy/credit payouts for rewards.
 - Chat prefixes/colors per role, and opt-in node-based gating on individual commands.
