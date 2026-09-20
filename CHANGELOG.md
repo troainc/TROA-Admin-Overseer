@@ -113,7 +113,7 @@ All notable changes to Overseer are documented here. The format follows
 - Core commands: `!ov status`, `!ov modules`, `!ov reload`, `!ov help`.
 - `net48` build via the .NET SDK (no Visual Studio required); packaging script.
 
-[Unreleased]: https://github.com/troainc/TROA-Overseer--Closed/compare/main...HEAD
-[0.3.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.3.0
-[0.2.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.2.0
-[0.1.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.1.0
+[Unreleased]: https://github.com/troainc/TROA-Admin-Overseer/compare/main...HEAD
+[0.3.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.3.0
+[0.2.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.2.0
+[0.1.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.1.0
