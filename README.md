@@ -78,7 +78,7 @@ Persistent data is managed JSON at `Instance/TROA Admin Overseer/Overseer.json`.
 
 ## Grid safety
 
-`!ova fixship` and `!ova stop` can target the grid directly under an admin’s crosshair. Console callers must provide a grid name or entity ID. `!ova gridtransfer <player> [grid]` always creates a preview; run `!ova confirm` within 30 seconds to apply it.
+`!ova gridcheck`, `!ova fixship`, and `!ova stop` can target the grid directly under an admin’s crosshair. Console callers must provide a grid name or entity ID. `!ova gridtransfer <player> [grid]` always creates a preview; run `!ova confirm` within 30 seconds to apply it.
 
 Grid deletion, backup, restore, and hangar storage are not TROA Admin Overseer features. Use TROA GridVault and TROA-Hangar for those workflows.
 

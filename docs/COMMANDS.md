@@ -59,6 +59,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 
 | Command | Minimum permission |
 |---|---|
+| `!ova gridcheck [grid]` | Admin | Read identity, block, owner, motion, and mechanical-group health without changing a grid. |
 | `!ova fixship [grid]` | Admin |
 | `!ova stop [grid]` | Admin |
 | `!ova gridtransfer <player> [grid]` | Admin |

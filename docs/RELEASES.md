@@ -1,3 +1,7 @@
+## v0.8.15 — Grid Health Scanner
+- Read-only `!ova gridcheck [grid]` reports grid identity, blocks, ownership, motion, and mechanical group details.
+- ZIP validated: only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.14 — Configuration Doctor
 - Owner-only read-only configuration health check and corrected !ova help access.
 - ZIP validated: only `Overseer.dll` and `manifest.xml`.

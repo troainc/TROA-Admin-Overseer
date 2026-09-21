@@ -1,3 +1,7 @@
+## v0.8.15 — Grid health scanner
+
+- Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
+
 # Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
