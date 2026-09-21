@@ -6,6 +6,7 @@ All notable changes to Overseer are documented here. The format follows
 
 ## [Unreleased]
 ### Changed
+- v0.8.2 replaces the restart-resetting store with debounced managed JSON persistence at `Instance/TROA Admin Overseer/Overseer.json`; player profiles, sessions, bans, roles, role assignments, and reward claims survive restart.
 - v0.8.1 adds conservative look-at grid targeting for `!ova fixship`, `!ova stop`, and `!ova gridtransfer`. Ownership transfers require an expiring `!ova confirm`; grid deletion code has been removed.
 - v0.8.0 introduces the two-tier command contract: player-safe commands use !ov; administration uses !ova. Grid deletion is not registered.
 

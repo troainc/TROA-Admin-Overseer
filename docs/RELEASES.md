@@ -1,3 +1,7 @@
+## v0.8.2 — Managed JSON Persistence
+- Persists player profiles, sessions, bans, roles, role assignments, and reward claims to `Instance/TROA Admin Overseer/Overseer.json`.
+- Debounced background writes; ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.1 — Safe Grid Targeting
 - Look-at targeting for `!ova fixship`, `!ova stop`, and `!ova gridtransfer`.
 - Ownership transfers require a 30-second `!ova confirm` preview.

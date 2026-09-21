@@ -98,3 +98,6 @@ Server: `!ov perf` (admin)
 
 ## Command safety
 Players use `!ov`; administrative and owner workflows use `!ova`. Grid actions use the grid under an admin's crosshair when no explicit target is supplied. Ownership transfers always require `!ova confirm`; deletion, backup, restore, and storage remain with TROA GridVault and TROA-Hangar.
+
+## Persistent data
+TROA Admin Overseer writes managed JSON to `Instance/TROA Admin Overseer/Overseer.json`. Writes are debounced and occur off the game thread; keep this file with normal instance backups.
