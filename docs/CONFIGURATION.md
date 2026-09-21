@@ -23,6 +23,8 @@ Set `TicketPortalUrlTemplate` to your ticket-site URL. It can include `{player}`
 
 Use `Modules` only when you want an entire feature area off. Missing module switches remain available by default.
 
+Set RequireSecondStaffApprovalForTransfers to 	rue when grid ownership transfers need two staff members. The requester creates the preview with !ova gridtransfer; a different administrator must use !ova approve <requesterSteamId> within 30 seconds. This is off by default, which retains !ova confirm for the requesting administrator.
+
 ### Player grid recovery
 
 `PlayerGridToolsEnabled` controls player `!ov fixship`, `!ov stop`, and `!ov gridcheck` (default `true`). `PlayerGridToolsCooldownMinutes` defaults to `10`; set `0` to disable the cooldown. `PlayerGridToolsMaxPcu` defaults to `20000` PCU across the complete mechanical group; set `0` to disable this plugin-specific PCU cap. These commands always require the player to be a major owner of every connected grid, cannot target by name or from console, and emit GridTools audit/webhook events.

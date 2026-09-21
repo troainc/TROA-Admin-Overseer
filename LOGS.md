@@ -36,3 +36,5 @@
 - Added non-overwriting helper/staff/builder/event/admin/owner role-template workflow.
 ## v0.8.29 — Scoped role permissions
 - Added durable scoped grants and simulator commands.
+## v0.8.31-v0.8.32 — Two-staff transfer approval
+- Published public-safe command, configuration, deployment, changelog, and release-index guidance for the enforced optional approval workflow.

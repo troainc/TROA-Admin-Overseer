@@ -20,3 +20,4 @@ Live limit previews: !ova limit preview [grid] is admin read-only; !ov limitchec
 The owner CSV export now lists every registered cube-block definition, including unbuilt definitions, alongside live total/ship/station usage counts.
 Role templates now provide previewable, non-overwriting standard ranks; review generated roles before assignment.
 Scoped permission grants now support faction, player, gridtag, and category policies with explainable simulation.
+Public v0.8.31/v0.8.32 documentation records optional, enforced second-staff approval for grid ownership transfers without exposing private source.

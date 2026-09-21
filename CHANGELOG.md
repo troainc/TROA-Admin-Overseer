@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.8.32 — Enforced two-staff transfer approval
+- When the optional two-staff transfer setting is enabled, the requester cannot confirm their own transfer; a distinct administrator must approve it.
+- ZIP validated: only Overseer.dll and manifest.xml.
+
+## v0.8.31 — Optional two-staff transfer approval
+- Added owner-configurable second-staff approval for ownership transfers, with a 30-second pending preview.
+
+
 ## v0.8.30 — Opt-in command policy enforcement
 
 - Added closed-by-default custom-node policy gates for selected sensitive commands while retaining native Torch rank requirements.

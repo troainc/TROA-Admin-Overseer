@@ -16,7 +16,7 @@
 - `!ov motd` and `!ov report` respond correctly.
 - A player looking at a wholly major-owned small grid can use `!ov gridcheck`, `!ov stop`, and `!ov fixship`; another player and a mixed-ownership mechanical group or a group above the configured PCU cap are denied.
 - `!ova fixship` with no argument requires a grid under the crosshair; from console, use an explicit target.
-- `!ova gridtransfer <player> [grid]` previews only; `!ova confirm` applies it.
+- `!ova gridtransfer <player> [grid]` previews only. With default settings, `!ova confirm` applies it; with two-staff approval enabled, a different admin must use `!ova approve <requesterSteamId>`.
 - After a Torch restart, verify JSON-backed roles, claims, bans, reports, notes, and audit history remain.
 
 ## Package verification
