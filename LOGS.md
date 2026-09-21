@@ -26,3 +26,5 @@
 - Added durable timed role assignment, automatic expiry, rank recalculation, and audit trail.
 ## v0.8.24 — Role presentation and Discord mappings
 - Added durable prefix/color role presentation plus audited Discord role-ID mapping commands; no Discord credential or automatic access grant is introduced.
+## v0.8.25 — Context-aware block limits
+- Added per-rule grid kind/size filters, current-world CSV subtype export, and player NEAR/OVER context feedback.

@@ -35,6 +35,12 @@ Rewards remain disabled until `Enabled` is set to true. To add a streak bonus, s
 
 Set `PlayerNearLimitPercent` in `TROA Admin Overseer Limits.cfg` (default `80`). `!ov limits` marks player usage as NEAR at or above that percentage and OVER when it exceeds the rule maximum. This display setting does not enable enforcement.
 
+### Context-aware block rules
+
+Each rule can independently filter by `GridKind` (`Any`, `Ship`, or `Station`) and `GridSize` (`Any`, `Large`, or `Small`). This means the same subtype can have different limits in the same config. For example, use two `Grid`-scope rules matching the reactor subtype: one with `GridKind=Ship`, `GridSize=Large`, `Max=5`; another with `GridKind=Station`, `GridSize=Large`, `Max=10`. Rules do not replace one another—the appropriate contextual rule is counted and shown to players as, for example, `Large Ship` or `Large Station`.
+
+Run `!ova limit exportcsv` as an owner to write `Instance/TROA Admin Overseer/exports/block-subtypes.csv`. It inventories fat-block subtype IDs currently present in the loaded world, with type, grid size, grid kind, and observed count. Use those exact subtype IDs when writing rules. The export never changes blocks or limits.
+
 ## Configuration doctor
 
 Run `!ova doctor` after your first setup and any larger config change. It checks the server name, webhook routes, reward/streak setup, limit rules, ticket URL, and retained legacy config files. It is read-only and never enables a feature for you.

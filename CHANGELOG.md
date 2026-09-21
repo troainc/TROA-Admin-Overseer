@@ -1,3 +1,8 @@
+## v0.8.25 — Context-aware block limits
+
+- Added independent GridKind and GridSize rule filters, allowing the same subtype to have separate ship/station and large/small caps.
+- Added owner !ova limit exportcsv current-world subtype catalog and contextual near/over feedback in !ov limits.
+
 ## v0.8.24 — Role presentation and Discord mappings
 
 - Added owner-managed custom role prefix/color presentation with !ova role style and safe clear support.
