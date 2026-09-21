@@ -11,6 +11,7 @@ A role has a name, optional chat presentation settings, a Torch promote level, d
 - `*` grants every custom TROA node; `area.*` grants nodes below that area.
 - Inheritance cycles are rejected. A role cannot inherit itself, a missing role, a duplicate parent, or a role that already depends on it.
 - Removing a role removes it from player assignments and every child role's inherited-parent list.
+- A role may carry a display prefix/color label and one or more Discord role IDs. IDs are durable mappings, not Discord credentials.
 
 ## Owner workflow
 
@@ -48,3 +49,23 @@ Accepted durations use `s`, `m`, `h`, `d`, or `w`, such as `30m`, `12h`, `7d`, o
 Temporary grants persist through restarts. The roles module checks every 30 seconds, removes expired grants, recalculates the player’s effective native Torch rank, and emits a moderation audit/webhook event. Use `!ova role temporarylist <player>` to view the expiry and assigning staff member.
 
 A temporary role cannot be added when the player already has that same role directly. If a normal role is later assigned, it is treated as a permanent conversion and the temporary expiry record is removed.
+## Role presentation and Discord mappings
+
+Owners can give a rank an operator-facing presentation label:
+
+```text
+!ova role style eventhost [EVENT] purple
+!ova role style eventhost clear
+```
+
+Presentation data is retained with the custom role so future chat/bridge surfaces can render it consistently. It does not modify native Torch permissions or game chat by itself.
+
+Discord role IDs can be recorded against a TROA role without giving the plugin a Discord bot token:
+
+```text
+!ova role discord add eventhost 123456789012345678
+!ova role discord list eventhost
+!ova role discord remove eventhost 123456789012345678
+```
+
+Use the numeric Discord role ID (Developer Mode -> Copy Role ID), not `@RoleName`. Mappings are owner-only, stored in `Overseer.json`, and audited. They are safe to prepare now for a future authenticated TROA Discord bridge; this outbound-webhook-only plugin does **not** poll Discord or automatically grant in-game access from a role ID. Automatic synchronization needs a separately configured, authenticated bridge and an explicit player identity link, so a Discord display name can never become an access key.

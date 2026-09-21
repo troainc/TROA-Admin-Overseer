@@ -110,6 +110,10 @@ Report submission and resolution events are both correlated to the reported play
 
 Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at their own grid. These tools are enabled by default but require major ownership of every mechanically connected grid. The master config sets `PlayerGridToolsEnabled`, `PlayerGridToolsCooldownMinutes` (default `10`), and `PlayerGridToolsMaxPcu` (default `20000` PCU; `0` disables the plugin-specific PCU cap). Each use is audited through the GridTools webhook category.
 
+### Custom rank presentation and Discord mapping
+
+Owners can apply a short prefix/color label with `!ova role style <role> <prefix> [color]`, and record Discord role IDs through `!ova role discord add|remove|list`. Mappings are persisted and audited without a Discord token. They are bridge-ready references only: automatic Discord-to-game access requires a future authenticated bridge and Steam/Discord identity link.
+
 ### Temporary staff and event roles
 
 Owners can grant a custom role for a defined duration with `!ova role temporary <player> <role> <duration>`. The grant survives restart, automatically expires, recalculates the player’s native rank, and records the event. See [Roles and permissions](docs/PERMISSIONS.md) for the supported duration format and operational safeguards.

@@ -39,3 +39,4 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Updated player grid recovery safeguards to use a server-owner-configurable PCU maximum.
 - Delivered custom role inheritance and explainable effective permission inspection.
 - Delivered durable temporary custom-role grants with automatic expiry and rank recalculation.
+- Delivered durable custom-role presentation labels and owner-managed Discord role-ID mappings, prepared for a future authenticated identity bridge.

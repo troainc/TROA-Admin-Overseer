@@ -24,3 +24,5 @@
 - Added parent-role persistence, effective role resolution, cycle protection, and permission inspection.
 ## v0.8.23 — Temporary role grants
 - Added durable timed role assignment, automatic expiry, rank recalculation, and audit trail.
+## v0.8.24 — Role presentation and Discord mappings
+- Added durable prefix/color role presentation plus audited Discord role-ID mapping commands; no Discord credential or automatic access grant is introduced.

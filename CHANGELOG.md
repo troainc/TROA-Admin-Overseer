@@ -1,6 +1,7 @@
-# Changelog
+## v0.8.24 — Role presentation and Discord mappings
 
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+- Added owner-managed custom role prefix/color presentation with !ova role style and safe clear support.
+- Added durable, audited Discord role-ID maps through !ova role discord add|remove|list; IDs are stored bridge-ready but do not grant access without a future authenticated identity bridge.
 
 ## v0.8.23 — Temporary role grants
 
@@ -39,6 +40,10 @@ This file summarizes current deployable behavior. The dated package archive hist
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
+
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
