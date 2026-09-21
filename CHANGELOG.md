@@ -1,3 +1,7 @@
+## v0.8.17 — Player audit trail
+
+- Added !ova caseevents <player> [count] to show up to 25 stored audit events explicitly tied to that player’s SteamID.
+
 ## v0.8.16 — Staff case summary
 
 - Added read-only !ova case <player> for a unified staff view of active ban status, watch flags, warnings, notes, reports, roles, and possible alts.

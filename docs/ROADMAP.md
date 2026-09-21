@@ -27,3 +27,5 @@ The installed Torch API reference does not expose a safe supported surface for w
 
 Every deployable phase builds with zero warnings, packages only the managed DLL and manifest, updates private source/public docs, and requires a fresh Torch log and functional server test for runtime acceptance.
 - Delivered staff case summary for safe, read-only moderation review.
+
+- Delivered player-specific audit-trail review for staff cases.

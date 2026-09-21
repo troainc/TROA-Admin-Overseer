@@ -1,5 +1,6 @@
-# Public project context
+# Project context
 
-This repository is the public-safe documentation companion for TROA Admin Overseer. It contains no source implementation, secrets, server configs, runtime data, or private release assets.
+TROA Admin Overseer is a clean-room Torch administrative plugin for Space Engineers. Public product name and data path are `TROA Admin Overseer`; server owners choose `ServerName` only for branding. It is a single managed-DLL plugin with JSON persistence under `Instance/TROA Admin Overseer/Overseer.json`.
 
-Public documentation reflects version v0.8.10 and the two-tier command contract: `!ov` for players and `!ova` for staff.
+Current command contract: `!ov` for player-safe commands and `!ova` for privileged commands. Legacy `!ov` admin spellings are redirects only.
+Current staff workflow includes !ova case <player> for moderation context and !ova caseevents <player> [count] for player-specific persisted audit events.

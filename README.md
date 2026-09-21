@@ -98,3 +98,5 @@ TROA Admin Overseer is intentionally a single managed DLL. It does not bundle na
 ### Staff case summary
 
 Use !ova case <player> for the moderation context before acting: active ban status, watch flag, warnings, staff notes, player reports, assigned roles, and possible alt count. It is read-only and restricted to administrators.
+
+For a chronological follow-up, use !ova caseevents <player> [count]. It returns only stored events explicitly tied to the player’s SteamID; it never guesses based on a matching display name.

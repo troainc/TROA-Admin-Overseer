@@ -1,3 +1,7 @@
+## v0.8.17 — Player Audit Trail
+- Added !ova caseevents <player> [count] for up to 25 persisted audit events explicitly matched to a player's SteamID.
+- ZIP validated: only Overseer.dll and manifest.xml.
+
 ## v0.8.16 — Staff Case Summary
 - Added read-only !ova case <player> for a single staff view of ban status, flags, warnings, notes, reports, roles, and possible alts.
 - Removed the obsolete SQLite package reference; ZIP remains only Overseer.dll and manifest.xml.

@@ -5,3 +5,6 @@
 ## v0.8.16 — Staff case summary
 - Added !ova case <player> backed by persisted moderation records.
 - Removed the obsolete SQLite package reference; release remains one managed DLL plus manifest.
+
+## v0.8.17 — Player audit trail
+- Added !ova caseevents <player> [count], capped at 25 SteamID-matched persisted events.

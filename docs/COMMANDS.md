@@ -41,6 +41,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova warn <player> <reason>` | Admin |
 | `!ova note <player> <text>` · `!ova notes <player>` | Admin |
 | `!ova case <player>` | Admin |
+| `!ova caseevents <player> [count]` | Admin |
 | `!ova reports` · `!ova resolvereport <id> [resolution]` | Admin |
 
 ### Player and staff tools
