@@ -71,7 +71,7 @@ Persistent data is managed JSON at `Instance/TROA Admin Overseer/Overseer.json`.
 |---|---|
 | Player support | MOTD, vote links, daily rewards, reward history, player reports |
 | Moderation | Warn, note, report review/resolution, ban, kick, mute, temporary-ban expiry |
-| Staff tools | Player dossier, alt/session history, heal, feed, teleport, online GPS, ranks and roles |
+| Staff tools | Player dossier, alt/session history, heal, feed, teleport, online GPS, custom roles, inheritance, and permission inspection |
 | Grid safety | Look-at `fixship`, `stop`, confirmed ownership transfer; no deletion command |
 | Owner controls | Save, announcement scheduler, configuration reload, module status |
 | Operations | Webhooks, connections/player history, limits, persisted audit history |
@@ -86,6 +86,7 @@ Grid deletion, backup, restore, and hangar storage are not TROA Admin Overseer f
 
 - [Commands](docs/COMMANDS.md) — every current player, admin, and owner command.
 - [Configuration](docs/CONFIGURATION.md) — each config file, default, and safe enablement path.
+- [Roles and permissions](docs/PERMISSIONS.md) — custom roles, inheritance, nodes, and inspection.
 - [Webhooks](docs/WEBHOOKS.md) — Discord route setup and testing.
 - [Deployment](docs/DEPLOYMENT.md) — installation and live validation.
 - [Roadmap](docs/ROADMAP.md) — completed work, boundaries, and remaining API-dependent items.

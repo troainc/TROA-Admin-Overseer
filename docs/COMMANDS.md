@@ -58,7 +58,8 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova promote <player>` · `!ova demote <player>` | Owner |
 | `!ova setrank <player> <rank>` | Owner |
 | `!ova rank <player>` · `!ova ranks` | Admin |
-| `!ova role list|info|create|delete|grant|revoke|assign|remove` · `!ova roles <player>` | Admin/Owner as shown in command help |
+| `!ova role list|info|create|delete|grant|revoke|inherit|uninherit|assign|remove` · `!ova roles <player>` | Admin/Owner as shown in command help |
+| `!ova perms check <player> <node>` | Admin | Explain whether a custom TROA permission is granted and which effective role grants it. |
 
 ### Grid tools
 

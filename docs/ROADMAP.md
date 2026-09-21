@@ -37,3 +37,4 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered player-owned grid recovery with strict whole-mechanical-group ownership and configurable safeguards.
 
 - Updated player grid recovery safeguards to use a server-owner-configurable PCU maximum.
+- Delivered custom role inheritance and explainable effective permission inspection.

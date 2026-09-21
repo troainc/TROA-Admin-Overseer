@@ -12,3 +12,4 @@ Player-report submissions and resolutions are both SteamID-correlated in the per
 Player self-service grid recovery is available under !ov fixship, !ov stop, and !ov gridcheck; it is limited to an in-game caller's wholly major-owned mechanical group and master-config limits.
 
 Player grid recovery uses the owner-configurable `PlayerGridToolsMaxPcu` master-config limit (default 20000 PCU; 0 disables the additional plugin cap).
+Advanced roles support durable parent-role inheritance with cycle protection. Effective Torch rank and custom permission nodes resolve across direct and inherited roles; `!ova perms check` explains node grants.

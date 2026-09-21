@@ -1,7 +1,7 @@
-# Changelog
+## v0.8.22 — Advanced role inheritance
 
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
-
+- Added durable custom-role inheritance with cycle protection and inherited effective Torch ranks and permission nodes.
+- Added owner commands `!ova role inherit` / `!ova role uninherit` and administrator `!ova perms check` for explainable custom access.
 ## v0.8.21 — Configurable player PCU cap
 
 - Replaced the player grid-recovery block cap with `PlayerGridToolsMaxPcu`, an owner-configurable PCU maximum (default `20000`; `0` disables the additional cap).
@@ -31,6 +31,10 @@ This file summarizes current deployable behavior. The dated package archive hist
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
+
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
