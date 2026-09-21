@@ -6,6 +6,7 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.49 | Automatic Block Catalogue | Complete vanilla-and-mod subtype CSV refreshed at every server startup in the plugin data folder. |
 | v0.8.46 | Scheduled Operations Summary | Opt-in audit/webhook summaries every 1–168 hours. |
 | v0.8.45 | Maintenance Mode | Persisted maintenance status and visible banner. |
 | v0.8.44 | Event MOTD | Separate expiring event MOTD override. |
