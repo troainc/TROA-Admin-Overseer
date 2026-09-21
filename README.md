@@ -151,3 +151,5 @@ Admins can use `!ova opssummary [count]` for a compact view of recent persisted 
 `!ova faction <player>` provides a read-only faction dossier for staff.
 
 `!ova faction roster <player>` lists the selected faction member identity IDs for staff review.
+
+Event owners can use `!ova event role` for temporary access and `!ova event announce` for audited event broadcasts.

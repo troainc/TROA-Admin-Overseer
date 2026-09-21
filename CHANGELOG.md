@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.41 — Event announcements
+- Added owner-only event broadcasts through the existing audit/webhook path.
+
+## v0.8.40 — Event roles
+- Added safe temporary event-role grants with automatic expiry.
+
 ## v0.8.39 — Faction roster
 - Added !ova faction roster for read-only staff roster visibility.
 
