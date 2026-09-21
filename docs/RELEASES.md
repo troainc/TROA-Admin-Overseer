@@ -1,3 +1,7 @@
+## v0.8.13 — Advanced Rewards and Limits
+- Opt-in daily streak milestones and configurable player near-limit indicators.
+- ZIP validated: only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.12 — Configurable Ticket Portal
 - `TicketPortalUrlTemplate` and `!ov ticket` support portal links with `{player}`, `{steamid}`, and `{server}` placeholders.
 - ZIP validated: only `Overseer.dll` and `manifest.xml`.

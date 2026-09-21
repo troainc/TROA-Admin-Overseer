@@ -1,3 +1,8 @@
+## v0.8.13 — Advanced rewards and limits
+
+- Added opt-in daily streak milestones with configurable bonus bundles.
+- Added configurable player near-limit display in `!ov limits`.
+
 ## v0.8.12 — Configurable ticket portal
 
 - Added `TicketPortalUrlTemplate` to the master config and player `!ov ticket` links with player/server placeholders.

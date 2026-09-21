@@ -23,6 +23,14 @@ Set `TicketPortalUrlTemplate` to your ticket-site URL. It can include `{player}`
 
 Use `Modules` only when you want an entire feature area off. Missing module switches remain available by default.
 
+## Rewards: streak milestones
+
+Rewards remain disabled until `Enabled` is set to true. To add a streak bonus, set `DailyStreakEnabled` to true, choose `DailyStreakMilestone` (for example `7`), and configure `DailyStreakReward`. A missed 48-hour window resets the streak; the normal daily cooldown still applies.
+
+## Limits: player warning threshold
+
+Set `PlayerNearLimitPercent` in `TROA Admin Overseer Limits.cfg` (default `80`). `!ov limits` marks player usage as NEAR at or above that percentage and OVER when it exceeds the rule maximum. This display setting does not enable enforcement.
+
 ## Safe enablement order
 
 1. Confirm `!ova status` works.

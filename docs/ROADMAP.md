@@ -4,6 +4,7 @@
 
 - Two-tier command contract: player `!ov`, privileged `!ova`.
 - Configurable ticket portal links through `!ov ticket`.
+- Opt-in daily streak milestones and configurable player near-limit display.
 - Single-DLL packaging with release validation.
 - Safe look-at grid repair/stop and confirmed ownership transfer.
 - Managed JSON persistence for operational records.

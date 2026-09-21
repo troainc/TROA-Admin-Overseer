@@ -10,7 +10,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ov motd` | Show the configured message of the day. |
 | `!ov vote` | Show configured voting links. |
 | `!ov claim` | Claim a configured space-engineers.com vote reward. |
-| `!ov daily` | Claim the configured daily reward. |
+| `!ov daily` | Claim the configured daily reward; optional milestone streak bonuses are owner-configured. |
 | `!ov rewards` | Show your recorded reward claims. |
 | `!ov limits` | Show your own tracked block-limit use. |
 | `!ov ticket` | Show the configured support ticket portal link. |
