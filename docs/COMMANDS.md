@@ -147,3 +147,12 @@ rewards** (to online players on an interval) are also configured in `Rewards.cfg
 | `!ova notes <player>` | Admin | Show the ten most recent staff notes. |
 
 `WarningEscalationCount` is closed by default (`0`). Set it above zero only when you also choose a safe `WarningEscalationBanDuration`; escalation occurs once when the threshold is reached.
+## Owner operations
+| Command | Perm | Description |
+|---|---|---|
+| `!ova save` | Owner | Request a real Torch game save. If a save is already running, it does nothing. |
+| `!ova schedule status` | Owner | Show rotating-announcement state. |
+| `!ova schedule start` | Owner | Enable and persist configured rotating announcements. |
+| `!ova schedule stop` | Owner | Disable and persist rotating announcements. |
+
+TROA Admin Overseer does not provide restart, cleanup, or performance automation. TROA Cleaner+ remains the owner of those workflows. Whitelist/maintenance enforcement is not exposed by the installed Torch multiplayer API and is intentionally not represented as a non-functional command.

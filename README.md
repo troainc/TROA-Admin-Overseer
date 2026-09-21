@@ -104,3 +104,6 @@ TROA Admin Overseer writes managed JSON to `Instance/TROA Admin Overseer/Oversee
 
 ## Player reports and moderation
 Players use `!ov report <player> <reason>`. Staff use `!ova reports`, `!ova resolvereport`, `!ova warn`, and `!ova note`. Warning escalation is disabled until an owner explicitly sets `WarningEscalationCount` in `Moderation.cfg`.
+
+## Owner operations
+`!ova save` requests a Torch game save. `!ova schedule start|stop|status` controls the configured rotating announcements and writes the choice to `Broadcast.cfg`. Restart and cleanup remain exclusively with TROA Cleaner+.

@@ -1,3 +1,8 @@
+## v0.8.4 — Owner Operations
+- Owner `!ova save` uses the supported Torch save API.
+- Owner announcement scheduler controls persist in `Broadcast.cfg`; no restart or cleanup control added.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.3 — Moderation Workflows
 - `!ov report` for players; `!ova` staff commands for reports, resolution, warnings, and notes.
 - Warnings, notes, and reports persist in managed JSON; escalation is disabled by default.
