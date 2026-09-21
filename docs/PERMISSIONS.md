@@ -69,3 +69,15 @@ Discord role IDs can be recorded against a TROA role without giving the plugin a
 ```
 
 Use the numeric Discord role ID (Developer Mode -> Copy Role ID), not `@RoleName`. Mappings are owner-only, stored in `Overseer.json`, and audited. They are safe to prepare now for a future authenticated TROA Discord bridge; this outbound-webhook-only plugin does **not** poll Discord or automatically grant in-game access from a role ID. Automatic synchronization needs a separately configured, authenticated bridge and an explicit player identity link, so a Discord display name can never become an access key.
+## Standard role templates
+
+Owners can create a safe starting role with `!ova role template apply <template> [newRoleName]`. Templates never overwrite an existing role. Inspect the result before assigning it:
+
+```text
+!ova role template list
+!ova role template preview senior-moderator
+!ova role template apply senior-moderator senior-staff
+!ova role info senior-staff
+```
+
+Available templates are `helper`, `moderator`, `senior-moderator`, `builder`, `event-host`, `administrator`, and `owner`. A senior moderator inherits `moderator` when that parent role exists. If you use a different moderator role name, add the parent explicitly with `!ova role inherit` after applying the template.

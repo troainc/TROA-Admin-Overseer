@@ -1,3 +1,8 @@
+## v0.8.28 — Standard role templates
+
+- Added owner-only !ova role template list|preview|apply for Helper, Moderator, Senior Moderator, Builder, Event Host, Administrator, and Owner starting roles.
+- Template application is non-destructive: it never overwrites a live role and tells owners to review before assignment.
+
 ## v0.8.27 — Complete block catalog export
 
 - Upgraded !ova limit exportcsv from a current-world list to every registered cube-block definition.

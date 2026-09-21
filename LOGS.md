@@ -32,3 +32,5 @@
 - Added read-only administrator and player grid-limit feedback commands.
 ## v0.8.27 — Complete block catalog export
 - Exported all registered cube-block definitions with live usage columns for limits planning.
+## v0.8.28 — Standard role templates
+- Added non-overwriting helper/staff/builder/event/admin/owner role-template workflow.

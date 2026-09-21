@@ -114,6 +114,10 @@ Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at 
 
 Block-limit rules can now distinguish Large/Small and Ship/Station, so the same subtype can safely have a different cap in each context. !ov limits tells players the rule context and whether they are near or over its cap. Owners can run !ova limit exportcsv to create a complete registered-subtype catalog with live usage columns at Instance/TROA Admin Overseer/exports/block-subtypes.csv.
 
+### Standard role templates
+
+Owners can preview and safely create helper, moderator, senior-moderator, uilder, vent-host, dministrator, and owner starting roles with !ova role template list|preview|apply. Template application never overwrites an existing role.
+
 ### Custom rank presentation and Discord mapping
 
 Owners can apply a short prefix/color label with `!ova role style <role> <prefix> [color]`, and record Discord role IDs through `!ova role discord add|remove|list`. Mappings are persisted and audited without a Discord token. They are bridge-ready references only: automatic Discord-to-game access requires a future authenticated bridge and Steam/Discord identity link.
