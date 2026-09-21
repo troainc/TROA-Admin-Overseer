@@ -1,3 +1,7 @@
+## v0.8.16 — Staff Case Summary
+- Added read-only !ova case <player> for a single staff view of ban status, flags, warnings, notes, reports, roles, and possible alts.
+- Removed the obsolete SQLite package reference; ZIP remains only Overseer.dll and manifest.xml.
+
 ## v0.8.15 — Grid Health Scanner
 - Read-only `!ova gridcheck [grid]` reports grid identity, blocks, ownership, motion, and mechanical group details.
 - ZIP validated: only `Overseer.dll` and `manifest.xml`.

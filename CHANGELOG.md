@@ -1,3 +1,8 @@
+## v0.8.16 — Staff case summary
+
+- Added read-only !ova case <player> for a unified staff view of active ban status, watch flags, warnings, notes, reports, roles, and possible alts.
+- Removed the obsolete SQLite package reference so release builds do not carry that dependency.
+
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.

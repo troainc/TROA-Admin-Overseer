@@ -95,3 +95,6 @@ Grid deletion, backup, restore, and hangar storage are not TROA Admin Overseer f
 ## Support boundaries
 
 TROA Admin Overseer is intentionally a single managed DLL. It does not bundle native SQLite or third-party plugin DLLs. Performance cleanup and restart automation remain owned by TROA Cleaner+. Archive/storage workflows remain owned by TROA GridVault and TROA-Hangar.
+### Staff case summary
+
+Use !ova case <player> for the moderation context before acting: active ban status, watch flag, warnings, staff notes, player reports, assigned roles, and possible alt count. It is read-only and restricted to administrators.

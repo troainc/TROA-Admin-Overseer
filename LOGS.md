@@ -1,1 +1,7 @@
-# Publication log`n`n- 2026-09-20: Published v0.8.11 with a complete owner-facing documentation refresh and admin-root access correction.
+# Work log
+
+- 2026-09-20: Established single-DLL release validation and paired private/public publication workflow.
+- 2026-09-20: Published v0.8.11: access correction, documentation refresh, and validated release workflow.
+## v0.8.16 — Staff case summary
+- Added !ova case <player> backed by persisted moderation records.
+- Removed the obsolete SQLite package reference; release remains one managed DLL plus manifest.
