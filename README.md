@@ -1,55 +1,100 @@
-# TROA Admin+ (Overseer)
+# TROA Admin Overseer
 
-The all-in-one Torch admin plugin for Space Engineers dedicated servers — one plugin, config-file
-driven, webhook-native. Built from the ground up to replace and enhance a whole shelf of separate
-plugins (admin logging, connection logs, ownership logging, PCU transfer, ship fixer, respawn fix,
-block limiter, auto-moderation, essentials, and vote rewards) with one cohesive tool.
+The ultimate all-in-one Torch admin plugin for Space Engineers dedicated servers — built from the
+ground up. One DLL, config-file driven, webhook-native. Replaces and enhances Admin Logger,
+Connection Log, Ownership Logger, PCU Transferrer, ShipFixer, RespawnFix, BlockLimiter,
+Auto Moderator, Essentials, and VoteRewards.
 
-> 🚧 **Status: in testing — public release coming soon.**
-> This repository hosts the public documentation. The build will be published here when it's ready.
-> Docs may change before release.
-
-## What it does
-- **Audit & webhooks** — every meaningful event (admin commands, moderation, connections) as rich,
-  color-coded Discord embeds, with per-category routing, rate limiting, and role pings on alerts.
-- **Player intel** — a full dossier per player: playtime, sessions, name/IP history, country,
-  alt-account detection (shared IP), and a watchlist.
-- **Moderation** — timed bans with reason + appeal id + auto-unban, kick, mute, ban list.
-- **Player & grid tools** — heal, feed, teleport, promote/demote; fixship (rebuilds a ship and its
-  subgrids to fix desync), stop, ownership transfer, grid list, delete.
-- **Ranks & roles** — a role/permission system (roles carry a Torch promote level plus custom
-  permission nodes) and Essentials-style rank commands.
-- **Broadcast & MOTD** — message of the day, rotating announcements, and a broadcast command.
-- **Block limits** — per player / faction / grid / global, with alert or turn-off enforcement and
-  role/SteamID exemptions.
-- **Rewards** — daily and playtime rewards, plus **space-engineers.com** vote rewards.
+**Version 0.7.2** · [Changelog](CHANGELOG.md)
 
 ## Documentation
-- [Commands](docs/COMMANDS.md) — the full `!ov` command reference
-- [Configuration](docs/CONFIGURATION.md) — every config file and field
-- [Webhooks](docs/WEBHOOKS.md) — Discord setup, routes, and embeds
-- [Changelog](CHANGELOG.md)
+- [Commands](docs/COMMANDS.md) — full `!ov` command reference
+- [Configuration](docs/CONFIGURATION.md) — every `.cfg` file and field
+- [Webhooks](docs/WEBHOOKS.md) — Discord setup, routes, embeds
+- [Architecture](docs/ARCHITECTURE.md) — how the plugin is built
+- [Plan](docs/PLAN.md) — full design and phase roadmap
+- [Contributing](CONTRIBUTING.md) — build and development notes
 
-## Command overview
-Everything lives under the `!ov` root, for example:
+## Status
+- **Phase 0 — Scaffold: complete.** Core plugin, module framework, event bus, webhook engine, config
+  system, and core `!ov` commands.
+- **Phase 1 — Audit, Connections & Webhooks: complete.** SQLite audit/connection store, Discord
+  webhook engine (rich embeds, routes, rate limit/retry), chat-command & moderation auditing,
+  join/leave + playtime + name/IP history, Steam-P2P IP capture, geo-IP, alt detection, watchlist,
+  and the `!ov who / lookup / alts / history / flag` dossier commands.
+- **Phase 2 — Player & Grid Tools + Moderation: complete.** Timed bans with reason + appeal id +
+  auto-unban sweep, kick/mute, `!ov bans`; heal/feed/teleport/promote/demote; and grid tools —
+  fixship (rebuilds the mechanical grid group so subgrids survive), stop, ownership transfer,
+  grid list, and delete. All game-state changes run on the session thread; destructive ops are
+  admin-gated and abort safely if grid data can't be captured.
+- **Roles & administration: complete.** Role/permission system (roles bundle a Torch promote level
+  plus custom permission nodes) with `!ov role assign/remove/create/grant/…` and `!ov roles`;
+  Essentials-style `!ov setrank/rank/ranks`; read-only `!ov perf` server health; and a Harmony guard
+  against the VRage `MyStringHash` collision crash.
+- **Broadcast & MOTD: complete.** MOTD on join, rotating announcements, and `!ov broadcast` / `!ov motd`
+  — sent to players or everyone, never intercepting player chat (safe alongside a Discord bridge).
+- **Limits (BlockLimiter): complete.** Scan-based block limits by Player/Faction/Grid/Global with
+  match-by-subtype/type, Alert or TurnOff punishment, and role/SteamID exemptions;
+  `!ov limits [player]` / `!ov limit recount`. Disabled by default.
+- **Rewards (VoteRewards): complete.** Item-bundle rewards — daily claim (`!ov daily`), optional
+  auto playtime rewards, admin grant (`!ov reward`), and **space-engineers.com vote rewards**
+  (`!ov claim`, `!ov vote`) via the site's API. Disabled by default.
+- Performance/cleanup is intentionally minimal — **Cleaner+ owns that**. Overseer only reports.
+- Next: economy/credit payouts, per-role chat prefixes/colors.
 
+All ten legacy plugins are now replaced from scratch: Admin Logger, Connection Log, Ownership Logger,
+PCU Transferrer, ShipFixer, RespawnFix, BlockLimiter, Auto Moderator (report-only; Cleaner+ enforces),
+Essentials, and VoteRewards.
+
+### Phase 1 notes
+- **IP capture** uses Steam P2P session state (`m_nRemoteIP`). It works for direct P2P connections;
+  when Steam routes a client through its relay/SDR no public IP exists, so geo/alt-detection stay
+  idle for those sessions. Everything else works regardless.
+- **Data** lives in `Instance/TROA Admin Overseer/Overseer.db` (SQLite). If SQLite can't load, the plugin keeps
+  running (events still go to logs and webhooks) — the DB features just disable.
+
+## Build
+Requires the .NET SDK (8.x is fine — it builds `net48` via the reference-assemblies package; no Visual
+Studio needed). Point `TorchBin` at your Torch install if it isn't the default path.
+
+```bash
+dotnet build -c Release
 ```
-!ov help                     Show command help
-!ov who / lookup <player>    Online players / player dossier
-!ov ban <player> <time> ...  Moderation (ban/kick/mute)
-!ov fixship <grid>           Rebuild a ship to fix desync
-!ov role assign <p> <role>   Roles & permissions
-!ov limits [player]          Block-limit usage
-!ov daily / vote / claim     Rewards (incl. space-engineers.com voting)
+Override the Torch reference location:
+```bash
+dotnet build -c Release -p:TorchBin="C:\path\to\TorchBinaries"
 ```
 
-See [docs/COMMANDS.md](docs/COMMANDS.md) for the complete list and permissions.
+Output lands in `bin/Release/`:
+- `Overseer.dll`, `manifest.xml`
+- `System.Data.SQLite.dll` + `x64/`, `x86/` native interop
 
-## Install (coming soon)
-1. Download the release from this repository (published at launch).
-2. Drop the release ZIP into `Torch/Plugins/`. Do not unpack or add native DLLs: Torch treats every DLL in a package as managed code; the release ZIP contains only `Overseer.dll` and `manifest.xml`.
-3. Start Torch — config files are created with defaults on first run under `Instance/`.
-4. Edit the config (add your Discord webhook URLs, etc.) and run `!ov reload`.
+Game and Torch assemblies are intentionally **not** copied — the server already provides them.
 
-## Support
-Questions and issues: open an issue on this repository. A Discord link will be added at release.
+## Install
+1. Build (or grab a release zip).
+2. Copy the `bin/Release` contents into `Torch/Plugins/TROA Admin Overseer/`.
+3. Start Torch. Overseer creates `Instance/TROA Admin Overseer.cfg and other TROA Admin Overseer config files` with defaults on first run.
+4. Edit the `.cfg` files (add your Discord webhook URLs in `Webhooks.cfg`, set `Enabled` true).
+5. In-game/console: `!ov reload` to apply config without a restart.
+
+## Commands
+Core: `!ov status` (admin) · `!ov modules` (owner) · `!ov reload` (owner) · `!ov help`
+Intel: `!ov who` · `!ov lookup <player>` · `!ov alts <player>` · `!ov history <player>` ·
+`!ov flag <player> [note]` · `!ov unflag <player>` (all admin)
+Moderation: `!ov ban <player> <duration|perm> [reason]` · `!ov unban <player>` ·
+`!ov kick <player> [reason]` · `!ov mute/unmute <player>` · `!ov bans` (all admin)
+Player tools: `!ov heal [player]` · `!ov feed [player]` · `!ov tp <player>` · `!ov tphere <player>` ·
+`!ov promote/demote <player>` (owner) (admin)
+Grid tools: `!ov fixship <grid>` · `!ov stop <grid>` · `!ov gridtransfer <grid> <player>` ·
+`!ov gridlist <player>` · `!ov griddelete <grid>` (all admin)
+Ranks & roles: `!ov setrank/rank/ranks` · `!ov role list/info/create/delete/grant/revoke/assign/remove` ·
+`!ov roles <player>` (owner/admin)
+Broadcast: `!ov broadcast <message>` (admin) · `!ov motd`
+Limits: `!ov limits [player]` · `!ov limit recount` (admin)
+Rewards: `!ov daily` · `!ov vote` · `!ov claim` · `!ov reward <player>` (admin)
+Server: `!ov perf` (admin)
+
+
+## Command safety
+Players use `!ov`; administrative and owner workflows use `!ova`. Grid actions use the grid under an admin's crosshair when no explicit target is supplied. Ownership transfers always require `!ova confirm`; deletion, backup, restore, and storage remain with TROA GridVault and TROA-Hangar.

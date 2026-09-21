@@ -1,3 +1,9 @@
+## v0.8.1 — Safe Grid Targeting
+- Look-at targeting for `!ova fixship`, `!ova stop`, and `!ova gridtransfer`.
+- Ownership transfers require a 30-second `!ova confirm` preview.
+- No grid deletion command; GridVault and TROA-Hangar own archival workflows.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 # TROA Admin Overseer release index
 
 Archives are retained for traceability. Deploy the newest package unless you are intentionally testing an older version.
@@ -8,4 +14,3 @@ Archives are retained for traceability. Deploy the newest package unless you are
 | TROA Admin Overseer v0.7.1 - Managed Package Loader Fix.zip | 54380 | `27C66489064B478A47919CE4E6229FAFDDDA5D584CB4FA3E26E3E12496F8F181` |
 | TROA Admin Overseer v0.7.2 - Harmony Dependency Removal.zip | 53520 | `5629DF6572A0DB408B843AABB4ED0BCD637A84A8C4FB488D699CC641EB05F39D` |
 | TROA Admin Overseer v0.7.3 - Managed SQLite Dependency.zip | 215048 | `6F1B7568867383E4A72ECB5CA8BB5AB0EB4F7CF49C2EDAB5D931D69226E6979A` |
-| TROA Admin Overseer v0.7.4 - Single DLL Managed Storage.zip | 50504 | `4E071F3C76610F40CC351E02611B98258D30E34922A1F53163EE14A1ACEEAA1F` |
