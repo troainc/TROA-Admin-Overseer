@@ -102,3 +102,5 @@ Use !ova case <player> for the moderation context before acting: active ban stat
 For a chronological follow-up, use !ova caseevents <player> [count]. It returns only stored events explicitly tied to the player’s SteamID; it never guesses based on a matching display name.
 
 New moderation events are correlated with the affected player’s SteamID, keeping !ova caseevents useful even if display names later change.
+
+Report submission and resolution events are both correlated to the reported player’s SteamID, so the staff case trail shows the complete workflow.

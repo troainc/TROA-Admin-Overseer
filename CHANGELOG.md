@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-# Changelog
+## v0.8.19 — Resolved report audit link
 
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
-=======
+- Resolved-report events now include the reported player’s SteamID and name, making them visible in !ova caseevents.
+
 ## v0.8.18 — Correlated moderation audit
 
 - Added target SteamIDs to mute, unmute, staff-note, and player-report audit events so they appear reliably in !ova caseevents.
->>>>>>> 3d59a61 (docs: publish v0.8.18 correlated moderation audit)
 
 ## v0.8.17 — Player audit trail
 
@@ -20,6 +18,10 @@ This file summarizes current deployable behavior. The dated package archive hist
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
+
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 

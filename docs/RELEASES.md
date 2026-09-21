@@ -1,3 +1,7 @@
+## v0.8.19 — Resolved Report Audit Link
+- Report resolution now records the reported player's name and SteamID, completing the case-event audit workflow.
+- ZIP validated: only Overseer.dll and manifest.xml.
+
 ## v0.8.18 — Correlated Moderation Audit
 - Core moderation audit events now include target SteamIDs, so !ova caseevents remains reliable after display-name changes.
 - ZIP validated: only Overseer.dll and manifest.xml.

@@ -11,3 +11,6 @@
 
 ## v0.8.18 — Correlated moderation audit
 - Added target SteamID fields to mute, unmute, staff-note, and player-report events.
+
+## v0.8.19 — Resolved report audit link
+- Report resolution now returns the resolved record internally and emits its target SteamID.

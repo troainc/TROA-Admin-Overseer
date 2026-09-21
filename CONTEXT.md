@@ -6,3 +6,5 @@ Current command contract: `!ov` for player-safe commands and `!ova` for privileg
 Current staff workflow includes !ova case <player> for moderation context and !ova caseevents <player> [count] for player-specific persisted audit events.
 
 Moderation audit events use stable target SteamIDs for case-history correlation; display names are never the matching key.
+
+Player-report submissions and resolutions are both SteamID-correlated in the persisted audit trail.

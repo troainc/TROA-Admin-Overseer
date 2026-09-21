@@ -31,3 +31,5 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered player-specific audit-trail review for staff cases.
 
 - Delivered stable SteamID correlation for core moderation audit events.
+
+- Delivered complete SteamID correlation across player-report submission and resolution events.
