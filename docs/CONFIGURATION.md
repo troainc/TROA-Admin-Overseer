@@ -18,7 +18,7 @@ sensible defaults on first run. Edit them on disk and apply changes without a re
 | Field | Default | Meaning |
 |---|---|---|
 | `Enabled` | `false` | Master switch for all webhook delivery. |
-| `Routes` | 8 named routes | Each `<WebhookRoute Name="...">` has `Url`, `Enabled`, and `CriticalMentionRoleId`. |
+| `Routes` | 8 named routes | Each `<WebhookRoute Name="...">` has `Url`, `Enabled`, and `CriticalMentionRoleId`. Every route starts **disabled**; add its URL and set `Enabled` to `true` only for routes you want. |
 | `Mappings` | see below | `<CategoryRoute Category="..." Route="..."/>` — points an event category at a route. Empty route = muted. |
 
 **Default routes:** `audit`, `moderation`, `joins`, `performance`, `rewards`, `limits`, `server`,
