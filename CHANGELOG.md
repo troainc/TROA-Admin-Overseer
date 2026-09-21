@@ -16,7 +16,7 @@ Today’s release work consolidated TROA Admin Overseer into a full server-opera
 - Added maintenance status/banner controls, manual operations summaries, and opt-in scheduled audit/webhook summaries.
 - Added player-risk context through existing cases, warnings, reports, notes, bans, watch flags, and audit records.
 - Added CSV block catalog export, contextual limits, and player-safe grid recovery safeguards.
-- The complete vanilla-and-mod block catalogue now refreshes automatically after every server start/restart; manual `!ova limit exportcsv` remains available.
+- v0.8.49 writes the complete vanilla-and-mod block catalogue automatically after every server start/restart to `Instance/TROA Admin Overseer/data/block-subtypes.csv`; manual `!ova limit exportcsv` remains available.
 
 ### Events and factions
 

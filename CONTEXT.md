@@ -25,4 +25,4 @@ Public v0.8.31/v0.8.32 documentation records optional, enforced second-staff app
 Public v0.8.33 guidance documents durable report assignment, status, deadline, and internal update workflows.
 2026-09-21: Rebuilt public README as a server-owner how-to and consolidated the changelog by date.
 
-v0.8.48 documentation: block-subtypes.csv is generated automatically after each server session start/restart at `Instance/TROA Admin Overseer/data/`.
+v0.8.49 documentation: block-subtypes.csv is generated automatically after each server session start/restart at `Instance/TROA Admin Overseer/data/`.

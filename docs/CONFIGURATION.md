@@ -23,7 +23,7 @@ Set `TicketPortalUrlTemplate` to your ticket-site URL. It can include `{player}`
 
 Use `Modules` only when you want an entire feature area off. Missing module switches remain available by default.
 
-Set RequireSecondStaffApprovalForTransfers to 	rue when grid ownership transfers need two staff members. The requester creates the preview with !ova gridtransfer; a different administrator must use !ova approve <requesterSteamId> within 30 seconds. This is off by default, which retains !ova confirm for the requesting administrator.
+Set RequireSecondStaffApprovalForTransfers to `true` when grid ownership transfers need two staff members. The requester creates the preview with !ova gridtransfer; a different administrator must use !ova approve <requesterSteamId> within 30 seconds. This is off by default, which retains !ova confirm for the requesting administrator.
 
 ### Player grid recovery
 
@@ -41,7 +41,7 @@ Set `PlayerNearLimitPercent` in `TROA Admin Overseer Limits.cfg` (default `80`).
 
 Each rule can independently filter by `GridKind` (`Any`, `Ship`, or `Station`) and `GridSize` (`Any`, `Large`, or `Small`). This means the same subtype can have different limits in the same config. For example, use two `Grid`-scope rules matching the reactor subtype: one with `GridKind=Ship`, `GridSize=Large`, `Max=5`; another with `GridKind=Station`, `GridSize=Large`, `Max=10`. Rules do not replace one another—the appropriate contextual rule is counted and shown to players as, for example, `Large Ship` or `Large Station`.
 
-Run `!ova limit exportcsv` as an owner to write `Instance/TROA Admin Overseer/exports/block-subtypes.csv`. It inventories every registered cube-block subtype, with type and cube size. Live-world columns show total observed use plus ship and station use, while unbuilt definitions remain present with zeroes. Use those exact subtype IDs when writing rules. The export never changes blocks or limits.
+After every server start or restart, TROA Admin Overseer automatically writes `Instance/TROA Admin Overseer/data/block-subtypes.csv`. It inventories every registered vanilla-and-mod cube-block subtype, with type and cube size. Live-world columns show total observed use plus ship and station use, while unbuilt definitions remain present with zeroes. Use `!ova limit exportcsv` for an immediate refresh; the export never changes blocks or limits.
 
 ## Configuration doctor
 
