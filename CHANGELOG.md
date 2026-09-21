@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.36 — Role comparison
+- Added administrator role comparison for rank, direct nodes, and inheritance.
+
 ## v0.8.35 — Expanded opt-in policy enforcement
 - Added optional TROA permission-node gates to sensitive moderation and broadcast actions.
 
