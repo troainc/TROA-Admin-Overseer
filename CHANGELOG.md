@@ -5,8 +5,14 @@ All notable changes to Overseer are documented here. The format follows
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html). Dates are UTC.
 
 ## [Unreleased]
+### Changed
+- v0.8.0 introduces the two-tier command contract: player-safe commands use !ov; administration uses !ova. Grid deletion is not registered.
+
+### Changed
+- Product-facing installation and data folder name is now TROA Admin Overseer; server owners still choose their own ServerName in Overseer.cfg.
+
 ### Fixed
-- Packaging now excludes native SQLite interop DLLs. Torch reflects every DLL in a plugin ZIP as managed code; including that native file caused a startup BadImageFormatException.
+- Removed the optional Harmony collision patch because the deployment Torch runtime does not provide 0Harmony. This eliminates the startup FileNotFoundException.`n- v0.7.3 packages the managed System.Data.SQLite assembly required by the database layer, while intentionally excluding native SQLite.Interop.dll.
 
 ### Planned
 - Economy/credit payouts for rewards.
@@ -116,7 +122,7 @@ All notable changes to Overseer are documented here. The format follows
 - Core commands: `!ov status`, `!ov modules`, `!ov reload`, `!ov help`.
 - `net48` build via the .NET SDK (no Visual Studio required); packaging script.
 
-[Unreleased]: https://github.com/troainc/TROA-Admin-Overseer/compare/main...HEAD
-[0.3.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.3.0
-[0.2.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.2.0
-[0.1.0]: https://github.com/troainc/TROA-Admin-Overseer/releases/tag/v0.1.0
+[Unreleased]: https://github.com/troainc/TROA-Overseer--Closed/compare/main...HEAD
+[0.3.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.3.0
+[0.2.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.2.0
+[0.1.0]: https://github.com/troainc/TROA-Overseer--Closed/releases/tag/v0.1.0
