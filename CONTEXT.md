@@ -13,3 +13,4 @@ Player self-service grid recovery is available under !ov fixship, !ov stop, and 
 
 Player grid recovery uses the owner-configurable `PlayerGridToolsMaxPcu` master-config limit (default 20000 PCU; 0 disables the additional plugin cap).
 Advanced roles support durable parent-role inheritance with cycle protection. Effective Torch rank and custom permission nodes resolve across direct and inherited roles; `!ova perms check` explains node grants.
+Temporary direct roles persist in JSON and expire every 30 seconds through the roles module; expiry removes the role, reapplies effective native rank, and emits an audit event.

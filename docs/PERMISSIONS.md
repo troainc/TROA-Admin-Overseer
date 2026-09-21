@@ -35,3 +35,16 @@ Use `!ova role info seniorhelper` to inspect direct nodes and parents. Use `!ova
 ## Current limits
 
 A custom node does not automatically override a Torch command's native `[Permission]` attribute. Existing commands continue to use their documented Torch rank. Future TROA features can opt into specific nodes; this prevents accidental privilege expansion during the migration to granular permissions.
+## Temporary roles
+
+Owners can grant a direct role for a positive duration:
+
+```text
+!ova role temporary PlayerName eventhost 4h
+```
+
+Accepted durations use `s`, `m`, `h`, `d`, or `w`, such as `30m`, `12h`, `7d`, or `2w`. Permanent durations are rejected for this command; use `!ova role assign` for a normal permanent grant.
+
+Temporary grants persist through restarts. The roles module checks every 30 seconds, removes expired grants, recalculates the player’s effective native Torch rank, and emits a moderation audit/webhook event. Use `!ova role temporarylist <player>` to view the expiry and assigning staff member.
+
+A temporary role cannot be added when the player already has that same role directly. If a normal role is later assigned, it is treated as a permanent conversion and the temporary expiry record is removed.

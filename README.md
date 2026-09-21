@@ -109,3 +109,7 @@ Report submission and resolution events are both correlated to the reported play
 ### Player grid recovery
 
 Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at their own grid. These tools are enabled by default but require major ownership of every mechanically connected grid. The master config sets `PlayerGridToolsEnabled`, `PlayerGridToolsCooldownMinutes` (default `10`), and `PlayerGridToolsMaxPcu` (default `20000` PCU; `0` disables the plugin-specific PCU cap). Each use is audited through the GridTools webhook category.
+
+### Temporary staff and event roles
+
+Owners can grant a custom role for a defined duration with `!ova role temporary <player> <role> <duration>`. The grant survives restart, automatically expires, recalculates the player’s native rank, and records the event. See [Roles and permissions](docs/PERMISSIONS.md) for the supported duration format and operational safeguards.

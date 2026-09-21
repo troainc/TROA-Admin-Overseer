@@ -22,3 +22,5 @@
 - Replaced the recovery block cap with `PlayerGridToolsMaxPcu`; gridcheck now reports group PCU.
 ## v0.8.22 — Advanced role inheritance
 - Added parent-role persistence, effective role resolution, cycle protection, and permission inspection.
+## v0.8.23 — Temporary role grants
+- Added durable timed role assignment, automatic expiry, rank recalculation, and audit trail.

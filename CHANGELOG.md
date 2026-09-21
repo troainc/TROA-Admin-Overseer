@@ -2,6 +2,10 @@
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
+## v0.8.23 — Temporary role grants
+
+- Added durable `!ova role temporary <player> <role> <duration>` grants, automatic 30-second expiry sweep, rank recalculation, and audit/webhook events.
+- Added `!ova role temporarylist <player>` for administrator review.
 ## v0.8.22 — Advanced role inheritance
 
 - Added durable custom-role inheritance with cycle protection and inherited effective Torch ranks and permission nodes.
