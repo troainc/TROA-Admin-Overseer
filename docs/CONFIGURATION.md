@@ -1,6 +1,6 @@
 # Overseer Configuration
 
-All configuration lives in XML files under `<Torch>/Instance/Overseer/`. Files are created with
+All configuration lives in XML files under `<Torch>/Instance/TROA Admin Overseer/`. Files are created with
 sensible defaults on first run. Edit them on disk and apply changes without a restart with
 `!ov reload`. A malformed file is backed up (`*.bad-<ticks>`) and replaced with defaults.
 
@@ -123,6 +123,6 @@ checks the player's SteamID for a vote in the last 24h and, when the site confir
 not yet supported (item bundles only).
 
 ## Data
-The SQLite database is `Instance/Overseer/Overseer.db`. If it cannot be created or loaded, the
+The SQLite database is `Instance/TROA Admin Overseer/Overseer.db`. If it cannot be created or loaded, the
 plugin keeps running and events still reach logs and webhooks — only the database-backed features
 (`lookup`, `alts`, `history`, `bans`, playtime) are disabled.

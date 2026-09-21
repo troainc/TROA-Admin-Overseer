@@ -15,7 +15,7 @@ dropped after retries.
 ## Setup
 1. In Discord: **Server Settings → Integrations → Webhooks → New Webhook**, pick a channel, and
    **Copy Webhook URL**.
-2. Open `Instance/Overseer/Webhooks.cfg`.
+2. Open `Instance/TROA Admin Overseer/Webhooks.cfg`.
 3. Set `Enabled` to `true`.
 4. Paste the URL into a route's `Url`. Use several channels by giving different routes different
    URLs (e.g. a `#moderation` webhook for the `moderation` route, `#joins` for `joins`).
