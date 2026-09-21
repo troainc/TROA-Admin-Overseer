@@ -161,3 +161,5 @@ Event controls: `!ova event reward <player>` grants the configured bundle; `!ova
 Maintenance: `!ova maintenance on [message]`, `off`, and `status` persist owner status and announce the visible banner. Join restriction is intentionally not implied.
 
 Set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` (1–168) in the master config to emit scheduled operations summaries through the Audit webhook route.
+
+Owners can export durable event check-ins with `!ova event export <eventId>`.

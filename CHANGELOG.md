@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.47 — Event attendee export
+- Added owner-only CSV export of durable event check-ins.
+
 ## v0.8.46 — Scheduled operations summary
 - Added opt-in off-thread recurring audit/webhook operational summaries.
 
