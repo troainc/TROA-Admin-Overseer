@@ -1,3 +1,7 @@
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+
 ## v0.8.25 — Context-aware block limits
 
 - Added independent GridKind and GridSize rule filters, allowing the same subtype to have separate ship/station and large/small caps.
@@ -46,9 +50,6 @@
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
 
-# Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
