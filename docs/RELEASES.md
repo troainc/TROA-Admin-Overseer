@@ -1,3 +1,12 @@
+## v0.8.11 — Owner Documentation and Access Guard
+- `!ova help` now requires administrator access.
+- Rebuilt all owner-facing guides: README, commands, configuration, webhooks, deployment, roadmap, and changelog.
+- ZIP validated: only `Overseer.dll` and `manifest.xml`.
+
+## v0.8.10 — Release Readiness Validation
+- Automated package validator verifies version alignment and exactly two ZIP entries.
+- Added deployment checklist and repository context files.
+
 ## v0.8.9 — Safe Legacy Command Migration
 - Legacy `!ov` admin spellings only redirect to canonical `!ova` commands; no privileged behavior is exposed through the old root.
 - ZIP contains only `Overseer.dll` and `manifest.xml`.

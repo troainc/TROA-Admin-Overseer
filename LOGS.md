@@ -1,0 +1,1 @@
+# Publication log`n`n- 2026-09-20: Published v0.8.11 with a complete owner-facing documentation refresh and admin-root access correction.

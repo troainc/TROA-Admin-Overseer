@@ -1,0 +1,24 @@
+# Roadmap and boundaries
+
+## Delivered
+
+- Two-tier command contract: player `!ov`, privileged `!ova`.
+- Single-DLL packaging with release validation.
+- Safe look-at grid repair/stop and confirmed ownership transfer.
+- Managed JSON persistence for operational records.
+- Reports, warnings, notes, durable audit history, Discord webhook routing.
+- Owner save and announcement-schedule controls.
+- Config naming migration and safe closed-by-default integrations.
+
+## Intentionally outside this plugin
+
+- Grid deletion, archival, restore, hangar storage — TROA GridVault / TROA-Hangar.
+- Cleanup and restart automation — TROA Cleaner+.
+
+## API-dependent future work
+
+The installed Torch API reference does not expose a safe supported surface for whitelist enforcement, PCU transfer, inventory clearing, or respawn repair. These remain deferred until a supported, testable API is available. They will not be implemented by guessed reflection or destructive workarounds.
+
+## Release discipline
+
+Every deployable phase builds with zero warnings, packages only the managed DLL and manifest, updates private source/public docs, and requires a fresh Torch log and functional server test for runtime acceptance.
