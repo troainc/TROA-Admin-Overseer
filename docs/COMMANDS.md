@@ -13,6 +13,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ov daily` | Claim the configured daily reward. |
 | `!ov rewards` | Show your recorded reward claims. |
 | `!ov limits` | Show your own tracked block-limit use. |
+| `!ov ticket` | Show the configured support ticket portal link. |
 | `!ov report <player> <reason>` | Submit a report to staff. |
 
 ## Administration — `!ova`

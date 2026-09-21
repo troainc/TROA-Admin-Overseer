@@ -19,6 +19,8 @@ All owner configuration lives beside the normal server configuration files. Star
 
 Set `ServerName` to the branding you want players to see. It does not rename the plugin, release package, data folder, or configuration files.
 
+Set `TicketPortalUrlTemplate` to your ticket-site URL. It can include `{player}`, `{steamid}`, and `{server}` and is shown by `!ov ticket`.
+
 Use `Modules` only when you want an entire feature area off. Missing module switches remain available by default.
 
 ## Safe enablement order

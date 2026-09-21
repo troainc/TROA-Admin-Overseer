@@ -23,7 +23,7 @@ For the complete live-server test, follow [Deployment verification](docs/DEPLOYM
 
 | Root | Audience | Examples |
 |---|---|---|
-| `!ov` | Players | `!ov help`, `!ov motd`, `!ov daily`, `!ov claim`, `!ov rewards`, `!ov report` |
+| `!ov` | Players | `!ov help`, `!ov motd`, `!ov ticket`, `!ov daily`, `!ov claim`, `!ov rewards`, `!ov report` |
 | `!ova` | Admins and owners | `!ova ban`, `!ova fixship`, `!ova save`, `!ova audit` |
 
 `!ov` never runs an admin command. If a server owner or player uses an old `!ov` admin spelling such as `!ov ban`, the plugin only replies with the canonical `!ova ban` form.
@@ -47,6 +47,10 @@ Older generic filenames are copied once to their new prefixed names, so existing
 ### Safe defaults
 
 Webhook routes, rewards, limits, rotating announcements, vote integration, and warning escalation are off until you explicitly enable and configure them. This prevents surprise enforcement or unwanted external posts.
+
+### Support portal
+
+Set `TicketPortalUrlTemplate` in `TROA Admin Overseer.cfg`, then players can use `!ov ticket`. Supported placeholders are `{player}`, `{steamid}`, and `{server}`. This is a safe portal link; direct ticket creation requires your website API endpoint and authentication specification.
 
 ### Everyday commands
 

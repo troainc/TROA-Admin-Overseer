@@ -1,3 +1,7 @@
+## v0.8.12 — Configurable Ticket Portal
+- `TicketPortalUrlTemplate` and `!ov ticket` support portal links with `{player}`, `{steamid}`, and `{server}` placeholders.
+- ZIP validated: only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.11 — Owner Documentation and Access Guard
 - `!ova help` now requires administrator access.
 - Rebuilt all owner-facing guides: README, commands, configuration, webhooks, deployment, roadmap, and changelog.

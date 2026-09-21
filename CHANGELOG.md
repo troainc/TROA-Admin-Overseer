@@ -1,3 +1,8 @@
+## v0.8.12 — Configurable ticket portal
+
+- Added `TicketPortalUrlTemplate` to the master config and player `!ov ticket` links with player/server placeholders.
+- Direct website ticket creation remains API-dependent and requires the website endpoint/authentication specification.
+
 # Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.

@@ -3,6 +3,7 @@
 ## Delivered
 
 - Two-tier command contract: player `!ov`, privileged `!ova`.
+- Configurable ticket portal links through `!ov ticket`.
 - Single-DLL packaging with release validation.
 - Safe look-at grid repair/stop and confirmed ownership transfer.
 - Managed JSON persistence for operational records.
