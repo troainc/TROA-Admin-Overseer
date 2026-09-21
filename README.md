@@ -123,4 +123,4 @@ For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSumm
 
 After install, verify a fresh Torch log and test `!ov help`, `!ova status`, player-owned `!ov gridcheck`, staff `!ova reportqueue`, and `!ova audit`.
 
-### Automatic block catalogue`r`n`r`nAfter each server start or restart, the plugin writes `Instance/TROA Admin Overseer/exports/block-subtypes.csv`. It lists every registered vanilla and mod block subtype plus live-use columns, so owners can prepare context-specific limits without memorising subtype IDs. `!ova limit exportcsv` refreshes it on demand.
+### Automatic block catalogue`r`n`r`nAfter each server start or restart, the plugin writes `Instance/TROA Admin Overseer/data/block-subtypes.csv`. It lists every registered vanilla and mod block subtype plus live-use columns, so owners can prepare context-specific limits without memorising subtype IDs. `!ova limit exportcsv` refreshes it on demand.
