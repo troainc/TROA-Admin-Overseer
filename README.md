@@ -141,3 +141,7 @@ Use `!ova reportassign`, `!ova reportstatus`, `!ova reportdue`, and `!ova report
 ### Staff case queue
 
 Admins can use `!ova reportqueue`, `!ova reportassign <id> [staff]`, and `!ova reporttimeline <id>` to coordinate active reports.
+
+### Opt-in sensitive-action policy
+
+`EnforceCustomPermissions=true` adds TROA policy nodes to sensitive moderation and broadcast commands without removing native Torch rank requirements.

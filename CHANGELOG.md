@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.35 — Expanded opt-in policy enforcement
+- Added optional TROA permission-node gates to sensitive moderation and broadcast actions.
+
 ## v0.8.34 — Staff case queue
 - Added delegated assignment, active queue, deadline visibility, and internal timeline commands.
 
