@@ -23,3 +23,4 @@ Scoped permission grants now support faction, player, gridtag, and category poli
 Public v0.8.31/v0.8.32 documentation records optional, enforced second-staff approval for grid ownership transfers without exposing private source.
 
 Public v0.8.33 guidance documents durable report assignment, status, deadline, and internal update workflows.
+2026-09-21: Rebuilt public README as a server-owner how-to and consolidated the changelog by date.

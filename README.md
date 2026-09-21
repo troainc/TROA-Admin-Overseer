@@ -1,165 +1,124 @@
-# TROA Admin Overseer (Pre Release Select Close Testing Group) 
+# TROA Admin Overseer
 
-> A single-DLL Torch administration plugin for Space Engineers dedicated servers.
+> A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
-TROA Admin Overseer gives server owners a clean, organized set of player support, moderation, grid safety, rewards, audit, webhook, and owner-operation tools—without taking over grid archival, cleanup, or restart automation from the TROA plugins that own those jobs.
+TROA Admin Overseer gives server owners one clear place for player support, moderation, staff cases, roles, safe grid tools, events, rewards, auditing, and webhooks.
 
-| What it does | What it deliberately does not do |
+## What it does
+
+| Area | Included |
 |---|---|
-| Moderation, staff notes, reports, roles, player tools, safe grid tools, announcements, rewards, audit history | Grid deletion, GridVault/Hangar backup or restore, Cleaner+ cleanup or restart automation |
+| Player support | MOTD, ticket link, reports, daily/vote rewards, limits feedback, owned-grid recovery |
+| Staff operations | Player dossiers, moderation, cases, roles, permissions, grid tools, audit history |
+| Owner operations | Config reload, save, maintenance status, announcements, scheduled summaries, exports |
+| Events | Event roles, announcements, temporary MOTD, check-ins, rewards, attendee export |
 
-## Start here
+It deliberately does **not** delete grids, manage GridVault/Hangar storage, perform Cleaner+ cleanup/restarts, or bundle native/third-party DLLs.
 
-1. Download the newest `TROA Admin Overseer v… .zip` from the release folder.
-2. Stop Torch and remove older TROA Admin Overseer ZIPs from its plugin directory.
-3. Install **one** current ZIP. It contains exactly `Overseer.dll` and `manifest.xml`.
-4. Start Torch once. It creates the master config and supporting TROA-prefixed config files.
-5. Set your `ServerName`, review the defaults, then use `!ova reload` after editing configs.
-6. Run `!ova status` as an admin. Players can use `!ov help`.
+## Install or upgrade
 
-For the complete live-server test, follow [Deployment verification](docs/DEPLOYMENT.md).
+1. Stop the Torch server.
+2. In the server `Plugins` folder, remove every older TROA Admin Overseer ZIP.
+3. Install exactly one newest `TROA Admin Overseer v… .zip`.
+4. Start Torch. The ZIP contains only `Overseer.dll` and `manifest.xml`.
+5. Confirm the startup log says **TROA Admin Overseer** loaded without dependency warnings.
+6. Run `!ova status` in-game or from the Torch console.
+
+> Keep the JSON data folder in backups: `Instance/TROA Admin Overseer/Overseer.json`.
 
 ## Command roots
 
-| Root | Audience | Examples |
+| Root | Who uses it | Purpose |
 |---|---|---|
-| `!ov` | Players | `!ov help`, `!ov motd`, `!ov ticket`, `!ov daily`, `!ov claim`, `!ov rewards`, `!ov report` |
-| `!ova` | Admins and owners | `!ova ban`, `!ova fixship`, `!ova save`, `!ova audit` |
+| `!ov` | Players | Safe self-service and support commands only |
+| `!ova` | Admins and owners | Moderation, staff, grid, configuration, and owner operations |
 
-`!ov` never runs an admin command. If a server owner or player uses an old `!ov` admin spelling such as `!ov ban`, the plugin only replies with the canonical `!ova ban` form.
+`!ov` never performs an admin action. Old admin-style `!ov` commands only redirect to their `!ova` equivalent.
 
-## Owner quick guide
+## First-time owner setup
 
-### First configuration
+The master config is `TROA Admin Overseer.cfg`, beside your other server `.cfg` files.
 
-The master file is `TROA Admin Overseer.cfg`, next to your other server `.cfg` files. Supporting files use the same naming pattern:
+1. Set `ServerName`.
+2. Set `TicketPortalUrlTemplate` if you have a support website. It accepts `{player}`, `{steamid}`, and `{server}`.
+3. Keep webhooks, rewards, limits, announcements, policy enforcement, and scheduled summaries disabled until configured.
+4. Run `!ova doctor` after any major configuration change.
+5. Run `!ova reload` after editing config files.
 
-- `TROA Admin Overseer Webhooks.cfg`
-- `TROA Admin Overseer Moderation.cfg`
-- `TROA Admin Overseer Broadcast.cfg`
-- `TROA Admin Overseer Rewards.cfg`
-- `TROA Admin Overseer Limits.cfg`
-- `TROA Admin Overseer Connections.cfg`
-- `TROA Admin Overseer Audit.cfg`
+### Recommended first commands
 
-Older generic filenames are copied once to their new prefixed names, so existing settings are retained. Edit the prefixed file thereafter.
-
-### Safe defaults
-
-Webhook routes, rewards, limits, rotating announcements, vote integration, and warning escalation are off until you explicitly enable and configure them. This prevents surprise enforcement or unwanted external posts.
-
-### Support portal
-
-Set `TicketPortalUrlTemplate` in `TROA Admin Overseer.cfg`, then players can use `!ov ticket`. Supported placeholders are `{player}`, `{steamid}`, and `{server}`. This is a safe portal link; direct ticket creation requires your website API endpoint and authentication specification.
-
-### Everyday commands
-
-- `!ova status` — plugin and module status.
+- `!ova status` — plugin and module health.
+- `!ova doctor` — read-only configuration checks.
+- `!ova audit 20` — latest recorded actions.
+- `!ova opssummary 100` — operational totals by category.
+- `!ova maintenance on <message>` — show a persisted maintenance banner.
 - `!ova save` — request a Torch save.
-- `!ova schedule start|stop|status` — persistently control rotating announcements.
-- `!ova audit [count]` — review the newest emitted events.
-- `!ova doctor` — read-only configuration health check.
-- `!ova reload` — reload owner configuration after edits.
 
-### Data and backups
+## Everyday workflows
 
-Persistent data is managed JSON at `Instance/TROA Admin Overseer/Overseer.json`. Include it in normal instance backups. It stores player records, sessions, roles, bans, notes, reports, reward claims, and recent audit events.
+### Staff cases
 
-## Feature map
+- `!ova reports` / `!ova reportqueue` — open report work.
+- `!ova reportassign <id> [staff]` — assign or hand off a case.
+- `!ova reportstatus <id> <open|investigating|waiting>` — update workflow state.
+- `!ova reportdue <id> <hours|clear>` — set a deadline.
+- `!ova reportupdate <id> <text>` / `!ova reporttimeline <id>` — internal staff record.
+- `!ova case <player>` — player moderation context.
 
-| Area | Highlights |
-|---|---|
-| Player support | MOTD, vote links, daily rewards, reward history, player reports |
-| Moderation | Warn, note, report review/resolution, ban, kick, mute, temporary-ban expiry |
-| Staff tools | Player dossier, alt/session history, heal, feed, teleport, online GPS, custom roles, inheritance, and permission inspection |
-| Grid safety | Look-at `fixship`, `stop`, confirmed ownership transfer; no deletion command |
-| Owner controls | Save, announcement scheduler, configuration reload, module status |
-| Operations | Webhooks, connections/player history, limits, persisted audit history |
+### Roles and permissions
 
-## Grid safety
+- `!ova role template list|preview|apply` — create safe starting roles.
+- `!ova role assign <player> <role>` — assign a durable role.
+- `!ova role temporary <player> <role> <duration>` — automatically expiring role.
+- `!ova role diff <roleA> <roleB>` — compare rank, nodes, and inheritance.
+- `!ova perms check <player> <node>` — explain access.
 
-`!ova gridcheck`, `!ova fixship`, and `!ova stop` can target the grid directly under an admin’s crosshair. Console callers must provide a grid name or entity ID. `!ova gridtransfer <player> [grid]` always creates a preview. By default, the requesting admin runs `!ova confirm` within 30 seconds. Set `RequireSecondStaffApprovalForTransfers=true` to require a different administrator to run `!ova approve <requesterSteamId>` instead.
+Set `EnforceCustomPermissions=true` only after reviewing role assignments. It adds TROA policy nodes on top of native Torch permissions; it is off by default.
 
-Grid deletion, backup, restore, and hangar storage are not TROA Admin Overseer features. Use TROA GridVault and TROA-Hangar for those workflows.
+### Grid safety
 
-## Documentation
+Admins can look at a grid and use `!ova gridcheck`, `!ova fixship`, and `!ova stop`. Ownership transfer always starts as a preview with `!ova gridtransfer`.
 
-- [Commands](docs/COMMANDS.md) — every current player, admin, and owner command.
-- [Configuration](docs/CONFIGURATION.md) — each config file, default, and safe enablement path.
-- [Roles and permissions](docs/PERMISSIONS.md) — custom roles, inheritance, nodes, and inspection.
-- [Webhooks](docs/WEBHOOKS.md) — Discord route setup and testing.
-- [Deployment](docs/DEPLOYMENT.md) — installation and live validation.
-- [Roadmap](docs/ROADMAP.md) — completed work, boundaries, and remaining API-dependent items.
-- [Releases](docs/RELEASES.md) — deployable release history.
-- [Changelog](CHANGELOG.md) — current version highlights.
+Set `RequireSecondStaffApprovalForTransfers=true` to require a different administrator to use `!ova approve <requesterSteamId>`; the requester cannot use `!ova confirm` while it is enabled.
 
-## Support boundaries
+Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` only on wholly major-owned mechanical groups, subject to the configured cooldown and PCU cap.
 
-TROA Admin Overseer is intentionally a single managed DLL. It does not bundle native SQLite or third-party plugin DLLs. Performance cleanup and restart automation remain owned by TROA Cleaner+. Archive/storage workflows remain owned by TROA GridVault and TROA-Hangar.
-### Staff case summary
+### Events
 
-Use !ova case <player> for the moderation context before acting: active ban status, watch flag, warnings, staff notes, player reports, assigned roles, and possible alt count. It is read-only and restricted to administrators.
+- `!ova event role <player> <role> <duration>`
+- `!ova event announce <message>`
+- `!ova event motd <hours> <message>` or `clear`
+- `!ova event checkin <player> <eventId>`
+- `!ova event attendees <eventId>` / `!ova event export <eventId>`
+- `!ova event reward <player>`
 
-For a chronological follow-up, use !ova caseevents <player> [count]. It returns only stored events explicitly tied to the player’s SteamID; it never guesses based on a matching display name.
+### Webhooks and operations summaries
 
-New moderation events are correlated with the affected player’s SteamID, keeping !ova caseevents useful even if display names later change.
+Webhook routes are closed by default. Add a valid URL, set its route `Enabled=true`, then run `!ova reload`.
 
-Report submission and resolution events are both correlated to the reported player’s SteamID, so the staff case trail shows the complete workflow.
+For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` to `1–168`. Summaries flow through the Audit webhook route.
 
-### Player grid recovery
+## Configuration files
 
-Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at their own grid. These tools are enabled by default but require major ownership of every mechanically connected grid. The master config sets `PlayerGridToolsEnabled`, `PlayerGridToolsCooldownMinutes` (default `10`), and `PlayerGridToolsMaxPcu` (default `20000` PCU; `0` disables the plugin-specific PCU cap). Each use is audited through the GridTools webhook category.
+- `TROA Admin Overseer.cfg` — server identity, safety, maintenance, policy, summaries.
+- `TROA Admin Overseer Webhooks.cfg` — Discord routes.
+- `TROA Admin Overseer Moderation.cfg` — warning escalation and moderation defaults.
+- `TROA Admin Overseer Broadcast.cfg` — MOTD and announcements.
+- `TROA Admin Overseer Rewards.cfg` — rewards and vote integration.
+- `TROA Admin Overseer Limits.cfg` — block limits.
+- `TROA Admin Overseer Connections.cfg` — session/network history settings.
+- `TROA Admin Overseer Audit.cfg` — audit controls.
 
-### Context-aware block limits
+## More documentation
 
-Block-limit rules can now distinguish Large/Small and Ship/Station, so the same subtype can safely have a different cap in each context. !ov limits tells players the rule context and whether they are near or over its cap. Owners can run !ova limit exportcsv to create a complete registered-subtype catalog with live usage columns at Instance/TROA Admin Overseer/exports/block-subtypes.csv.
+- [Commands](docs/COMMANDS.md)
+- [Configuration](docs/CONFIGURATION.md)
+- [Roles and permissions](docs/PERMISSIONS.md)
+- [Webhooks](docs/WEBHOOKS.md)
+- [Deployment verification](docs/DEPLOYMENT.md)
+- [Release index](docs/RELEASES.md)
+- [Changelog](CHANGELOG.md)
 
-### Scoped staff authority
+## Live acceptance checklist
 
-Roles can now carry scoped custom grants for a faction, specific player, grid tag, or command category. Owners use !ova role scope grant|revoke|list; staff can explain the exact result through !ova perms scopedcheck.
-
-### Standard role templates
-
-Owners can preview and safely create helper, moderator, senior-moderator, uilder, vent-host, dministrator, and owner starting roles with !ova role template list|preview|apply. Template application never overwrites an existing role.
-
-### Custom rank presentation and Discord mapping
-
-Owners can apply a short prefix/color label with `!ova role style <role> <prefix> [color]`, and record Discord role IDs through `!ova role discord add|remove|list`. Mappings are persisted and audited without a Discord token. They are bridge-ready references only: automatic Discord-to-game access requires a future authenticated bridge and Steam/Discord identity link.
-
-### Temporary staff and event roles
-
-Owners can grant a custom role for a defined duration with `!ova role temporary <player> <role> <duration>`. The grant survives restart, automatically expires, recalculates the player’s native rank, and records the event. See [Roles and permissions](docs/PERMISSIONS.md) for the supported duration format and operational safeguards.
-### Opt-in policy enforcement
-
-Set EnforceCustomPermissions to 	rue only after reviewing role assignments. It adds TROA-node gates to selected sensitive administrator commands while retaining native Torch rank checks; it is disabled by default.
-
-
-### Staff case workflow
-
-Use `!ova reportassign`, `!ova reportstatus`, `!ova reportdue`, and `!ova reportupdate` to manage unresolved reports with durable staff context.
-
-### Staff case queue
-
-Admins can use `!ova reportqueue`, `!ova reportassign <id> [staff]`, and `!ova reporttimeline <id>` to coordinate active reports.
-
-### Opt-in sensitive-action policy
-
-`EnforceCustomPermissions=true` adds TROA policy nodes to sensitive moderation and broadcast commands without removing native Torch rank requirements.
-
-Admins can use `!ova opssummary [count]` for a compact view of recent persisted operations.
-
-`!ova faction <player>` provides a read-only faction dossier for staff.
-
-`!ova faction roster <player>` lists the selected faction member identity IDs for staff review.
-
-Event owners can use `!ova event role` for temporary access and `!ova event announce` for audited event broadcasts.
-
-Event check-ins persist across restart: use `!ova event checkin <player> <eventId>` and `!ova event attendees <eventId>`.
-
-Event controls: `!ova event reward <player>` grants the configured bundle; `!ova event motd <hours> <message>` creates an expiring override without replacing normal MOTD lines.
-
-Maintenance: `!ova maintenance on [message]`, `off`, and `status` persist owner status and announce the visible banner. Join restriction is intentionally not implied.
-
-Set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` (1–168) in the master config to emit scheduled operations summaries through the Audit webhook route.
-
-Owners can export durable event check-ins with `!ova event export <eventId>`.
+After install, verify a fresh Torch log and test `!ov help`, `!ova status`, player-owned `!ov gridcheck`, staff `!ova reportqueue`, and `!ova audit`.

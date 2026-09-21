@@ -41,3 +41,5 @@
 
 ## v0.8.33 — Staff case workflow
 - Published public-safe staff case command and release guidance.
+## 2026-09-21 — Public documentation consolidation
+- Rewrote README as owner how-to and grouped release changes by date.
