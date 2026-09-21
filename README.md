@@ -107,3 +107,6 @@ Players use `!ov report <player> <reason>`. Staff use `!ova reports`, `!ova reso
 
 ## Owner operations
 `!ova save` requests a Torch game save. `!ova schedule start|stop|status` controls the configured rotating announcements and writes the choice to `Broadcast.cfg`. Restart and cleanup remain exclusively with TROA Cleaner+.
+
+## Configuration naming
+The master file is `TROA Admin Overseer.cfg`. Supplementary files use the same prefix, such as `TROA Admin Overseer Webhooks.cfg`. Existing unprefixed configs are copied to the new names once, without deleting the original.

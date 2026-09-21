@@ -2,19 +2,19 @@
 
 All configuration lives in XML files under `<Torch>/Instance/TROA Admin Overseer/`. Files are created with
 sensible defaults on first run. Edit them on disk and apply changes without a restart with
-`!ov reload`. A malformed file is backed up (`*.bad-<ticks>`) and replaced with defaults.
+`!ova reload`. A malformed file is backed up (`*.bad-<ticks>`) and replaced with defaults.
 
 > **Secrets:** webhook URLs and API keys live in these files. They are excluded from git via
 > `.gitignore` (`Instance/`, `*.cfg`). Never commit them.
 
-## Overseer.cfg (root)
+## TROA Admin Overseer.cfg (master)
 | Field | Default | Meaning |
 |---|---|---|
 | `ServerName` | `My Space Engineers Server` | Shown in status and webhook footers. |
 | `CommandRoot` | `ov` | Command root (used after Torch's `!`). |
 | `Modules` | (all enabled) | Per-module `<ModuleToggle Id="..." Enabled="true/false"/>`. Missing entries default to enabled. Module ids: `diagnostics`, `audit`, `connections`, `moderation`, `broadcast`, `limits`, `rewards`. |
 
-## Webhooks.cfg
+## TROA Admin Overseer Webhooks.cfg
 | Field | Default | Meaning |
 |---|---|---|
 | `Enabled` | `false` | Master switch for all webhook delivery. |
@@ -29,7 +29,7 @@ To start: set `Enabled` to `true`, paste a Discord webhook URL into one or more 
 `CriticalMentionRoleId` to a Discord role id to ping on critical events (bans, alerts). See
 [WEBHOOKS.md](WEBHOOKS.md) for the full walkthrough.
 
-## Audit.cfg
+## TROA Admin Overseer Audit.cfg
 | Field | Default | Meaning |
 |---|---|---|
 | `LogCommands` | `true` | Log chat commands (messages starting with the prefix). |
@@ -37,7 +37,7 @@ To start: set `Enabled` to `true`, paste a Discord webhook URL into one or more 
 | `LogModerationEvents` | `true` | Log kicks, bans, and promotions. |
 | `CommandPrefix` | `!` | Prefix used to identify commands. |
 
-## Connections.cfg
+## TROA Admin Overseer Connections.cfg
 | Field | Default | Meaning |
 |---|---|---|
 | `AnnounceJoinLeave` | `true` | Emit join/leave events. |
@@ -51,14 +51,14 @@ To start: set `Enabled` to `true`, paste a Discord webhook URL into one or more 
 > connections. When Steam routes a client through its relay/SDR there is no public IP, so geo and
 > alt-detection stay idle for that session. Everything else works regardless.
 
-## Moderation.cfg
+## TROA Admin Overseer Moderation.cfg
 | Field | Default | Meaning |
 |---|---|---|
 | `UnbanSweepSeconds` | `60` | How often to check for and lift expired temporary bans (min 15). |
 | `AppealUrlTemplate` | empty | Appeal link included in ban embeds; use `{id}` for the appeal id. |
 | `DefaultKickReason` | `Kicked by an administrator` | Used when `!ov kick` has no reason. |
 
-## Broadcast.cfg
+## TROA Admin Overseer Broadcast.cfg
 | Field | Default | Meaning |
 |---|---|---|
 | `Author` | `Server` | Name shown as the sender of MOTD/announcements/broadcasts. |
@@ -71,7 +71,7 @@ To start: set `Enabled` to `true`, paste a Discord webhook URL into one or more 
 | `Announcements` | 2 lines | Messages to rotate through. |
 | `JoinLeaveMessages` | `false` | Post in-game "X joined/left" chat lines (webhooks already cover this). |
 
-## Limits.cfg
+## TROA Admin Overseer Limits.cfg
 Scan-based block limits. **Disabled by default** so it never surprise-enforces.
 
 | Field | Default | Meaning |
@@ -96,7 +96,7 @@ Each `<LimitRule>`:
 > Enforcement is scan-based (no placement hooks), so a violation is caught and acted on at the next
 > scan rather than blocked at placement. `TurnOff` disables excess **functional** blocks only.
 
-## Rewards.cfg
+## TROA Admin Overseer Rewards.cfg
 Item-bundle rewards. **Disabled by default.**
 
 | Field | Default | Meaning |
@@ -126,3 +126,6 @@ not yet supported (item bundles only).
 The SQLite database is `Instance/TROA Admin Overseer/Overseer.db`. If it cannot be created or loaded, the
 plugin keeps running and events still reach logs and webhooks — only the database-backed features
 (`lookup`, `alts`, `history`, `bans`, playtime) are disabled.
+
+## Configuration migration
+On first load, each legacy unprefixed config such as `Broadcast.cfg` or `Webhooks.cfg` is copied to its TROA Admin Overseer-prefixed counterpart. The original file is left untouched for rollback; edit the new prefixed file thereafter.

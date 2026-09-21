@@ -1,3 +1,8 @@
+## v0.8.5 — Config Naming and Migration
+- Master config remains `TROA Admin Overseer.cfg`; all supplementary configs are now consistently prefixed.
+- Legacy generic config files are copied once to preserve existing settings.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.4 — Owner Operations
 - Owner `!ova save` uses the supported Torch save API.
 - Owner announcement scheduler controls persist in `Broadcast.cfg`; no restart or cleanup control added.
