@@ -1,4 +1,4 @@
-## Change Log
+# Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
@@ -11,8 +11,6 @@ This file summarizes current deployable behavior. The dated package archive hist
 
 - Added `TicketPortalUrlTemplate` to the master config and player `!ov ticket` links with player/server placeholders.
 - Direct website ticket creation remains API-dependent and requires the website endpoint/authentication specification.
-
-# Changelog
 
 ## v0.8.11 — Owner documentation and access consistency
 
