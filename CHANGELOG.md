@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.42 — Event participants
+- Added durable owner-managed event check-ins and staff attendee review.
+
 ## v0.8.41 — Event announcements
 - Added owner-only event broadcasts through the existing audit/webhook path.
 
