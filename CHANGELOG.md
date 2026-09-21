@@ -1,3 +1,8 @@
+## v0.8.29 — Scoped role permissions
+
+- Added durable faction, player, grid-tag, and command-category scoped permission grants.
+- Added scoped grant management and !ova perms scopedcheck explainability without unexpectedly restricting existing commands.
+
 ## v0.8.28 — Standard role templates
 
 - Added owner-only !ova role template list|preview|apply for Helper, Moderator, Senior Moderator, Builder, Event Host, Administrator, and Owner starting roles.

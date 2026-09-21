@@ -19,3 +19,4 @@ Limits now support independent ship/station and large/small context filters for 
 Live limit previews: !ova limit preview [grid] is admin read-only; !ov limitcheck is player-safe and requires whole-group major ownership.
 The owner CSV export now lists every registered cube-block definition, including unbuilt definitions, alongside live total/ship/station usage counts.
 Role templates now provide previewable, non-overwriting standard ranks; review generated roles before assignment.
+Scoped permission grants now support faction, player, gridtag, and category policies with explainable simulation.

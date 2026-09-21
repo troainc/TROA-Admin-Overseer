@@ -114,6 +114,10 @@ Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at 
 
 Block-limit rules can now distinguish Large/Small and Ship/Station, so the same subtype can safely have a different cap in each context. !ov limits tells players the rule context and whether they are near or over its cap. Owners can run !ova limit exportcsv to create a complete registered-subtype catalog with live usage columns at Instance/TROA Admin Overseer/exports/block-subtypes.csv.
 
+### Scoped staff authority
+
+Roles can now carry scoped custom grants for a faction, specific player, grid tag, or command category. Owners use !ova role scope grant|revoke|list; staff can explain the exact result through !ova perms scopedcheck.
+
 ### Standard role templates
 
 Owners can preview and safely create helper, moderator, senior-moderator, uilder, vent-host, dministrator, and owner starting roles with !ova role template list|preview|apply. Template application never overwrites an existing role.

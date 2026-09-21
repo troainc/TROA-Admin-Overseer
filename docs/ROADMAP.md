@@ -44,3 +44,4 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered read-only admin/player live previews for applicable grid-scoped limit rules.
 - Delivered complete registered block-definition CSV export with live total/ship/station usage columns.
 - Delivered safe standard role templates with preview and non-overwriting application.
+- Delivered durable scoped role permission grants and scoped access simulation.

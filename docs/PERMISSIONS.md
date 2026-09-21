@@ -81,3 +81,15 @@ Owners can create a safe starting role with `!ova role template apply <template>
 ```
 
 Available templates are `helper`, `moderator`, `senior-moderator`, `builder`, `event-host`, `administrator`, and `owner`. A senior moderator inherits `moderator` when that parent role exists. If you use a different moderator role name, add the parent explicitly with `!ova role inherit` after applying the template.
+## Scoped permissions
+
+Scoped grants narrow a custom node to one operational value. Supported scopes are `faction`, `player`, `gridtag`, and `category`:
+
+```text
+!ova role scope grant faction-moderator moderation.warn faction RedFleet
+!ova role scope grant event-host rewards.grant category event
+!ova role scope list faction-moderator
+!ova perms scopedcheck PlayerName moderation.warn faction RedFleet
+```
+
+Scoped policy data is durable and audited. A normal unscoped node remains global. Commands adopt scoped gates individually in later policy phases; no existing command is unexpectedly restricted merely by upgrading.

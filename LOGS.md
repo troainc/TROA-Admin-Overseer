@@ -34,3 +34,5 @@
 - Exported all registered cube-block definitions with live usage columns for limits planning.
 ## v0.8.28 — Standard role templates
 - Added non-overwriting helper/staff/builder/event/admin/owner role-template workflow.
+## v0.8.29 — Scoped role permissions
+- Added durable scoped grants and simulator commands.
