@@ -137,3 +137,7 @@ Set EnforceCustomPermissions to 	rue only after reviewing role assignments. It a
 ### Staff case workflow
 
 Use `!ova reportassign`, `!ova reportstatus`, `!ova reportdue`, and `!ova reportupdate` to manage unresolved reports with durable staff context.
+
+### Staff case queue
+
+Admins can use `!ova reportqueue`, `!ova reportassign <id> [staff]`, and `!ova reporttimeline <id>` to coordinate active reports.

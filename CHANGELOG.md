@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.34 — Staff case queue
+- Added delegated assignment, active queue, deadline visibility, and internal timeline commands.
+
 ## v0.8.33 — Staff case workflow
 - Added durable assignment, status, deadline, and internal-update workflows for unresolved player reports.
 
