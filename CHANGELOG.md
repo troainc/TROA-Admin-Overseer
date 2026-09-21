@@ -1,3 +1,7 @@
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
+
 ## v0.8.29 — Scoped role permissions
 
 - Added durable faction, player, grid-tag, and command-category scoped permission grants.
@@ -12,10 +16,6 @@
 
 - Upgraded !ova limit exportcsv from a current-world list to every registered cube-block definition.
 - CSV now includes exact subtype/type IDs, cube size, and live total/ship/station usage columns for rule planning.
-
-# Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
 
 ## v0.8.26 — Live limit preview
 
