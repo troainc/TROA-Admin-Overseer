@@ -1,3 +1,7 @@
+## v0.8.9 — Safe Legacy Command Migration
+- Legacy `!ov` admin spellings only redirect to canonical `!ova` commands; no privileged behavior is exposed through the old root.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.8 — Player GPS and Reward History
 - `!ova gps <player>` for online player coordinates and `!ov rewards` for personal claim history.
 - ZIP contains only `Overseer.dll` and `manifest.xml`.

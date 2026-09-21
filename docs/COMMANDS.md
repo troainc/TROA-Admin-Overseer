@@ -163,3 +163,13 @@ TROA Admin Overseer does not provide restart, cleanup, or performance automation
 | `!ova audit [count]` | Admin | Show the latest persisted plugin events (1–100, default 10). |
 
 Audit records retain event time, category, severity, title, message, and details in `Instance/TROA Admin Overseer/Overseer.json`. The store keeps the newest 5,000 records.
+## Legacy command migration
+Legacy `!ov` administrative spellings are safe redirects only: they never run an administrative action and respond with the required canonical `!ova` command. Examples: `!ov ban` → `!ova ban`, `!ov fixship` → `!ova fixship`, `!ov broadcast` → `!ova broadcast`, and `!ov reward` → `!ova reward`.
+
+| Legacy workflow | TROA Admin Overseer command |
+|---|---|
+| Ban, kick, player lookup | `!ova ban`, `!ova kick`, `!ova lookup` |
+| Heal, teleport, GPS | `!ova heal`, `!ova tp`, `!ova gps` |
+| Grid repair, stop, transfer | `!ova fixship`, `!ova stop`, `!ova gridtransfer` then `!ova confirm` |
+| Announcement | `!ova broadcast` or `!ova schedule` |
+| Reward administration | `!ova reward` |

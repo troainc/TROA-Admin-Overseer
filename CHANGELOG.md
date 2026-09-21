@@ -6,6 +6,7 @@ All notable changes to Overseer are documented here. The format follows
 
 ## [Unreleased]
 ### Changed
+- v0.8.9 adds safe legacy command redirects. Old `!ov` admin spellings only identify their required `!ova` replacement and cannot execute privileged behavior.
 - v0.8.8 adds safe player location and reward-history workflows: `!ova gps <player>` and `!ov rewards`.
 - v0.8.7 persists emitted plugin events as managed JSON audit records and adds `!ova audit [count]` for staff history review.
 - v0.8.6 completes player command registration: `!ov claim` is available and player-safe MOTD, daily, vote, and claim commands no longer register under `!ova`.

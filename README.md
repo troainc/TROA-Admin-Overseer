@@ -116,3 +116,6 @@ Every emitted plugin event is retained in managed JSON (up to 5,000 recent entri
 
 ## Player history
 Admins can use `!ova gps <player>` for an online player location. Players can use `!ov rewards` to view their own recorded reward claims.
+
+## Legacy command migration
+Older `!ov` administrative spellings are redirect-only. They cannot perform an admin action and tell the caller to use the matching `!ova` command.
