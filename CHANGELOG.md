@@ -1,6 +1,7 @@
-# Changelog
+## v0.8.26 — Live limit preview
 
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+- Added read-only !ova limit preview [grid] showing active grid-scoped rules, context, counts, caps, and configured action.
+- Added player-safe !ov limitcheck for a wholly major-owned crosshair-targeted grid, including NEAR/OVER feedback.
 
 ## v0.8.25 — Context-aware block limits
 
@@ -50,6 +51,9 @@ This file summarizes current deployable behavior. The dated package archive hist
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
 
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 

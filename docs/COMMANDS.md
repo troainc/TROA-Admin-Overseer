@@ -16,6 +16,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ov ticket` | Show the configured support ticket portal link. |
 | `!ov report <player> <reason>` | Submit a report to staff. |
 | `!ov gridcheck` | Read health details for the wholly major-owned grid group under your crosshair. |
+| `!ov limitcheck` | Show active grid-scoped limits and near/over feedback for the owned grid under your crosshair. |
 | `!ov stop` | Stop motion on the wholly major-owned grid group under your crosshair; cooldown applies. |
 | `!ov fixship` | Rebuild the wholly major-owned grid group under your crosshair; cooldown and owner-configured PCU cap apply. |
 
@@ -77,7 +78,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | Command | Minimum permission |
 |---|---|
 | `!ova broadcast <message>` | Admin |
-| `!ova limits [player]` · `!ova limit recount` · `!ova limit exportcsv` (Owner) | Admin/Moderator as shown in command help |
+| `!ova limits [player]` · `!ova limit recount` · `!ova limit preview [grid]` · `!ova limit exportcsv` (Owner) | Admin/Moderator as shown in command help |
 | `!ova reward <player>` | Admin |
 
 ## Legacy migration

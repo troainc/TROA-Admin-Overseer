@@ -61,3 +61,6 @@ On first load, an old generic file such as `Broadcast.cfg` is copied to `TROA Ad
 ## Data
 
 Operational records are stored separately in `Instance/TROA Admin Overseer/Overseer.json`. Back it up with your normal server instance data. Do not edit it while Torch is running.
+### Live rule preview
+
+Use !ova limit preview [grid] to verify the exact active Grid-scope rules, context, count, cap, and action for a targeted grid. Players can run !ov limitcheck on a wholly major-owned grid under their crosshair. Both are read-only: they never alter blocks or invoke enforcement.
