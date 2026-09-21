@@ -1,3 +1,8 @@
+## v0.8.3 — Moderation Workflows
+- `!ov report` for players; `!ova` staff commands for reports, resolution, warnings, and notes.
+- Warnings, notes, and reports persist in managed JSON; escalation is disabled by default.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.2 — Managed JSON Persistence
 - Persists player profiles, sessions, bans, roles, role assignments, and reward claims to `Instance/TROA Admin Overseer/Overseer.json`.
 - Debounced background writes; ZIP contains only `Overseer.dll` and `manifest.xml`.

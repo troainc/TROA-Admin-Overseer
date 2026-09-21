@@ -136,3 +136,14 @@ rewards** (to online players on an interval) are also configured in `Rewards.cfg
 | `!ova gridlist <player>` | Admin | List grids owned by a player. |
 
 > Look-at targeting accepts only a grid directly in the admin's aim path. Console callers must specify a grid. Grid deletion, backup, restore, and storage belong to TROA GridVault and TROA-Hangar.
+## Reports, warnings, and staff notes
+| Command | Perm | Description |
+|---|---|---|
+| `!ov report <player> <reason>` | None | Submit a report to server staff. Players cannot report themselves. |
+| `!ova reports` | Admin | List unresolved player reports. |
+| `!ova resolvereport <id> [resolution]` | Admin | Resolve a report and retain its outcome. |
+| `!ova warn <player> <reason>` | Admin | Record a durable warning and notify the moderation webhook route. |
+| `!ova note <player> <text>` | Admin | Add a staff-only durable note. |
+| `!ova notes <player>` | Admin | Show the ten most recent staff notes. |
+
+`WarningEscalationCount` is closed by default (`0`). Set it above zero only when you also choose a safe `WarningEscalationBanDuration`; escalation occurs once when the threshold is reached.

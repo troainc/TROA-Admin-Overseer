@@ -101,3 +101,6 @@ Players use `!ov`; administrative and owner workflows use `!ova`. Grid actions u
 
 ## Persistent data
 TROA Admin Overseer writes managed JSON to `Instance/TROA Admin Overseer/Overseer.json`. Writes are debounced and occur off the game thread; keep this file with normal instance backups.
+
+## Player reports and moderation
+Players use `!ov report <player> <reason>`. Staff use `!ova reports`, `!ova resolvereport`, `!ova warn`, and `!ova note`. Warning escalation is disabled until an owner explicitly sets `WarningEscalationCount` in `Moderation.cfg`.
