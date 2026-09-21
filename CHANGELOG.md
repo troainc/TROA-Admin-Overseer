@@ -1,3 +1,7 @@
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+
 ## v0.8.17 — Player audit trail
 
 - Added !ova caseevents <player> [count] to show up to 25 stored audit events explicitly tied to that player’s SteamID.
@@ -10,10 +14,6 @@
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
-
-# Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
