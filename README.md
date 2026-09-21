@@ -31,13 +31,13 @@ Auto Moderator, Essentials, and VoteRewards.
   plus custom permission nodes) with `!ov role assign/remove/create/grant/…` and `!ov roles`;
   Essentials-style `!ov setrank/rank/ranks`; read-only `!ov perf` server health; and a Harmony guard
   against the VRage `MyStringHash` collision crash.
-- **Broadcast & MOTD: complete.** MOTD on join, rotating announcements, and `!ov broadcast` / `!ov motd`
+- **Broadcast & MOTD: complete.** MOTD on join, rotating announcements, and `!ova broadcast` / `!ov motd`
   — sent to players or everyone, never intercepting player chat (safe alongside a Discord bridge).
 - **Limits (BlockLimiter): complete.** Scan-based block limits by Player/Faction/Grid/Global with
   match-by-subtype/type, Alert or TurnOff punishment, and role/SteamID exemptions;
   `!ov limits [player]` / `!ov limit recount`. Disabled by default.
 - **Rewards (VoteRewards): complete.** Item-bundle rewards — daily claim (`!ov daily`), optional
-  auto playtime rewards, admin grant (`!ov reward`), and **space-engineers.com vote rewards**
+  auto playtime rewards, admin grant (`!ova reward`), and **space-engineers.com vote rewards**
   (`!ov claim`, `!ov vote`) via the site's API. Disabled by default.
 - Performance/cleanup is intentionally minimal — **Cleaner+ owns that**. Overseer only reports.
 - Next: economy/credit payouts, per-role chat prefixes/colors.
@@ -87,12 +87,12 @@ Moderation: `!ov ban <player> <duration|perm> [reason]` · `!ov unban <player>` 
 Player tools: `!ov heal [player]` · `!ov feed [player]` · `!ov tp <player>` · `!ov tphere <player>` ·
 `!ov promote/demote <player>` (owner) (admin)
 Grid tools: `!ov fixship <grid>` · `!ov stop <grid>` · `!ov gridtransfer <grid> <player>` ·
-`!ov gridlist <player>` · `!ov griddelete <grid>` (all admin)
+`!ova gridlist <player>` (admin; no grid deletion command)
 Ranks & roles: `!ov setrank/rank/ranks` · `!ov role list/info/create/delete/grant/revoke/assign/remove` ·
 `!ov roles <player>` (owner/admin)
-Broadcast: `!ov broadcast <message>` (admin) · `!ov motd`
+Broadcast: `!ova broadcast <message>` (admin) · `!ov motd`
 Limits: `!ov limits [player]` · `!ov limit recount` (admin)
-Rewards: `!ov daily` · `!ov vote` · `!ov claim` · `!ov reward <player>` (admin)
+Rewards: `!ov daily` · `!ov vote` · `!ov claim` · `!ova reward <player>` (admin)
 Server: `!ov perf` (admin)
 
 

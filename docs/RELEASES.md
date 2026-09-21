@@ -1,3 +1,8 @@
+## v0.8.6 — Command Contract Completion
+- `!ov claim` is registered; public MOTD, daily, vote, and claim are no longer duplicated under `!ova`.
+- Corrected root references in owner documentation.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.5 — Config Naming and Migration
 - Master config remains `TROA Admin Overseer.cfg`; all supplementary configs are now consistently prefixed.
 - Legacy generic config files are copied once to preserve existing settings.
