@@ -1,3 +1,7 @@
+## v0.8.8 — Player GPS and Reward History
+- `!ova gps <player>` for online player coordinates and `!ov rewards` for personal claim history.
+- ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.7 — Durable Audit History
 - Persists recent emitted events and provides `!ova audit [count]` for administrator review.
 - Audit history is capped at 5,000 newest entries; ZIP contains only `Overseer.dll` and `manifest.xml`.

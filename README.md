@@ -113,3 +113,6 @@ The master file is `TROA Admin Overseer.cfg`. Supplementary files use the same p
 
 ## Audit history
 Every emitted plugin event is retained in managed JSON (up to 5,000 recent entries). Admins can inspect it with `!ova audit [count]`.
+
+## Player history
+Admins can use `!ova gps <player>` for an online player location. Players can use `!ov rewards` to view their own recorded reward claims.

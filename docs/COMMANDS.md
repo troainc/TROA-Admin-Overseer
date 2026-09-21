@@ -111,6 +111,7 @@ inventory, so the recipient must be online.
 | `!ov daily` | None | Claim your daily reward (respects the configured cooldown). |
 | `!ov vote` | None | Show the configured vote links. |
 | `!ov claim` | None | Claim your **space-engineers.com** vote reward. |
+| `!ov rewards` | None | Show your recorded reward claims. |
 | !ova reward <player>` | Admin | Grant the daily reward bundle to a player. |
 
 **Voting (space-engineers.com):** set `VoteSiteEnabled` and `SpaceEngineersComApiKey` in `Rewards.cfg`.
