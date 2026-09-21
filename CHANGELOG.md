@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.38 — Faction dossier
+- Added !ova faction for read-only faction identity and membership summary.
+
 ## v0.8.37 — Operations summary
 - Added !ova opssummary for recent persisted event totals and critical-event visibility.
 
