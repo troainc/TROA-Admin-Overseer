@@ -1,8 +1,11 @@
-
 # Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
+## v0.8.21 — Configurable player PCU cap
+
+- Replaced the player grid-recovery block cap with `PlayerGridToolsMaxPcu`, an owner-configurable PCU maximum (default `20000`; `0` disables the additional cap).
+- `!ov gridcheck` now reports total PCU for the owned mechanical group.
 ## v0.8.20 — Player grid recovery
 
 - Added player-safe !ov fixship, !ov stop, and !ov gridcheck for the owned grid under a player's crosshair.

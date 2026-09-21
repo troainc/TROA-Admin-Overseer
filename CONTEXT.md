@@ -10,3 +10,5 @@ Moderation audit events use stable target SteamIDs for case-history correlation;
 Player-report submissions and resolutions are both SteamID-correlated in the persisted audit trail.
 
 Player self-service grid recovery is available under !ov fixship, !ov stop, and !ov gridcheck; it is limited to an in-game caller's wholly major-owned mechanical group and master-config limits.
+
+Player grid recovery uses the owner-configurable `PlayerGridToolsMaxPcu` master-config limit (default 20000 PCU; 0 disables the additional plugin cap).

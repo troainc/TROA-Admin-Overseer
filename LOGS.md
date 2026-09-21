@@ -17,3 +17,6 @@
 
 ## v0.8.20 — Player grid recovery
 - Added owned-grid !ov fixship, !ov stop, and !ov gridcheck with major-owner, cooldown, block-cap, and audit safeguards.
+
+## v0.8.21 — Configurable player PCU cap
+- Replaced the recovery block cap with `PlayerGridToolsMaxPcu`; gridcheck now reports group PCU.

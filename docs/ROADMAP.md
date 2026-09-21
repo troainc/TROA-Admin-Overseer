@@ -35,3 +35,5 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered complete SteamID correlation across player-report submission and resolution events.
 
 - Delivered player-owned grid recovery with strict whole-mechanical-group ownership and configurable safeguards.
+
+- Updated player grid recovery safeguards to use a server-owner-configurable PCU maximum.
