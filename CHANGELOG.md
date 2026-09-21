@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.37 — Operations summary
+- Added !ova opssummary for recent persisted event totals and critical-event visibility.
+
 ## v0.8.36 — Role comparison
 - Added administrator role comparison for rank, direct nodes, and inheritance.
 

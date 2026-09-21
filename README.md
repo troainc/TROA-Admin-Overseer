@@ -145,3 +145,5 @@ Admins can use `!ova reportqueue`, `!ova reportassign <id> [staff]`, and `!ova r
 ### Opt-in sensitive-action policy
 
 `EnforceCustomPermissions=true` adds TROA policy nodes to sensitive moderation and broadcast commands without removing native Torch rank requirements.
+
+Admins can use `!ova opssummary [count]` for a compact view of recent persisted operations.
