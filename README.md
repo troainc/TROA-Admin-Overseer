@@ -149,3 +149,5 @@ Admins can use `!ova reportqueue`, `!ova reportassign <id> [staff]`, and `!ova r
 Admins can use `!ova opssummary [count]` for a compact view of recent persisted operations.
 
 `!ova faction <player>` provides a read-only faction dossier for staff.
+
+`!ova faction roster <player>` lists the selected faction member identity IDs for staff review.

@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.39 — Faction roster
+- Added !ova faction roster for read-only staff roster visibility.
+
 ## v0.8.38 — Faction dossier
 - Added !ova faction for read-only faction identity and membership summary.
 
