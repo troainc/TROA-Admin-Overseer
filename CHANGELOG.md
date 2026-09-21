@@ -1,3 +1,7 @@
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+
 ## v0.8.22 — Advanced role inheritance
 
 - Added durable custom-role inheritance with cycle protection and inherited effective Torch ranks and permission nodes.
@@ -31,10 +35,6 @@
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
-
-# Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
