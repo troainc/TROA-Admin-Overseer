@@ -1,3 +1,7 @@
+## Change Log
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+
 ## v0.8.13 — Advanced rewards and limits
 
 - Added opt-in daily streak milestones with configurable bonus bundles.
@@ -9,8 +13,6 @@
 - Direct website ticket creation remains API-dependent and requires the website endpoint/authentication specification.
 
 # Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.11 — Owner documentation and access consistency
 
