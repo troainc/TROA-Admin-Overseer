@@ -72,6 +72,10 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova gridtransfer <player> [grid]` | Admin |
 | `!ova confirm` | Admin | Confirms the requester preview only when two-staff approval is disabled. |`r`n| `!ova approve <requesterSteamId>` | Admin | A different administrator approves a pending transfer when `RequireSecondStaffApprovalForTransfers` is enabled. |
 | `!ova gridlist <player>` | Admin |
+| `!ova reportassign <id>` | Admin | Assign an unresolved report to yourself. |
+| `!ova reportstatus <id> <open|investigating|waiting>` | Admin | Set case workflow status. |
+| `!ova reportdue <id> <hours|clear>` | Admin | Set or clear a case deadline. |
+| `!ova reportupdate <id> <text>` | Admin | Add a durable internal staff update. |
 
 ### Broadcast, limits, and rewards
 

@@ -38,3 +38,6 @@
 - Added durable scoped grants and simulator commands.
 ## v0.8.31-v0.8.32 — Two-staff transfer approval
 - Published public-safe command, configuration, deployment, changelog, and release-index guidance for the enforced optional approval workflow.
+
+## v0.8.33 — Staff case workflow
+- Published public-safe staff case command and release guidance.

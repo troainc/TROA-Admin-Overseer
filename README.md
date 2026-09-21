@@ -132,3 +132,8 @@ Owners can grant a custom role for a defined duration with `!ova role temporary 
 ### Opt-in policy enforcement
 
 Set EnforceCustomPermissions to 	rue only after reviewing role assignments. It adds TROA-node gates to selected sensitive administrator commands while retaining native Torch rank checks; it is disabled by default.
+
+
+### Staff case workflow
+
+Use `!ova reportassign`, `!ova reportstatus`, `!ova reportdue`, and `!ova reportupdate` to manage unresolved reports with durable staff context.

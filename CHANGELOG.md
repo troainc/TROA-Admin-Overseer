@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.33 — Staff case workflow
+- Added durable assignment, status, deadline, and internal-update workflows for unresolved player reports.
+
 ## v0.8.32 — Enforced two-staff transfer approval
 - When the optional two-staff transfer setting is enabled, the requester cannot confirm their own transfer; a distinct administrator must approve it.
 - ZIP validated: only Overseer.dll and manifest.xml.
