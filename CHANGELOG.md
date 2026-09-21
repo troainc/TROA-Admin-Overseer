@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.44 — Event MOTD
+- Added separate expiring event MOTD configuration with owner set/clear controls.
+
+## v0.8.43 — Event rewards
+- Added owner-only event reward grants via the existing reward workflow.
+
 ## v0.8.42 — Event participants
 - Added durable owner-managed event check-ins and staff attendee review.
 

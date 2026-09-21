@@ -155,3 +155,5 @@ Admins can use `!ova opssummary [count]` for a compact view of recent persisted 
 Event owners can use `!ova event role` for temporary access and `!ova event announce` for audited event broadcasts.
 
 Event check-ins persist across restart: use `!ova event checkin <player> <eventId>` and `!ova event attendees <eventId>`.
+
+Event controls: `!ova event reward <player>` grants the configured bundle; `!ova event motd <hours> <message>` creates an expiring override without replacing normal MOTD lines.
