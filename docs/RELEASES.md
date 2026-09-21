@@ -1,3 +1,7 @@
+## v0.8.14 — Configuration Doctor
+- Owner-only read-only configuration health check and corrected !ova help access.
+- ZIP validated: only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.13 — Advanced Rewards and Limits
 - Opt-in daily streak milestones and configurable player near-limit indicators.
 - ZIP validated: only `Overseer.dll` and `manifest.xml`.

@@ -25,6 +25,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova status` | Admin |
 | `!ova perf` | Admin |
 | `!ova audit [count]` | Admin |
+| `!ova doctor` | Owner | Read-only check for webhook, rewards, limits, ticket, and legacy-config issues. |
 | `!ova modules` | Owner |
 | `!ova reload` | Owner |
 | `!ova save` | Owner |

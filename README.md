@@ -58,6 +58,7 @@ Set `TicketPortalUrlTemplate` in `TROA Admin Overseer.cfg`, then players can use
 - `!ova save` — request a Torch save.
 - `!ova schedule start|stop|status` — persistently control rotating announcements.
 - `!ova audit [count]` — review the newest emitted events.
+- `!ova doctor` — read-only configuration health check.
 - `!ova reload` — reload owner configuration after edits.
 
 ### Data and backups

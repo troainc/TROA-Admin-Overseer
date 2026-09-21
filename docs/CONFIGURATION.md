@@ -31,6 +31,10 @@ Rewards remain disabled until `Enabled` is set to true. To add a streak bonus, s
 
 Set `PlayerNearLimitPercent` in `TROA Admin Overseer Limits.cfg` (default `80`). `!ov limits` marks player usage as NEAR at or above that percentage and OVER when it exceeds the rule maximum. This display setting does not enable enforcement.
 
+## Configuration doctor
+
+Run `!ova doctor` after your first setup and any larger config change. It checks the server name, webhook routes, reward/streak setup, limit rules, ticket URL, and retained legacy config files. It is read-only and never enables a feature for you.
+
 ## Safe enablement order
 
 1. Confirm `!ova status` works.

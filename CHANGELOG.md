@@ -2,6 +2,11 @@
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
+## v0.8.14 — Configuration doctor
+
+- Added owner-only `!ova doctor` for read-only webhook, rewards, limits, ticket, and legacy-config checks.
+- Restored administrator-only access for `!ova help`.
+
 ## v0.8.13 — Advanced rewards and limits
 
 - Added opt-in daily streak milestones with configurable bonus bundles.
