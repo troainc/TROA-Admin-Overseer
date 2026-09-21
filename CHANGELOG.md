@@ -1,3 +1,8 @@
+
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+
 ## v0.8.20 — Player grid recovery
 
 - Added player-safe !ov fixship, !ov stop, and !ov gridcheck for the owned grid under a player's crosshair.
@@ -23,10 +28,6 @@
 ## v0.8.15 — Grid health scanner
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
-
-# Changelog
-
-This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 
 ## v0.8.14 — Configuration doctor
 
