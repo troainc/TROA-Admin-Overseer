@@ -1,4 +1,4 @@
-# TROA Admin Overseer
+# TROA Admin Overseer (Pre Release Selected Tester) 
 
 > A single-DLL Torch administration plugin for Space Engineers dedicated servers.
 
