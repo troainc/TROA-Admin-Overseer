@@ -1,3 +1,7 @@
+# Changelog
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
+
 ## v0.8.26 — Live limit preview
 
 - Added read-only !ova limit preview [grid] showing active grid-scoped rules, context, counts, caps, and configured action.
