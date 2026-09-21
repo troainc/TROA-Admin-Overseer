@@ -159,3 +159,5 @@ Event check-ins persist across restart: use `!ova event checkin <player> <eventI
 Event controls: `!ova event reward <player>` grants the configured bundle; `!ova event motd <hours> <message>` creates an expiring override without replacing normal MOTD lines.
 
 Maintenance: `!ova maintenance on [message]`, `off`, and `status` persist owner status and announce the visible banner. Join restriction is intentionally not implied.
+
+Set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` (1–168) in the master config to emit scheduled operations summaries through the Audit webhook route.

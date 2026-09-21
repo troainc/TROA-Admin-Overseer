@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.46 — Scheduled operations summary
+- Added opt-in off-thread recurring audit/webhook operational summaries.
+
 ## v0.8.45 — Maintenance mode
 - Added owner-controlled persisted maintenance status and visible banner.
 
