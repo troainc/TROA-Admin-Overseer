@@ -8,3 +8,5 @@ Current staff workflow includes !ova case <player> for moderation context and !o
 Moderation audit events use stable target SteamIDs for case-history correlation; display names are never the matching key.
 
 Player-report submissions and resolutions are both SteamID-correlated in the persisted audit trail.
+
+Player self-service grid recovery is available under !ov fixship, !ov stop, and !ov gridcheck; it is limited to an in-game caller's wholly major-owned mechanical group and master-config limits.

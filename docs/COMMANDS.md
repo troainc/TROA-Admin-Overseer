@@ -15,6 +15,9 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ov limits` | Show your own tracked block-limit use. |
 | `!ov ticket` | Show the configured support ticket portal link. |
 | `!ov report <player> <reason>` | Submit a report to staff. |
+| `!ov gridcheck` | Read health details for the wholly major-owned grid group under your crosshair. |
+| `!ov stop` | Stop motion on the wholly major-owned grid group under your crosshair; cooldown applies. |
+| `!ov fixship` | Rebuild the wholly major-owned grid group under your crosshair; cooldown and block cap apply. |
 
 ## Administration — `!ova`
 

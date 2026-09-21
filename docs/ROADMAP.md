@@ -33,3 +33,5 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered stable SteamID correlation for core moderation audit events.
 
 - Delivered complete SteamID correlation across player-report submission and resolution events.
+
+- Delivered player-owned grid recovery with strict whole-mechanical-group ownership and configurable safeguards.

@@ -14,6 +14,7 @@
 - A non-admin cannot use `!ova` administration commands.
 - An admin can use `!ova status`.
 - `!ov motd` and `!ov report` respond correctly.
+- A player looking at a wholly major-owned small grid can use `!ov gridcheck`, `!ov stop`, and `!ov fixship`; another player and a mixed-ownership mechanical group are denied.
 - `!ova fixship` with no argument requires a grid under the crosshair; from console, use an explicit target.
 - `!ova gridtransfer <player> [grid]` previews only; `!ova confirm` applies it.
 - After a Torch restart, verify JSON-backed roles, claims, bans, reports, notes, and audit history remain.

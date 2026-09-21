@@ -1,3 +1,8 @@
+## v0.8.20 — Player grid recovery
+
+- Added player-safe !ov fixship, !ov stop, and !ov gridcheck for the owned grid under a player's crosshair.
+- Player recovery requires major ownership across the complete mechanical group and uses configurable cooldown and block-cap safeguards.
+
 ## v0.8.19 — Resolved report audit link
 
 - Resolved-report events now include the reported player’s SteamID and name, making them visible in !ova caseevents.

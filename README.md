@@ -104,3 +104,7 @@ For a chronological follow-up, use !ova caseevents <player> [count]. It returns 
 New moderation events are correlated with the affected player’s SteamID, keeping !ova caseevents useful even if display names later change.
 
 Report submission and resolution events are both correlated to the reported player’s SteamID, so the staff case trail shows the complete workflow.
+
+### Player grid recovery
+
+Players can use !ov fixship, !ov stop, and !ov gridcheck while looking at their own grid. These tools are enabled by default but require major ownership of every mechanically connected grid. The master config sets PlayerGridToolsEnabled, PlayerGridToolsCooldownMinutes (default 10), and PlayerGridToolsMaxBlocks (default 20000). Each use is audited through the GridTools webhook category.

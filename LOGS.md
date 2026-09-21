@@ -14,3 +14,6 @@
 
 ## v0.8.19 — Resolved report audit link
 - Report resolution now returns the resolved record internally and emits its target SteamID.
+
+## v0.8.20 — Player grid recovery
+- Added owned-grid !ov fixship, !ov stop, and !ov gridcheck with major-owner, cooldown, block-cap, and audit safeguards.
