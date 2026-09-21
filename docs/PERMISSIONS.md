@@ -93,3 +93,9 @@ Scoped grants narrow a custom node to one operational value. Supported scopes ar
 ```
 
 Scoped policy data is durable and audited. A normal unscoped node remains global. Commands adopt scoped gates individually in later policy phases; no existing command is unexpectedly restricted merely by upgrading.
+## Opt-in command policy enforcement
+
+Set EnforceCustomPermissions to 	rue in TROA Admin Overseer.cfg only after assigning reviewed roles. Native Torch rank remains mandatory; this setting adds a second TROA-node gate. Console callers remain available for recovery.
+
+Initially gated commands are !ova ban (moderation.ban), warn (moderation.warn),
+ote (moderation.note), ixship (grid.fixship), gridtransfer (grid.transfer), and roadcast (roadcast.send). Each accepts a matching global node or a category scoped grant. The default is alse, so upgrading never removes staff access unexpectedly.

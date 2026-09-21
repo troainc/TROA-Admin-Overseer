@@ -1,6 +1,8 @@
 # Changelog
 
-This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
+## v0.8.30 — Opt-in command policy enforcement
+
+- Added closed-by-default custom-node policy gates for selected sensitive commands while retaining native Torch rank requirements.
 
 ## v0.8.29 — Scoped role permissions
 
@@ -16,6 +18,10 @@ This file summarizes current deployable behavior. The dated package archive hist
 
 - Upgraded !ova limit exportcsv from a current-world list to every registered cube-block definition.
 - CSV now includes exact subtype/type IDs, cube size, and live total/ship/station usage columns for rule planning.
+
+
+
+This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
 
 ## v0.8.26 — Live limit preview
 
@@ -70,7 +76,7 @@ This file summarizes current deployable behavior. The dated package archive hist
 
 - Added `!ova gridcheck [grid]` for read-only grid identity, block, owner, motion, and mechanical-group details.
 
-# Changelog
+
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
 

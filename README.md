@@ -129,3 +129,6 @@ Owners can apply a short prefix/color label with `!ova role style <role> <prefix
 ### Temporary staff and event roles
 
 Owners can grant a custom role for a defined duration with `!ova role temporary <player> <role> <duration>`. The grant survives restart, automatically expires, recalculates the player’s native rank, and records the event. See [Roles and permissions](docs/PERMISSIONS.md) for the supported duration format and operational safeguards.
+### Opt-in policy enforcement
+
+Set EnforceCustomPermissions to 	rue only after reviewing role assignments. It adds TROA-node gates to selected sensitive administrator commands while retaining native Torch rank checks; it is disabled by default.
