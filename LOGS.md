@@ -44,4 +44,5 @@
 ## 2026-09-21 — Public documentation consolidation
 - Rewrote README as owner how-to and grouped release changes by date.
 
-## 2026-09-21 — Automatic block catalogue`r`nPublic owner documentation now records the startup/restart export location and manual refresh command for the complete vanilla-and-mod block catalogue.
+## 2026-09-21 — Automatic block catalogue
+Public owner documentation now records the startup/restart export location and manual refresh command for the complete vanilla-and-mod block catalogue.
