@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.45 — Maintenance mode
+- Added owner-controlled persisted maintenance status and visible banner.
+
 ## v0.8.44 — Event MOTD
 - Added separate expiring event MOTD configuration with owner set/clear controls.
 

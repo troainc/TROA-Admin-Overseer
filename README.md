@@ -157,3 +157,5 @@ Event owners can use `!ova event role` for temporary access and `!ova event anno
 Event check-ins persist across restart: use `!ova event checkin <player> <eventId>` and `!ova event attendees <eventId>`.
 
 Event controls: `!ova event reward <player>` grants the configured bundle; `!ova event motd <hours> <message>` creates an expiring override without replacing normal MOTD lines.
+
+Maintenance: `!ova maintenance on [message]`, `off`, and `status` persist owner status and announce the visible banner. Join restriction is intentionally not implied.
