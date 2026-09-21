@@ -78,7 +78,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | Command | Minimum permission |
 |---|---|
 | `!ova broadcast <message>` | Admin |
-| `!ova limits [player]` · `!ova limit recount` · `!ova limit preview [grid]` · `!ova limit exportcsv` (Owner) | Admin/Moderator as shown in command help |
+| `!ova limits [player]` · `!ova limit recount` · `!ova limit preview [grid]` · `!ova limit exportcsv` (Owner; all registered subtypes) | Admin/Moderator as shown in command help |
 | `!ova reward <player>` | Admin |
 
 ## Legacy migration

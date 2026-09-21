@@ -112,7 +112,7 @@ Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` while looking at 
 
 ### Context-aware block limits
 
-Block-limit rules can now distinguish Large/Small and Ship/Station, so the same subtype can safely have a different cap in each context. !ov limits tells players the rule context and whether they are near or over its cap. Owners can run !ova limit exportcsv to create a current-world subtype catalog at Instance/TROA Admin Overseer/exports/block-subtypes.csv.
+Block-limit rules can now distinguish Large/Small and Ship/Station, so the same subtype can safely have a different cap in each context. !ov limits tells players the rule context and whether they are near or over its cap. Owners can run !ova limit exportcsv to create a complete registered-subtype catalog with live usage columns at Instance/TROA Admin Overseer/exports/block-subtypes.csv.
 
 ### Custom rank presentation and Discord mapping
 

@@ -17,3 +17,4 @@ Temporary direct roles persist in JSON and expire every 30 seconds through the r
 Role records now retain safe presentation labels and owner-managed Discord role-ID mappings. This plugin stores no Discord token and never auto-grants access from a Discord mapping without an authenticated identity bridge.
 Limits now support independent ship/station and large/small context filters for the same subtype. Owners export observed current-world subtype IDs with !ova limit exportcsv; player !ov limits feedback names the applying context.
 Live limit previews: !ova limit preview [grid] is admin read-only; !ov limitcheck is player-safe and requires whole-group major ownership.
+The owner CSV export now lists every registered cube-block definition, including unbuilt definitions, alongside live total/ship/station usage counts.

@@ -30,3 +30,5 @@
 - Added per-rule grid kind/size filters, current-world CSV subtype export, and player NEAR/OVER context feedback.
 ## v0.8.26 — Live limit preview
 - Added read-only administrator and player grid-limit feedback commands.
+## v0.8.27 — Complete block catalog export
+- Exported all registered cube-block definitions with live usage columns for limits planning.

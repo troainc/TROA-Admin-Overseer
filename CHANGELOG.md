@@ -1,3 +1,8 @@
+## v0.8.27 — Complete block catalog export
+
+- Upgraded !ova limit exportcsv from a current-world list to every registered cube-block definition.
+- CSV now includes exact subtype/type IDs, cube size, and live total/ship/station usage columns for rule planning.
+
 # Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in docs/RELEASES.md.
