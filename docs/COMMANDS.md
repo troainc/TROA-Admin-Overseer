@@ -156,3 +156,9 @@ rewards** (to online players on an interval) are also configured in `Rewards.cfg
 | `!ova schedule stop` | Owner | Disable and persist rotating announcements. |
 
 TROA Admin Overseer does not provide restart, cleanup, or performance automation. TROA Cleaner+ remains the owner of those workflows. Whitelist/maintenance enforcement is not exposed by the installed Torch multiplayer API and is intentionally not represented as a non-functional command.
+## Audit history
+| Command | Perm | Description |
+|---|---|---|
+| `!ova audit [count]` | Admin | Show the latest persisted plugin events (1–100, default 10). |
+
+Audit records retain event time, category, severity, title, message, and details in `Instance/TROA Admin Overseer/Overseer.json`. The store keeps the newest 5,000 records.

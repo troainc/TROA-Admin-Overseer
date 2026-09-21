@@ -6,6 +6,7 @@ All notable changes to Overseer are documented here. The format follows
 
 ## [Unreleased]
 ### Changed
+- v0.8.7 persists emitted plugin events as managed JSON audit records and adds `!ova audit [count]` for staff history review.
 - v0.8.6 completes player command registration: `!ov claim` is available and player-safe MOTD, daily, vote, and claim commands no longer register under `!ova`.
 - v0.8.5 standardizes supplementary configs as `TROA Admin Overseer <Feature>.cfg` and safely copies existing legacy files on first load. The master config remains `TROA Admin Overseer.cfg`.
 - v0.8.4 adds supported owner operations: `!ova save` and persistent `!ova schedule start|stop|status`. It does not take ownership of Cleaner+ restart or cleanup automation.

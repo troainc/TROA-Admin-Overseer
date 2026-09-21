@@ -110,3 +110,6 @@ Players use `!ov report <player> <reason>`. Staff use `!ova reports`, `!ova reso
 
 ## Configuration naming
 The master file is `TROA Admin Overseer.cfg`. Supplementary files use the same prefix, such as `TROA Admin Overseer Webhooks.cfg`. Existing unprefixed configs are copied to the new names once, without deleting the original.
+
+## Audit history
+Every emitted plugin event is retained in managed JSON (up to 5,000 recent entries). Admins can inspect it with `!ova audit [count]`.

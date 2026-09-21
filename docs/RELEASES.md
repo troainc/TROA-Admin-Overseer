@@ -1,3 +1,7 @@
+## v0.8.7 — Durable Audit History
+- Persists recent emitted events and provides `!ova audit [count]` for administrator review.
+- Audit history is capped at 5,000 newest entries; ZIP contains only `Overseer.dll` and `manifest.xml`.
+
 ## v0.8.6 — Command Contract Completion
 - `!ov claim` is registered; public MOTD, daily, vote, and claim are no longer duplicated under `!ova`.
 - Corrected root references in owner documentation.
