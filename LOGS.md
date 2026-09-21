@@ -8,3 +8,6 @@
 
 ## v0.8.17 — Player audit trail
 - Added !ova caseevents <player> [count], capped at 25 SteamID-matched persisted events.
+
+## v0.8.18 — Correlated moderation audit
+- Added target SteamID fields to mute, unmute, staff-note, and player-report events.

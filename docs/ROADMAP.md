@@ -29,3 +29,5 @@ Every deployable phase builds with zero warnings, packages only the managed DLL 
 - Delivered staff case summary for safe, read-only moderation review.
 
 - Delivered player-specific audit-trail review for staff cases.
+
+- Delivered stable SteamID correlation for core moderation audit events.

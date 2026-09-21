@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Changelog
 
 This file summarizes current deployable behavior. The dated package archive history is maintained in `docs/RELEASES.md`.
+=======
+## v0.8.18 — Correlated moderation audit
+
+- Added target SteamIDs to mute, unmute, staff-note, and player-report audit events so they appear reliably in !ova caseevents.
+>>>>>>> 3d59a61 (docs: publish v0.8.18 correlated moderation audit)
 
 ## v0.8.17 — Player audit trail
 

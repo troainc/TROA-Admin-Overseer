@@ -1,3 +1,7 @@
+## v0.8.18 — Correlated Moderation Audit
+- Core moderation audit events now include target SteamIDs, so !ova caseevents remains reliable after display-name changes.
+- ZIP validated: only Overseer.dll and manifest.xml.
+
 ## v0.8.17 — Player Audit Trail
 - Added !ova caseevents <player> [count] for up to 25 persisted audit events explicitly matched to a player's SteamID.
 - ZIP validated: only Overseer.dll and manifest.xml.
