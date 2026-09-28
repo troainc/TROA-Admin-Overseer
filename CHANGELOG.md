@@ -5,7 +5,7 @@
 - After `!ova restart` confirms the save and completes its 60-second delay, Overseer persists a one-time startup confirmation marker before asking Torch to restart.
 - On the next qualifying startup, Overseer logs “Restart and Save were successful.” in green where Torch's console honors ANSI colors and sends a green success embed through the configured Server webhook route.
 - Stale markers expire after two hours. Build/package validation passed with 0 warnings and 0 errors; dedicated-server console coloring and webhook delivery still need runtime acceptance.
-- Local package: `TROA Admin Overseer v0.8.54 - Restart and Save Confirmation.zip`; SHA-256 `F2A9218E0F21228D9D71D04E46E09CAE6BE89F7BC2F8D96939652D992A17049C`.
+- Local package: `TROA Admin Overseer v0.8.54 - Restart and Save Confirmation.zip`; SHA-256 `4606ABF906D072187A1D560F0607F67AAE02F3D6BFD7A9EC54A77E5BBCEA3E6A`.
 
 ## 2026-09-28 — v0.8.53 Save-confirmed delayed restart
 
