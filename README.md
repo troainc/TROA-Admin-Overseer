@@ -4,11 +4,13 @@
 
 TROA Admin Overseer gives server owners one clear place for player support, moderation, staff cases, roles, safe grid tools, events, rewards, auditing, and webhooks.
 
+The current version is **v0.8.51**. See the [release index](docs/RELEASES.md) for the version summary and package contents. Version 0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values and loads configured routes/reward lists without duplicating built-in defaults.
+
 ## What it does
 
 | Area | Included |
 |---|---|
-| Player support | MOTD, ticket link, reports, daily/vote rewards, limits feedback, owned-grid recovery |
+| Player support | MOTD, ticket link, reports, daily/playtime rewards, vote claims, reward history, limits feedback, owned-grid recovery |
 | Staff operations | Player dossiers, moderation, cases, roles, permissions, grid tools, audit history |
 | Owner operations | Config reload, save, maintenance status, announcements, scheduled summaries, exports |
 | Events | Event roles, announcements, temporary MOTD, check-ins, rewards, attendee export |
@@ -95,6 +97,7 @@ Players can use `!ov fixship`, `!ov stop`, and `!ov gridcheck` only on wholly ma
 ### Webhooks and operations summaries
 
 Webhook routes are closed by default. Add a valid URL, set its route `Enabled=true`, then run `!ova reload`.
+Edit the TROA-prefixed file in the plugin's `StoragePath` shown in the startup log. XML URL query separators should be `&amp;`; v0.8.51 repairs bare ampersands automatically without resetting the route.
 
 For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` to `1–168`. Summaries flow through the Audit webhook route.
 
@@ -108,6 +111,21 @@ For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSumm
 - `TROA Admin Overseer Limits.cfg` — block limits.
 - `TROA Admin Overseer Connections.cfg` — session/network history settings.
 - `TROA Admin Overseer Audit.cfg` — audit controls.
+
+### Rewards and Monitor+ migration
+
+Admin Overseer v0.8.50 owns voting and rewards. Players use `!ov daily`, `!ov vote`, `!ov claim`,
+`!ov rewards`, and `!ov topvoters`; admins grant bundles with `!ova reward <player>`. Linked Discord
+users can reserve a vote reward with `!reward` in the configured channel or `/adminoverseer reward`,
+then claim it in-game using `!ov claim`. Discord also provides `!votelink`, `!topvoters`, and
+matching `/adminoverseer` slash commands.
+
+To migrate Monitor+ reservations and voter history, start Overseer once to create its Rewards config,
+stop Torch, set `LegacyMonitorStorageDirectory` to the Monitor+ plugin storage directory, review the
+`VoteReward` item bundle, then start a game session and confirm the import count in the Overseer log
+before removing the old Monitor+ installation. The import is repeat-safe; imported pending claims use
+the configured Overseer bundle. Monitor+ account linking and its optional economy balance connector
+remain available for other features.
 
 ## More documentation
 

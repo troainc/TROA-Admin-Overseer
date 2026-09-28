@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-09-28 — v0.8.51 XML URL configuration repair
+
+- Documents the automatic repair of unescaped ampersands in Webhooks and Rewards XML values, preserving multi-parameter URLs and other settings.
+- Records the fix for configured Webhooks routes and Rewards lists replacing initialized defaults instead of being appended after them.
+- Server owners should edit the plugin's active `StoragePath`; unrecoverable XML still produces a `.bad-*` backup and startup-log error.
+- Build/package validation is distinct from dedicated-server runtime acceptance.
+
+## 2026-09-27 — v0.8.50, consolidated Discord vote rewards
+
+- Added linked Discord vote reservations through channel-scoped `!reward` and `/adminoverseer` commands; pending claims are completed in-game with `!ov claim`.
+- Added persistent pending reservations, vote history, voter leaderboard, and reward claim history.
+- Added a repeat-safe importer for pending reward IDs and voter history from Monitor+ storage. Monitor+ v1.1.5K6 removes its voting/rewards implementation and retains account linking and optional economy balance support.
+- Build and release ZIP validation passed. Dedicated-server runtime acceptance remains to be confirmed on the target server.
+
 ## 2026-09-21 — Server operations, staff workflow, events, and releases
 
 Today’s release work consolidated TROA Admin Overseer into a full server-operations toolset.
