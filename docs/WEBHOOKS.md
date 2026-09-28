@@ -1,6 +1,14 @@
 # Discord webhooks
 
+Webhook events are sent by the plugin that owns the event. Monitor+ may transport a Discord command and return its reply, but it does not proxy Admin Overseer's webhook events through Monitor-owned webhook URLs.
+
 Webhooks are optional and disabled by default. Configure them in `TROA Admin Overseer Webhooks.cfg`.
+
+Webhook routes are outbound event delivery. The optional inbound Discord bot used for vote reward
+reservations is configured separately in `TROA Admin Overseer Rewards.cfg`; configuring a webhook
+does not enable bot commands.
+
+Edit the file in the plugin `StoragePath` shown at startup. URLs with query parameters use `&amp;` separators in XML; v0.8.51 automatically repairs bare ampersands and preserves the route configuration.
 
 ## Safe setup
 

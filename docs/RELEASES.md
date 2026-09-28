@@ -6,6 +6,8 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.51 | XML Configuration Repair | Repairs unescaped URL ampersands and ensures configured Webhooks routes and Rewards lists replace defaults. |
+| v0.8.50 | Consolidated Discord Vote Rewards | Discord vote reservations, persistent claims/history, voter leaderboard, and repeat-safe Monitor+ migration. |
 | v0.8.49 | Automatic Block Catalogue | Complete vanilla-and-mod subtype CSV refreshed at every server startup in the plugin data folder. |
 | v0.8.46 | Scheduled Operations Summary | Opt-in audit/webhook summaries every 1–168 hours. |
 | v0.8.45 | Maintenance Mode | Persisted maintenance status and visible banner. |

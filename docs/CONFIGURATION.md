@@ -2,6 +2,10 @@
 
 All owner configuration lives beside the normal server configuration files. Start Torch once to create missing files, edit the **TROA Admin Overseer-prefixed** files, then run `!ova reload`.
 
+The active location is the plugin `StoragePath` printed at startup. XML URL query separators should be written as `&amp;`; v0.8.51 repairs bare ampersands and replaces initialized Webhooks/Rewards list defaults with the values from the file. If `.bad-*` backups continue to appear, inspect the matching startup log exception for the remaining XML syntax error.
+
+To recover settings already reset by an older build, stop Torch and restore the desired `.bad-*` backup over its matching TROA-prefixed config file, then restart v0.8.51. Keep config backups private because they may contain credentials.
+
 ## Files
 
 | File | Purpose | Safe default |
@@ -32,6 +36,22 @@ Set RequireSecondStaffApprovalForTransfers to `true` when grid ownership transfe
 ## Rewards: streak milestones
 
 Rewards remain disabled until `Enabled` is set to true. To add a streak bonus, set `DailyStreakEnabled` to true, choose `DailyStreakMilestone` (for example `7`), and configure `DailyStreakReward`. A missed 48-hour window resets the streak; the normal daily cooldown still applies.
+
+## Rewards: Discord voting and Monitor+ migration
+
+In `TROA Admin Overseer Rewards.cfg`, configure `VoteSiteEnabled` and `SpaceEngineersComApiKey` for
+vote claims, plus `VoteReward` for the item bundle. `VoteLeaderboardEnabled` and
+`VoteLeaderboardCount` control `!ov topvoters`. For Discord reservations, set
+`DiscordRewardsEnabled`, `DiscordBotToken`, `DiscordCommandChannelId`, and
+`DiscordSteamMappings` (`discord-user-id:steam-id-64`). `DiscordCommandPrefix` defaults to `!` and
+`DiscordReconnectDelaySeconds` defaults to `5`. Keep the bot token private.
+
+To migrate existing Monitor+ data, start Torch once with Admin Overseer installed to create the
+Rewards config, stop Torch, set `LegacyMonitorStorageDirectory` to Monitor+'s plugin storage folder,
+and review `VoteReward`. Start a game session with both plugins' data folders present and check the
+Overseer log for the import count before removing Monitor+. Overseer imports pending reward IDs,
+voter history, and compatible vote/Discord settings once per source directory; it leaves the old
+files intact. Imported pending rewards use the configured Overseer item bundle.
 
 ## Limits: player warning threshold
 

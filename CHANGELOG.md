@@ -5,6 +5,7 @@
 - Documents the automatic repair of unescaped ampersands in Webhooks and Rewards XML values, preserving multi-parameter URLs and other settings.
 - Records the fix for configured Webhooks routes and Rewards lists replacing initialized defaults instead of being appended after them.
 - Server owners should edit the plugin's active `StoragePath`; unrecoverable XML still produces a `.bad-*` backup and startup-log error.
+- Admin Overseer retains its reward/admin commands and webhook routes while Monitor+ supplies Discord command transport; Econ+ owns balance and GridVault owns grid backup/recovery.
 - Build/package validation is distinct from dedicated-server runtime acceptance.
 
 ## 2026-09-27 — v0.8.50, consolidated Discord vote rewards

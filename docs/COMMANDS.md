@@ -1,5 +1,7 @@
 # Command reference
 
+When Monitor+ is installed, its Discord bridge can forward `!ov` and `!ova` commands to Admin Overseer and return the response. Admin Overseer still enforces Torch permissions and owns command behavior.
+
 Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments are optional.
 
 ## Player commands — `!ov`
@@ -12,6 +14,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ov claim` | Claim a configured space-engineers.com vote reward. |
 | `!ov daily` | Claim the configured daily reward; optional milestone streak bonuses are owner-configured. |
 | `!ov rewards` | Show your recorded reward claims. |
+| `!ov topvoters` | Show the configured vote leaderboard. |
 | `!ov limits` | Show your own tracked block-limit use. |
 | `!ov ticket` | Show the configured support ticket portal link. |
 | `!ov report <player> <reason>` | Submit a report to staff. |
@@ -85,6 +88,14 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova broadcast <message>` | Admin |
 | `!ova limits [player]` · `!ova limit recount` · `!ova limit preview [grid]` · `!ova limit exportcsv` (Owner; all registered subtypes) | Admin/Moderator as shown in command help |
 | `!ova reward <player>` | Admin |
+
+## Discord vote reservations
+
+Link Discord users to Steam IDs in `DiscordSteamMappings` and configure the reward bot and command
+channel. In that channel, linked users can reserve an eligible vote with `!reward` or
+`/adminoverseer reward`; the mapped player then claims it in-game with `!ov claim`. The bot also
+provides `!votelink`, `!topvoters`, `/adminoverseer votelink`, and `/adminoverseer topvoters`.
+Reservations, completed claims, and vote history are persisted by Admin Overseer.
 
 ## Legacy migration
 

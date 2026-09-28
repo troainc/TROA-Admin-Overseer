@@ -19,6 +19,18 @@
 - `!ova gridtransfer <player> [grid]` previews only. With default settings, `!ova confirm` applies it; with two-staff approval enabled, a different admin must use `!ova approve <requesterSteamId>`.
 - After a Torch restart, verify JSON-backed roles, claims, bans, reports, notes, and audit history remain.
 
+## Rewards and Monitor+ migration
+
+- Configure Discord-to-Steam mappings and the reward bot channel; verify `!reward` and
+  `/adminoverseer reward` reserve a vote for the linked account, then confirm that account can
+  complete it with `!ov claim`.
+- Verify `!ov topvoters` and `!ov rewards` show persisted vote history and claims.
+- For migration, create the Overseer Rewards config once, stop Torch, set
+  `LegacyMonitorStorageDirectory` to the Monitor+ plugin storage folder, and review `VoteReward`.
+  Start a game session with the old data present, confirm the import log, then remove Monitor+.
+- Confirm imported pending claims use the intended Overseer item bundle. A successful build and ZIP
+  check do not replace dedicated-server gameplay or live Discord acceptance.
+
 ## Package verification
 
 The project’s `pack.ps1` runs `verify-release.ps1`. A release fails validation unless:

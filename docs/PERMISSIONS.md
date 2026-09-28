@@ -68,7 +68,7 @@ Discord role IDs can be recorded against a TROA role without giving the plugin a
 !ova role discord remove eventhost 123456789012345678
 ```
 
-Use the numeric Discord role ID (Developer Mode -> Copy Role ID), not `@RoleName`. Mappings are owner-only, stored in `Overseer.json`, and audited. They are safe to prepare now for a future authenticated TROA Discord bridge; this outbound-webhook-only plugin does **not** poll Discord or automatically grant in-game access from a role ID. Automatic synchronization needs a separately configured, authenticated bridge and an explicit player identity link, so a Discord display name can never become an access key.
+Use the numeric Discord role ID (Developer Mode -> Copy Role ID), not `@RoleName`. Role mappings are owner-only, stored in `Overseer.json`, and audited; they do not automatically grant in-game access. The optional Discord reward gateway handles only configured reward commands in its designated channel. It does not synchronize Discord roles or treat a Discord display name as an access key; reward reservations require an explicit Discord-to-Steam mapping in the Rewards config.
 ## Standard role templates
 
 Owners can create a safe starting role with `!ova role template apply <template> [newRoleName]`. Templates never overwrite an existing role. Inspect the result before assigning it:

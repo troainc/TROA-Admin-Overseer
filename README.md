@@ -4,6 +4,8 @@
 
 TROA Admin Overseer gives server owners one clear place for player support, moderation, staff cases, roles, safe grid tools, events, rewards, auditing, and webhooks.
 
+Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
+
 The current version is **v0.8.51**. See the [release index](docs/RELEASES.md) for the version summary and package contents. Version 0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values and loads configured routes/reward lists without duplicating built-in defaults.
 
 ## What it does
@@ -123,9 +125,11 @@ matching `/adminoverseer` slash commands.
 To migrate Monitor+ reservations and voter history, start Overseer once to create its Rewards config,
 stop Torch, set `LegacyMonitorStorageDirectory` to the Monitor+ plugin storage directory, review the
 `VoteReward` item bundle, then start a game session and confirm the import count in the Overseer log
-before removing the old Monitor+ installation. The import is repeat-safe; imported pending claims use
-the configured Overseer bundle. Monitor+ account linking and its optional economy balance connector
-remain available for other features.
+before removing old Monitor+ reward files. The import is repeat-safe; imported pending claims use the
+configured Overseer bundle. Monitor+ v1.1.5K8 retains account linking and becomes the Discord command
+transport: it forwards owner-plugin commands and returns their replies while leaving each plugin's
+features and webhook delivery with its owner. Econ+ owns economy and balance; GridVault owns grid
+backup and recovery.
 
 ## More documentation
 
