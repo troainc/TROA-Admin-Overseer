@@ -1,6 +1,6 @@
 # TROA Admin Overseer
 
-Current release: **v0.8.53**. Owner-only `!ova restart` waits for a successful world save, then gives it a 60-second buffer before restarting Torch. Failed, timed-out, or already-running saves cancel the restart.
+Current release: **v0.8.54**. Owner-only `!ova restart` waits for a successful world save, then gives it a 60-second buffer before restarting Torch. On the next qualifying startup, it logs “Restart and Save were successful.” in green where Torch's console honors ANSI colors and sends a green success embed through the configured Server webhook route. Failed, timed-out, or already-running saves cancel the restart.
 
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
@@ -8,7 +8,7 @@ TROA Admin Overseer gives server owners one clear place for player support, mode
 
 Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
 
-The current version is **v0.8.53**. See the [release index](docs/RELEASES.md) for version summaries and package contents. Version 0.8.52 explains how to fix malformed webhook routes; v0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values. See the [full configuration sample set](#full-configuration-examples).
+The current version is **v0.8.54**. See the [release index](docs/RELEASES.md) for version summaries and package contents. Version 0.8.52 explains how to fix malformed webhook routes; v0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values. See the [full configuration sample set](#full-configuration-examples).
 
 ## What it does
 

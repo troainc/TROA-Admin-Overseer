@@ -36,7 +36,7 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 | `!ova modules` | Owner |
 | `!ova reload` | Owner |
 | `!ova save` | Owner |
-| `!ova restart` | Owner; waits for successful save completion, then 60 seconds before restarting Torch |
+| `!ova restart` | Owner; waits for successful save completion, then 60 seconds before restarting Torch. On the next startup, logs and sends a green success confirmation through the enabled Server webhook route. |
 | `!ova schedule status|start|stop` | Owner |
 
 ### Moderation and reports
