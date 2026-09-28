@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-28 — v0.8.52 Clear webhook config errors
+
+- Webhook config errors tell owners to put each Discord URL inside its `<WebhookRoute Name="...">` block's `<Url>...</Url>` field, not directly under `<Routes>`.
+- The diagnostic points to the XML line/column where available, explains that defaults loaded and a `.bad-*` backup was created, and tells the owner to correct the route and run `!ova reload`.
+- The v0.8.52 package built with 0 warnings/errors and passed ZIP validation. Dedicated-server runtime acceptance remains pending.
+- Local package: `TROA Admin Overseer v0.8.52 - Clear Webhook Config Errors.zip`; SHA-256 `43260A7E9E288F0F3DF45B35D2252720100C9D26E2FF9AF3E943C5211466D58B`.
+
 ## 2026-09-28 — v0.8.51 XML URL configuration repair
 
 - Documents the automatic repair of unescaped ampersands in Webhooks and Rewards XML values, preserving multi-parameter URLs and other settings.

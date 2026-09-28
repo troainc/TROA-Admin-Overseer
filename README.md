@@ -1,5 +1,7 @@
 # TROA Admin Overseer
 
+Current release: **v0.8.52**. Malformed webhook config errors now explain that each Discord URL belongs inside the matching route's `<Url>...</Url>` field. Correct the route and run `!ova reload`.
+
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
 TROA Admin Overseer gives server owners one clear place for player support, moderation, staff cases, roles, safe grid tools, events, rewards, auditing, and webhooks.
