@@ -8,7 +8,7 @@ TROA Admin Overseer gives server owners one clear place for player support, mode
 
 Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
 
-The current version is **v0.8.51**. See the [release index](docs/RELEASES.md) for the version summary and package contents. Version 0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values and loads configured routes/reward lists without duplicating built-in defaults.
+The current version is **v0.8.52**. See the [release index](docs/RELEASES.md) for the version summary and package contents. Version 0.8.52 explains how to fix malformed webhook routes. Version 0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values and loads configured routes/reward lists without duplicating built-in defaults. See the public [Webhooks config example](TROA%20Admin%20Overseer%20Webhooks.cfg.example) for the correct URL field.
 
 ## What it does
 

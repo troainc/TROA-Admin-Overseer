@@ -8,7 +8,7 @@ Webhook routes are outbound event delivery. The optional inbound Discord bot use
 reservations is configured separately in `TROA Admin Overseer Rewards.cfg`; configuring a webhook
 does not enable bot commands.
 
-Edit the file in the plugin `StoragePath` shown at startup. URLs with query parameters use `&amp;` separators in XML; v0.8.51 automatically repairs bare ampersands and preserves the route configuration.
+Use the [public Webhooks config example](../TROA%20Admin%20Overseer%20Webhooks.cfg.example) as a template. Edit the live file in the plugin `StoragePath` shown at startup. URLs with query parameters use `&amp;` separators in XML; v0.8.51 automatically repairs bare ampersands and preserves the route configuration. v0.8.52 gives direct route repair instructions for malformed XML.
 
 ## Safe setup
 

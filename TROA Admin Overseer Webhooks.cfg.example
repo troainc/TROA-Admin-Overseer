@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebhookConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Enabled>true</Enabled>
+  <Routes>
+    <WebhookRoute Name="audit">
+      <Url />
+      <CriticalMentionRoleId />
+      <Enabled>false</Enabled>
+    </WebhookRoute>
+    <WebhookRoute Name="moderation">
+      <!-- Paste the channel's Discord webhook URL between the Url tags. Keep this route disabled until ready. -->
+      <Url>PASTE_NEW_DISCORD_WEBHOOK_URL_HERE</Url>
+      <CriticalMentionRoleId />
+      <Enabled>false</Enabled>
+    </WebhookRoute>
+    <WebhookRoute Name="joins"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+    <WebhookRoute Name="performance"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+    <WebhookRoute Name="rewards"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+    <WebhookRoute Name="limits"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+    <WebhookRoute Name="server"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+    <WebhookRoute Name="critical"><Url /><CriticalMentionRoleId /><Enabled>false</Enabled></WebhookRoute>
+  </Routes>
+  <Mappings>
+    <CategoryRoute Category="Server" Route="server" />
+    <CategoryRoute Category="Audit" Route="audit" />
+    <CategoryRoute Category="Connections" Route="joins" />
+    <CategoryRoute Category="Moderation" Route="moderation" />
+    <CategoryRoute Category="PlayerTools" Route="audit" />
+    <CategoryRoute Category="GridTools" Route="audit" />
+    <CategoryRoute Category="Limits" Route="limits" />
+    <CategoryRoute Category="Performance" Route="performance" />
+    <CategoryRoute Category="Rewards" Route="rewards" />
+    <CategoryRoute Category="Broadcast" Route="server" />
+  </Mappings>
+</WebhookConfig>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-28 — v0.8.52 Webhooks config example
+
+- Added a public, secret-free Webhooks config example showing URLs in the correct <WebhookRoute> <Url> field.
+- Linked the example from the README and Webhooks guide; corrected the README current version to v0.8.52.
+
 ## 2026-09-28 — v0.8.52 Clear webhook config errors
 
 - Webhook config errors tell owners to put each Discord URL inside its `<WebhookRoute Name="...">` block's `<Url>...</Url>` field, not directly under `<Routes>`.
