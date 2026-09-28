@@ -1,6 +1,6 @@
 # TROA Admin Overseer
 
-Current release: **v0.8.52**. Malformed webhook config errors now explain that each Discord URL belongs inside the matching route's `<Url>...</Url>` field. Correct the route and run `!ova reload`.
+Current release: **v0.8.53**. Owner-only `!ova restart` waits for a successful world save, then gives it a 60-second buffer before restarting Torch. Failed, timed-out, or already-running saves cancel the restart.
 
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
@@ -8,7 +8,7 @@ TROA Admin Overseer gives server owners one clear place for player support, mode
 
 Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
 
-The current version is **v0.8.52**. See the [release index](docs/RELEASES.md) for the version summary and package contents. Version 0.8.52 explains how to fix malformed webhook routes. Version 0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values and loads configured routes/reward lists without duplicating built-in defaults. See the public [Webhooks config example](TROA%20Admin%20Overseer%20Webhooks.cfg.example) for the correct URL field.
+The current version is **v0.8.53**. See the [release index](docs/RELEASES.md) for version summaries and package contents. Version 0.8.52 explains how to fix malformed webhook routes; v0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values. See the [full configuration sample set](#full-configuration-examples).
 
 ## What it does
 
@@ -16,7 +16,7 @@ The current version is **v0.8.52**. See the [release index](docs/RELEASES.md) fo
 |---|---|
 | Player support | MOTD, ticket link, reports, daily/playtime rewards, vote claims, reward history, limits feedback, owned-grid recovery |
 | Staff operations | Player dossiers, moderation, cases, roles, permissions, grid tools, audit history |
-| Owner operations | Config reload, save, maintenance status, announcements, scheduled summaries, exports |
+| Owner operations | Config reload, save, save-confirmed delayed restart, maintenance status, announcements, scheduled summaries, exports |
 | Events | Event roles, announcements, temporary MOTD, check-ins, rewards, attendee export |
 
 It deliberately does **not** delete grids, manage GridVault/Hangar storage, perform Cleaner+ cleanup/restarts, or bundle native/third-party DLLs.
@@ -59,6 +59,7 @@ The master config is `TROA Admin Overseer.cfg`, beside your other server `.cfg` 
 - `!ova opssummary 100` — operational totals by category.
 - `!ova maintenance on <message>` — show a persisted maintenance banner.
 - `!ova save` — request a Torch save.
+- `!ova restart` — wait for a successful Torch save, pause for 60 seconds, then request restart. A failed, timed-out, or already-running save cancels the restart.
 
 ## Everyday workflows
 
@@ -107,7 +108,7 @@ For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSumm
 
 ## Full configuration examples
 
-The public repository includes a complete, secret-free sample for every v0.8.52 configuration file. Copy the files you need into Overseer's plugin `StoragePath` and remove the `.example` suffix. Review all settings before use. Private keys, tokens, webhook URLs, channel IDs, and account IDs are blank or placeholders; replace them privately and keep completed configs out of public repositories. Reward integrations, limits, and webhooks are disabled in the samples. Review connection privacy settings before enabling IP or geolocation features.
+The public repository includes a complete, secret-free sample for every current configuration file. Copy the files you need into Overseer's plugin `StoragePath` and remove the `.example` suffix. Review all settings before use. Private keys, tokens, webhook URLs, channel IDs, and account IDs are blank or placeholders; replace them privately and keep completed configs out of public repositories. Reward integrations, limits, and webhooks are disabled in the samples. Review connection privacy settings before enabling IP or geolocation features.
 
 - [Master](TROA%20Admin%20Overseer.cfg.example) · [Webhooks](TROA%20Admin%20Overseer%20Webhooks.cfg.example) · [Moderation](TROA%20Admin%20Overseer%20Moderation.cfg.example) · [Broadcast](TROA%20Admin%20Overseer%20Broadcast.cfg.example)
 - [Rewards](TROA%20Admin%20Overseer%20Rewards.cfg.example) · [Limits](TROA%20Admin%20Overseer%20Limits.cfg.example) · [Connections](TROA%20Admin%20Overseer%20Connections.cfg.example) · [Audit](TROA%20Admin%20Overseer%20Audit.cfg.example)

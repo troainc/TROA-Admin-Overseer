@@ -6,6 +6,8 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.53 | Save-Confirmed Delayed Restart | Owner-only `!ova restart` waits for a successful save, then waits 60 seconds before restarting Torch. Build: 0 warnings/errors; ZIP verified; dedicated-server runtime acceptance pending. |
+| v0.8.52 | Clear Webhook Config Errors | Logs actionable instructions when the Webhooks XML is malformed. |
 | v0.8.51 | XML Configuration Repair | Repairs unescaped URL ampersands and ensures configured Webhooks routes and Rewards lists replace defaults. |
 | v0.8.50 | Consolidated Discord Vote Rewards | Discord vote reservations, persistent claims/history, voter leaderboard, and repeat-safe Monitor+ migration. |
 | v0.8.49 | Automatic Block Catalogue | Complete vanilla-and-mod subtype CSV refreshed at every server startup in the plugin data folder. |

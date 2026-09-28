@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-28 — v0.8.53 Save-confirmed delayed restart
+
+- Added owner-only `!ova restart`: await successful Torch world-save completion, wait 60 seconds, then restart Torch.
+- A save already in progress, failure, timeout, or exception cancels the restart. Duplicate restart sequences are rejected.
+- Package build passed with 0 warnings and 0 errors after disabling unavailable NuGet audit feed lookup for the offline build; ZIP contains only `Overseer.dll` and `manifest.xml`. Dedicated-server runtime acceptance remains pending.
+- Local package: `TROA Admin Overseer v0.8.53 - Save Confirmed Delayed Restart.zip`; SHA-256 `9A43697C0583D0A9C1614B44B6927F630FFB1FB9AA5C306E0EAF6236C1939969`.
+
 ## 2026-09-28 — v0.8.52 Full public configuration examples
 
 - Added secret-free examples for all eight v0.8.52 config files, not only Webhooks.
