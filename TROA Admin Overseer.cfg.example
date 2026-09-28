@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OverseerConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ServerName>My Space Engineers Server</ServerName><CommandRoot>ov</CommandRoot><TicketPortalUrlTemplate />
+  <EnforceCustomPermissions>false</EnforceCustomPermissions><RequireSecondStaffApprovalForTransfers>false</RequireSecondStaffApprovalForTransfers>
+  <MaintenanceModeEnabled>false</MaintenanceModeEnabled><OperationsSummaryEnabled>false</OperationsSummaryEnabled><OperationsSummaryIntervalHours>24</OperationsSummaryIntervalHours><MaintenanceMessage />
+  <PlayerGridToolsEnabled>true</PlayerGridToolsEnabled><PlayerGridToolsCooldownMinutes>10</PlayerGridToolsCooldownMinutes><PlayerGridToolsMaxPcu>20000</PlayerGridToolsMaxPcu><Modules />
+</OverseerConfig>

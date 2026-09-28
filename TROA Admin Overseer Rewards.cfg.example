@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RewardsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Enabled>false</Enabled><DailyEnabled>true</DailyEnabled><DailyCooldownHours>24</DailyCooldownHours>
+  <DailyReward><RewardItem><TypeId>MyObjectBuilder_Ingot</TypeId><SubtypeId>Iron</SubtypeId><Amount>500</Amount></RewardItem></DailyReward>
+  <DailyStreakEnabled>false</DailyStreakEnabled><DailyStreakMilestone>7</DailyStreakMilestone><DailyStreakReward><RewardItem><TypeId>MyObjectBuilder_Component</TypeId><SubtypeId>SteelPlate</SubtypeId><Amount>25</Amount></RewardItem></DailyStreakReward>
+  <PlaytimeEnabled>false</PlaytimeEnabled><PlaytimeIntervalMinutes>60</PlaytimeIntervalMinutes><PlaytimeReward><RewardItem><TypeId>MyObjectBuilder_Ingot</TypeId><SubtypeId>Iron</SubtypeId><Amount>100</Amount></RewardItem></PlaytimeReward>
+  <VoteSiteEnabled>false</VoteSiteEnabled><SpaceEngineersComApiKey /><VoteReward><RewardItem><TypeId>MyObjectBuilder_Ingot</TypeId><SubtypeId>Iron</SubtypeId><Amount>1000</Amount></RewardItem></VoteReward>
+  <VoteLinks><string>https://space-engineers.com/server/YOUR_SERVER_ID/</string></VoteLinks>
+  <DiscordRewardsEnabled>false</DiscordRewardsEnabled><DiscordBotToken /><DiscordCommandChannelId /><DiscordCommandPrefix>!</DiscordCommandPrefix><DiscordReconnectDelaySeconds>5</DiscordReconnectDelaySeconds><WebhookUsername>TROA Admin Overseer</WebhookUsername>
+  <DiscordSteamMappings><string>YOUR_DISCORD_USER_ID:YOUR_STEAM_ID_64</string></DiscordSteamMappings><LegacyMonitorStorageDirectory />
+  <VoteLeaderboardEnabled>true</VoteLeaderboardEnabled><VoteLeaderboardCount>10</VoteLeaderboardCount>
+</RewardsConfig>

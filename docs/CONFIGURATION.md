@@ -6,6 +6,9 @@ The active location is the plugin `StoragePath` printed at startup. XML URL quer
 
 To recover settings already reset by an older build, stop Torch and restore the desired `.bad-*` backup over its matching TROA-prefixed config file, then restart v0.8.51. Keep config backups private because they may contain credentials.
 
+## Downloadable v0.8.52 samples
+
+Secret-free examples for all eight configuration files are available in the repository root: [master](../TROA%20Admin%20Overseer.cfg.example), [webhooks](../TROA%20Admin%20Overseer%20Webhooks.cfg.example), [moderation](../TROA%20Admin%20Overseer%20Moderation.cfg.example), [broadcast](../TROA%20Admin%20Overseer%20Broadcast.cfg.example), [rewards](../TROA%20Admin%20Overseer%20Rewards.cfg.example), [limits](../TROA%20Admin%20Overseer%20Limits.cfg.example), [connections](../TROA%20Admin%20Overseer%20Connections.cfg.example), and [audit](../TROA%20Admin%20Overseer%20Audit.cfg.example). Remove `.example` when copying into plugin storage. Replace placeholders privately; never publish real tokens, IDs, or webhook URLs.
 ## Files
 
 | File | Purpose | Safe default |

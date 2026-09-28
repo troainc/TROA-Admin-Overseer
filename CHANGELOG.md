@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-28 — v0.8.52 Full public configuration examples
+
+- Added secret-free examples for all eight v0.8.52 config files, not only Webhooks.
+- Linked the full set from the README and documented placeholders and private secrets.
+
 ## 2026-09-28 — v0.8.52 Webhooks config example
 
 - Added a public, secret-free Webhooks config example showing URLs in the correct <WebhookRoute> <Url> field.

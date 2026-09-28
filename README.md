@@ -105,6 +105,12 @@ Edit the TROA-prefixed file in the plugin's `StoragePath` shown in the startup l
 
 For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSummaryIntervalHours` to `1–168`. Summaries flow through the Audit webhook route.
 
+## Full configuration examples
+
+The public repository includes a complete, secret-free sample for every v0.8.52 configuration file. Copy the files you need into Overseer's plugin `StoragePath` and remove the `.example` suffix. Review all settings before use. Private keys, tokens, webhook URLs, channel IDs, and account IDs are blank or placeholders; replace them privately and keep completed configs out of public repositories. Reward integrations, limits, and webhooks are disabled in the samples. Review connection privacy settings before enabling IP or geolocation features.
+
+- [Master](TROA%20Admin%20Overseer.cfg.example) · [Webhooks](TROA%20Admin%20Overseer%20Webhooks.cfg.example) · [Moderation](TROA%20Admin%20Overseer%20Moderation.cfg.example) · [Broadcast](TROA%20Admin%20Overseer%20Broadcast.cfg.example)
+- [Rewards](TROA%20Admin%20Overseer%20Rewards.cfg.example) · [Limits](TROA%20Admin%20Overseer%20Limits.cfg.example) · [Connections](TROA%20Admin%20Overseer%20Connections.cfg.example) · [Audit](TROA%20Admin%20Overseer%20Audit.cfg.example)
 ## Configuration files
 
 - `TROA Admin Overseer.cfg` — server identity, safety, maintenance, policy, summaries.

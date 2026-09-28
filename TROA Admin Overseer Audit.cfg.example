@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuditConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><LogCommands>true</LogCommands><LogChat>false</LogChat><LogModerationEvents>true</LogModerationEvents><CommandPrefix>!</CommandPrefix></AuditConfig>

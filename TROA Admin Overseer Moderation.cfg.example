@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModerationConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><UnbanSweepSeconds>60</UnbanSweepSeconds><AppealUrlTemplate /><WarningEscalationCount>0</WarningEscalationCount><WarningEscalationBanDuration>7d</WarningEscalationBanDuration><DefaultKickReason>Kicked by an administrator</DefaultKickReason></ModerationConfig>
