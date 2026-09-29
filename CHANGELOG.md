@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-29 — v0.8.55 Restart countdown
+
+- After a successful save, owner-only `!ova restart` announces 60, 30, 10, 5, 4, 3, 2, and 1 seconds remaining in global in-game chat and through the configured Server webhook route.
+- Torch restarts 60 seconds after save completion; announcement dispatch does not add time to the countdown. Failed, timed-out, or already-running saves still cancel the restart.
+- The next-startup green “Restart and Save were successful.” confirmation remains in place. Build/package passed with 0 warnings and 0 errors; dedicated-server runtime acceptance is pending.
+- Local package: `TROA Admin Overseer v0.8.55 - Restart Countdown.zip`; SHA-256 `CF710825BD47AFCABDD11A3C6B4D007592ECE27CC664ABF8C39C8F8410F3EC1F`.
+
 ## 2026-09-28 — v0.8.54 Restart and save confirmation
 
 - After `!ova restart` confirms the save and completes its 60-second delay, Overseer persists a one-time startup confirmation marker before asking Torch to restart.
