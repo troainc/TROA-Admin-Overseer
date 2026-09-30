@@ -1,6 +1,6 @@
 # TROA Admin Overseer
 
-Current release: **v0.8.55**. Owner-only `!ova restart` waits for a successful world save, then announces 60, 30, 10, 5, 4, 3, 2, and 1 seconds remaining in global game chat and through the configured Server webhook route. Torch restarts 60 seconds after the save completes. On the next qualifying startup, it logs “Restart and Save were successful.” in green where Torch's console honors ANSI colors and sends a green success embed through the configured Server webhook route. Failed, timed-out, or already-running saves cancel the restart.
+Current release: **v0.8.56**. Rewards include a named bundle catalog that Overseer fills with registered vanilla and modded physical items while preserving owner edits, configurable daily/playtime/travel milestones, player progress, and offline admin-grant queuing. Players use `!ov rewards progress`; admins use `!ova rewards list`, `!ova rewards preview <rewardId>`, and `!ova rewards grant <player> <rewardId>`. Vote claims, reward data, and reward commands remain owned by Admin Overseer. Owner-only `!ova restart` waits for a successful world save, then announces 60, 30, 10, 5, 4, 3, 2, and 1 seconds remaining in global game chat and through the configured Server webhook route. Torch restarts 60 seconds after the save completes. On the next qualifying startup, it logs “Restart and Save were successful.” in green where Torch's console honors ANSI colors and sends a green success embed through the configured Server webhook route. Failed, timed-out, or already-running saves cancel the restart.
 
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
@@ -8,7 +8,7 @@ TROA Admin Overseer gives server owners one clear place for player support, mode
 
 Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
 
-The current version is **v0.8.55**. See the [release index](docs/RELEASES.md) for version summaries and package contents. Version 0.8.52 explains how to fix malformed webhook routes; v0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values. See the [full configuration sample set](#full-configuration-examples).
+The current version is **v0.8.56**. See the [release index](docs/RELEASES.md) for version summaries and package contents. Version 0.8.52 explains how to fix malformed webhook routes; v0.8.51 repairs raw ampersands in Webhooks and Rewards XML URL values. See the [full configuration sample set](#full-configuration-examples).
 
 ## What it does
 
@@ -123,13 +123,13 @@ The public repository includes a complete, secret-free sample for every current 
 - `TROA Admin Overseer Connections.cfg` — session/network history settings.
 - `TROA Admin Overseer Audit.cfg` — audit controls.
 
-### Rewards and Monitor+ migration
+### Rewards catalog and Monitor+ migration
 
-Admin Overseer v0.8.50 owns voting and rewards. Players use `!ov daily`, `!ov vote`, `!ov claim`,
-`!ov rewards`, and `!ov topvoters`; admins grant bundles with `!ova reward <player>`. Linked Discord
+Admin Overseer owns voting and rewards. The reward catalog at `Instance/TROA Admin Overseer/Rewards/Rewards.csv` is populated on startup with registered vanilla and modded physical items. Existing owner-authored rows and bundles are preserved; new server definitions are appended without replacing custom amounts or names. Repeat a `RewardId` across rows to make a multi-item bundle. Players use `!ov daily`, `!ov vote`, `!ov claim`,
+`!ov rewards`, `!ov rewards progress`, and `!ov topvoters`; admins can browse, preview, and grant catalog bundles with `!ova rewards list`, `!ova rewards preview <rewardId>`, and `!ova rewards grant <player> <rewardId>`. Offline grants stay queued until the player is online. Linked Discord
 users can reserve a vote reward with `!reward` in the configured channel or `/adminoverseer reward`,
 then claim it in-game using `!ov claim`. Discord also provides `!votelink`, `!topvoters`, and
-matching `/adminoverseer` slash commands.
+matching `/adminoverseer` slash commands. Discord reward replies are branded TROA Admin Overseer.
 
 To migrate Monitor+ reservations and voter history, start Overseer once to create its Rewards config,
 stop Torch, set `LegacyMonitorStorageDirectory` to the Monitor+ plugin storage directory, review the

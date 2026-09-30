@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-30 — v0.8.56 Rewards catalog and progression
+
+- Added an editable rewards CSV catalog that automatically includes registered vanilla and modded physical items, preserves existing owner rows, and supports multi-item bundles.
+- Added configurable daily streak, continuous-session playtime, and travel-distance milestones plus a player progress command.
+- Added admin catalog list, preview, and grant commands, including durable queuing for offline players; bounded catalog list output for servers with many modded items.
+- Branded Discord reward command responses as TROA Admin Overseer. Vote links, reservations, claims, and reward history remain owned by Admin Overseer.
+- Build and ZIP verification passed with zero warnings/errors; dedicated-server runtime acceptance remains pending.
+
 ## 2026-09-29 — v0.8.55 Restart countdown
 
 - After a successful save, owner-only `!ova restart` announces 60, 30, 10, 5, 4, 3, 2, and 1 seconds remaining in global in-game chat and through the configured Server webhook route.
