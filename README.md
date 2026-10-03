@@ -157,3 +157,7 @@ After install, verify a fresh Torch log and test `!ov help`, `!ova status`, play
 ### Automatic block catalogue
 
 After each server start or restart, the plugin writes `Instance/TROA Admin Overseer/data/block-subtypes.csv`. It lists every registered vanilla and mod block subtype plus live-use columns, so owners can prepare context-specific limits without memorising subtype IDs. `!ova limit exportcsv` refreshes it on demand.
+
+## Documentation
+
+Use [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for installation, [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md) and the full configuration samples for setup, [`docs/COMMANDS.md`](docs/COMMANDS.md) for commands, [`docs/PERMISSIONS.md`](docs/PERMISSIONS.md) for access, and [`docs/WEBHOOKS.md`](docs/WEBHOOKS.md) for webhook routing. The release index and README describe current feature/version boundaries.

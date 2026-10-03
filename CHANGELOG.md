@@ -96,3 +96,7 @@ Today’s release work consolidated TROA Admin Overseer into a full server-opera
 - Added JSON persistence, auditing, webhooks, moderation, player tools, grid tools, rewards, role foundations, limits, diagnostics, and deployment safeguards.
 
 For the current owner guide, see [README.md](README.md). For concise release history, see [docs/RELEASES.md](docs/RELEASES.md).
+
+## Documentation navigation - 2026-10-03
+
+- Added direct README navigation to deployment, configuration, commands, permissions, and webhook guides.
