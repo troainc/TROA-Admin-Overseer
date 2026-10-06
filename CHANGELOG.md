@@ -1,3 +1,9 @@
+## Public operator documentation expansion - 2026-10-06
+
+- Added a detailed user guide under docs/USER_GUIDE.md and linked it from the documentation index and root README.
+- Documented current setup, feature ownership, command/config references, operational workflows, safety boundaries, and version/status limitations using the published behavior.
+- Added repository-local context, contribution instructions, and a dated documentation log entry. No private source or credentials are included.
+
 # Changelog
 
 ## 2026-09-30 — v0.8.56 Rewards catalog and progression
@@ -100,3 +106,9 @@ For the current owner guide, see [README.md](README.md). For concise release his
 ## Documentation navigation - 2026-10-03
 
 - Added direct README navigation to deployment, configuration, commands, permissions, and webhook guides.
+## Documentation correction - 2026-10-06
+
+- Clarified that Admin Overseer owns its save-confirmed restart workflow and Monitor+ is only its authorized command transport.
+- Updated public roadmap ownership and release-gated rewards/restart priorities; current public version remains v0.8.56.
+- Added a root-level `ROADMAP.md` and linked it from the README for easier discovery.
+

@@ -4,6 +4,8 @@ Current release: **v0.8.56**. Rewards include a named bundle catalog that Overse
 
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
+See the [public roadmap](ROADMAP.md) for ownership boundaries and release-gated priorities. The same roadmap is available under [docs](docs/ROADMAP.md).
+
 TROA Admin Overseer gives server owners one clear place for player support, moderation, staff cases, roles, safe grid tools, events, rewards, auditing, and webhooks.
 
 Admin Overseer owns its command behavior, reward data, and configured webhook routes. Monitor+ can transport Discord `!ov` and `!ova` commands to Torch and return their replies; it does not take over or re-post Admin Overseer's webhook events. Econ+ owns balance commands, while GridVault owns grid backups and recovery.
@@ -19,7 +21,7 @@ The current version is **v0.8.56**. See the [release index](docs/RELEASES.md) fo
 | Owner operations | Config reload, save, save-confirmed delayed restart, maintenance status, announcements, scheduled summaries, exports |
 | Events | Event roles, announcements, temporary MOTD, check-ins, rewards, attendee export |
 
-It deliberately does **not** delete grids, manage GridVault/Hangar storage, perform Cleaner+ cleanup/restarts, or bundle native/third-party DLLs.
+It deliberately does **not** delete grids, manage GridVault/Hangar storage, perform Cleaner+ cleanup, or bundle native/third-party DLLs. Admin Overseer owns its save-confirmed administrative restart workflow; Monitor+ can transport authorized commands and replies but does not own restart behavior.
 
 ## Install or upgrade
 
@@ -161,3 +163,9 @@ After each server start or restart, the plugin writes `Instance/TROA Admin Overs
 ## Documentation
 
 Use [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for installation, [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md) and the full configuration samples for setup, [`docs/COMMANDS.md`](docs/COMMANDS.md) for commands, [`docs/PERMISSIONS.md`](docs/PERMISSIONS.md) for access, and [`docs/WEBHOOKS.md`](docs/WEBHOOKS.md) for webhook routing. The release index and README describe current feature/version boundaries.
+
+
+## Documentation
+
+Use the [documentation index](docs/README.md) and [detailed operator guide](docs/USER_GUIDE.md) for setup, everyday use, feature behavior, and troubleshooting. Check the changelog and the current release before applying version-specific instructions.
+
