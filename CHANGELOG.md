@@ -1,10 +1,17 @@
+# Changelog
+
+## Unreleased — v0.8.58 local candidate (not published)
+
+- Added the initial Bifrost Panel - SE Torch dashboard, hosted inside Admin Overseer and connected to Torch's live plugin manager.
+- The panel binds to loopback only (default `http://127.0.0.1:18750/`) and shows loaded Torch plugin names, versions, and states. `BifrostPanelEnabled` and `BifrostPanelPort` are the master-config controls.
+- This candidate is read-only. Plugin-specific settings/actions are not connected yet; each owning plugin must provide its own validated adapter. Runtime acceptance on a dedicated Torch server is pending.
+- Local build and package validation passed with 0 warnings and 0 errors; the candidate has not been published as a GitHub release.
+
 ## Public operator documentation expansion - 2026-10-06
 
 - Added a detailed user guide under docs/USER_GUIDE.md and linked it from the documentation index and root README.
 - Documented current setup, feature ownership, command/config references, operational workflows, safety boundaries, and version/status limitations using the published behavior.
 - Added repository-local context, contribution instructions, and a dated documentation log entry. No private source or credentials are included.
-
-# Changelog
 
 ## 2026-09-30 — v0.8.56 Rewards catalog and progression
 
