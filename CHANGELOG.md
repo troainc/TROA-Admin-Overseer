@@ -1,4 +1,19 @@
+## v0.8.61 — Bifrost live plugin dashboards
+
+- Expanded every detected TROA plugin workspace with visual live metrics, version/state/registered-command cards, plugin-owned command shortcuts, readable formatting, and responsive desktop/mobile styling.
+- GridVault displays live world grids, unique stored grids, retained and incomplete backups, cleanup archives, stored size, latest backup/grid, queue/pass status, and a 14-day history chart.
+- Econ+ exposes player-account and credit/treasury totals plus open contracts. Hangar+ exposes stored grids, market listings/bids, and recent storage activity where owner data is available. Other workspaces show operational readings supplied by their owning plugin APIs.
+- Corrected the command browser to use paths from Torch's registered command tree.
+- Release package validation passed. Dedicated Torch runtime and device acceptance are unverified.
 # Changelog
+## 2026-10-08 — v0.8.62 Bifrost native live dashboards
+
+- Repaired embedded workspace CSS that could appear as page text.
+- Fixed command authorization lookup to mirror Torch's prefix stripping while preserving the prefixed command for execution.
+- Added 10-second live plugin workspace refresh, native trend/bar charts, and percentage/ratio gauges without a Grafana installation.
+- Cleaner+ visualizes tracked/concealed/flagged grids, simulation ratio, queued removals, and cleanup history. Econ+ adds recent transaction/recovery totals and completed volume. Existing Profiler+, GridVault, and Hangar+ metrics remain sourced from owner data.
+- Build succeeded with 0 warnings and 0 errors; release ZIP verification passed. Dedicated Torch/browser runtime acceptance is unverified.
+
 ## 2026-10-08 — v0.8.60 Bifrost TROA plugin workspaces (local candidate; not published)
 
 - Added TROA-only plugin workspaces with configuration editing saved/reloaded through each recognized plugin's existing configuration path; non-TROA tools such as AMPutilities are omitted.
@@ -127,4 +142,3 @@ For the current owner guide, see [README.md](README.md). For concise release his
 - Clarified that Admin Overseer owns its save-confirmed restart workflow and Monitor+ is only its authorized command transport.
 - Updated public roadmap ownership and release-gated rewards/restart priorities; current public version remains v0.8.56.
 - Added a root-level `ROADMAP.md` and linked it from the README for easier discovery.
-
