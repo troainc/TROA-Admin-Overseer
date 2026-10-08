@@ -2,7 +2,7 @@
 
 Current release: **v0.8.56**. Rewards include a named bundle catalog that Overseer fills with registered vanilla and modded physical items while preserving owner edits, configurable daily/playtime/travel milestones, player progress, and offline admin-grant queuing. Players use `!ov rewards progress`; admins use `!ova rewards list`, `!ova rewards preview <rewardId>`, and `!ova rewards grant <player> <rewardId>`. Vote claims, reward data, and reward commands remain owned by Admin Overseer. Owner-only `!ova restart` waits for a successful world save, then announces 60, 30, 10, 5, 4, 3, 2, and 1 seconds remaining in global game chat and through the configured Server webhook route. Torch restarts 60 seconds after the save completes. On the next qualifying startup, it logs “Restart and Save were successful.” in green where Torch's console honors ANSI colors and sends a green success embed through the configured Server webhook route. Failed, timed-out, or already-running saves cancel the restart.
 
-**Upcoming local candidate — v0.8.58, not yet published:** Bifrost Panel - SE Torch is a loopback-only dashboard hosted by Admin Overseer inside Torch. It reads Torch's live plugin manager and displays loaded plugin names, versions, and states at `http://127.0.0.1:18750/` by default. This candidate is read-only; it does not edit plugin configuration or provide plugin actions. Each plugin must supply its own validated adapter before its settings can be managed through the GUI. Dedicated-server runtime acceptance is still pending.
+**Upcoming candidate — v0.8.58, not yet published:** Bifrost Panel - SE Torch is hosted by Admin Overseer inside Torch and reads Torch's live plugin manager. It defaults to `http://127.0.0.1:18750/`; a separate `TROA Admin Overseer Webserver.cfg` controls its listener and advertised URL. All users sign in with individual accounts: the owner bootstraps once, then creates Admin and Moderator accounts. Passwords are stored as salted PBKDF2 hashes; use an HTTPS reverse proxy for untrusted networks. This candidate includes live plugin status and owner account management. Per-plugin config Save/Reload controls require validated integrations from each owning plugin and are not available yet. Dedicated-server runtime acceptance is still pending.
 
 > A single-DLL Torch administration and server-operations plugin for Space Engineers dedicated servers.
 
@@ -30,7 +30,7 @@ It deliberately does **not** delete grids, manage GridVault/Hangar storage, perf
 1. Stop the Torch server.
 2. In the server `Plugins` folder, remove every older TROA Admin Overseer ZIP.
 3. Install exactly one newest `TROA Admin Overseer v… .zip`.
-4. Start Torch. The ZIP contains only `Overseer.dll` and `manifest.xml`.
+4. Start Torch. The ZIP contains only `Overseer.dll` and `manifest.xml`. After the game session loads, the candidate logs a green “Bifrost Webpanel is online and ready to use” message only when its listener is running.
 5. Confirm the startup log says **TROA Admin Overseer** loaded without dependency warnings.
 6. Run `!ova status` in-game or from the Torch console.
 
@@ -115,7 +115,7 @@ For scheduled summaries, set `OperationsSummaryEnabled=true` and `OperationsSumm
 The public repository includes a complete, secret-free sample for every current configuration file. Copy the files you need into Overseer's plugin `StoragePath` and remove the `.example` suffix. Review all settings before use. Private keys, tokens, webhook URLs, channel IDs, and account IDs are blank or placeholders; replace them privately and keep completed configs out of public repositories. Reward integrations, limits, and webhooks are disabled in the samples. Review connection privacy settings before enabling IP or geolocation features.
 
 - [Master](TROA%20Admin%20Overseer.cfg.example) · [Webhooks](TROA%20Admin%20Overseer%20Webhooks.cfg.example) · [Moderation](TROA%20Admin%20Overseer%20Moderation.cfg.example) · [Broadcast](TROA%20Admin%20Overseer%20Broadcast.cfg.example)
-- [Rewards](TROA%20Admin%20Overseer%20Rewards.cfg.example) · [Limits](TROA%20Admin%20Overseer%20Limits.cfg.example) · [Connections](TROA%20Admin%20Overseer%20Connections.cfg.example) · [Audit](TROA%20Admin%20Overseer%20Audit.cfg.example)
+- [Rewards](TROA%20Admin%20Overseer%20Rewards.cfg.example) · [Limits](TROA%20Admin%20Overseer%20Limits.cfg.example) · [Connections](TROA%20Admin%20Overseer%20Connections.cfg.example) · [Audit](TROA%20Admin%20Overseer%20Audit.cfg.example) · [Webserver](TROA%20Admin%20Overseer%20Webserver.cfg.example)
 ## Configuration files
 
 - `TROA Admin Overseer.cfg` — server identity, safety, maintenance, policy, summaries.

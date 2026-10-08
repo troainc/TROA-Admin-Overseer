@@ -1,10 +1,12 @@
 # Changelog
 
-## Unreleased — v0.8.58 local candidate (not published)
+## Unreleased — v0.8.58 candidate (not published)
 
 - Added the initial Bifrost Panel - SE Torch dashboard, hosted inside Admin Overseer and connected to Torch's live plugin manager.
-- The panel binds to loopback only (default `http://127.0.0.1:18750/`) and shows loaded Torch plugin names, versions, and states. `BifrostPanelEnabled` and `BifrostPanelPort` are the master-config controls.
-- This candidate is read-only. Plugin-specific settings/actions are not connected yet; each owning plugin must provide its own validated adapter. Runtime acceptance on a dedicated Torch server is pending.
+- A dedicated `TROA Admin Overseer Webserver.cfg` controls the listener (`Enabled`, `BindAddress`, `Port`, `PublicUrl`) and is created beside the other Overseer configs. It defaults to loopback; use an HTTPS reverse proxy for untrusted networks.
+- After the game session loads, log a green “Bifrost Webpanel is online and ready to use” message and publish the Server success event only if the listener started successfully.
+- Added one-time owner account setup, individual Owner/Admin/Moderator accounts, salted PBKDF2 password hashes, 12-hour in-memory sessions, and owner-only account creation/removal.
+- All panel endpoints require sign-in except setup-status and health checks. Per-plugin config Save/Reload remains pending owner-plugin adapters; the candidate does not directly write other plugins' files.
 - Local build and package validation passed with 0 warnings and 0 errors; the candidate has not been published as a GitHub release.
 
 ## Public operator documentation expansion - 2026-10-06

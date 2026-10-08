@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BifrostPanelConfig>
+  <Enabled>true</Enabled>
+  <!-- 127.0.0.1 = local only; use the server IPv4 or 0.0.0.0 for remote access. -->
+  <BindAddress>127.0.0.1</BindAddress>
+  <Port>18750</Port>
+  <!-- Optional browser URL/domain. For HTTPS, place a TLS reverse proxy in front. -->
+  <PublicUrl />
+</BifrostPanelConfig>

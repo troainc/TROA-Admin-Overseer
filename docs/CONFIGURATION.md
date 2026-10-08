@@ -6,9 +6,9 @@ The active location is the plugin `StoragePath` printed at startup. XML URL quer
 
 To recover settings already reset by an older build, stop Torch and restore the desired `.bad-*` backup over its matching TROA-prefixed config file, then restart v0.8.51. Keep config backups private because they may contain credentials.
 
-## Downloadable v0.8.52 samples
+## Downloadable config samples
 
-Secret-free examples for all eight configuration files are available in the repository root: [master](../TROA%20Admin%20Overseer.cfg.example), [webhooks](../TROA%20Admin%20Overseer%20Webhooks.cfg.example), [moderation](../TROA%20Admin%20Overseer%20Moderation.cfg.example), [broadcast](../TROA%20Admin%20Overseer%20Broadcast.cfg.example), [rewards](../TROA%20Admin%20Overseer%20Rewards.cfg.example), [limits](../TROA%20Admin%20Overseer%20Limits.cfg.example), [connections](../TROA%20Admin%20Overseer%20Connections.cfg.example), and [audit](../TROA%20Admin%20Overseer%20Audit.cfg.example). Remove `.example` when copying into plugin storage. Replace placeholders privately; never publish real tokens, IDs, or webhook URLs.
+Secret-free examples for all nine configuration files are available in the repository root: [master](../TROA%20Admin%20Overseer.cfg.example), [webhooks](../TROA%20Admin%20Overseer%20Webhooks.cfg.example), [moderation](../TROA%20Admin%20Overseer%20Moderation.cfg.example), [broadcast](../TROA%20Admin%20Overseer%20Broadcast.cfg.example), [rewards](../TROA%20Admin%20Overseer%20Rewards.cfg.example), [limits](../TROA%20Admin%20Overseer%20Limits.cfg.example), [connections](../TROA%20Admin%20Overseer%20Connections.cfg.example), [audit](../TROA%20Admin%20Overseer%20Audit.cfg.example), and [webserver](../TROA%20Admin%20Overseer%20Webserver.cfg.example). Remove `.example` when copying into plugin storage. Replace placeholders privately; never publish real tokens, IDs, or webhook URLs.
 ## Files
 
 | File | Purpose | Safe default |
@@ -21,6 +21,7 @@ Secret-free examples for all eight configuration files are available in the repo
 | `TROA Admin Overseer Limits.cfg` | Scan-based block limits | Disabled |
 | `TROA Admin Overseer Connections.cfg` | Join history and optional IP/geo lookups | Review privacy settings |
 | `TROA Admin Overseer Audit.cfg` | Command/chat auditing | Command auditing on; chat off |
+| `TROA Admin Overseer Webserver.cfg` | Bifrost Panel web server | Loopback only; port 18750 |
 
 ## Master config
 
@@ -89,3 +90,7 @@ Operational records are stored separately in `Instance/TROA Admin Overseer/Overs
 ### Live rule preview
 
 Use !ova limit preview [grid] to verify the exact active Grid-scope rules, context, count, cap, and action for a targeted grid. Players can run !ov limitcheck on a wholly major-owned grid under their crosshair. Both are read-only: they never alter blocks or invoke enforcement.
+
+## Bifrost Panel webserver (v0.8.58 candidate)
+
+`TROA Admin Overseer Webserver.cfg` is generated beside the other Overseer configs. `BindAddress` accepts an IP literal: `127.0.0.1` keeps access on the Torch host, a specific server IPv4 binds one interface, and `0.0.0.0` listens on all IPv4 interfaces. Set `PublicUrl` to the browser-facing address or domain; DNS must point to the server. The embedded listener uses HTTP, so use an HTTPS reverse proxy for secure domain access. All panel APIs require sign-in. On first start, create the owner account using the one-time code at `TROA Admin Overseer/BifrostPanel/OwnerSetupCode.txt` under the plugin `StoragePath`. The owner can create/remove individual Admin and Moderator accounts. Password hashes are salted PBKDF2; sessions are held in memory for 12 hours. Open the green ready URL after the game session loads. Use `!ova reload` after changing this config. Current panel features are live status and account management; each plugin must implement its own validated adapter before panel-based config Save/Reload is available.
