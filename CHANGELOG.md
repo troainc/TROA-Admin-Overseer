@@ -1,13 +1,20 @@
 # Changelog
+## 2026-10-08 — v0.8.60 Bifrost TROA plugin workspaces (local candidate; not published)
 
-## Unreleased — v0.8.58 candidate (not published)
+- Added TROA-only plugin workspaces with configuration editing saved/reloaded through each recognized plugin's existing configuration path; non-TROA tools such as AMPutilities are omitted.
+- Owners and Admins can edit allowed settings; Moderators are read-only. High-impact Cleaner settings are Owner-only. Secret values remain masked, and scalar-list inputs are JSON-validated.
+- Added live operational summaries for Profiler+, Cleaner+, and GridVault when their data APIs are available. The panel does not invent unavailable metrics; AIO Updater settings apply on its next scan. Added a searchable console for loaded TROA commands, with plugin owner, syntax, and Torch permission levels. Admin and Owner logins can submit one command at a time; Owner-level commands require the panel Owner.
+- Added the public webserver sample config and Bifrost setup/use documentation. Plugins without a safe detected save/reload path show “Integration needed.”
+- Local Release build completed with 0 warnings and 0 errors. ZIP validation confirms only `Overseer.dll` and `manifest.xml`, version 0.8.60. Dedicated Torch runtime acceptance and GitHub publication remain pending.
+
+## 2026-10-08 — v0.8.59 Bifrost Panel webserver (candidate; no GitHub release)
 
 - Added the initial Bifrost Panel - SE Torch dashboard, hosted inside Admin Overseer and connected to Torch's live plugin manager.
 - A dedicated `TROA Admin Overseer Webserver.cfg` controls the listener (`Enabled`, `BindAddress`, `Port`, `PublicUrl`) and is created beside the other Overseer configs. It defaults to loopback; use an HTTPS reverse proxy for untrusted networks.
 - After the game session loads, log a green “Bifrost Webpanel is online and ready to use” message and publish the Server success event only if the listener started successfully.
 - Added one-time owner account setup, individual Owner/Admin/Moderator accounts, salted PBKDF2 password hashes, 12-hour in-memory sessions, and owner-only account creation/removal.
 - All panel endpoints require sign-in except setup-status and health checks. Per-plugin config Save/Reload remains pending owner-plugin adapters; the candidate does not directly write other plugins' files.
-- Local build and package validation passed with 0 warnings and 0 errors; the candidate has not been published as a GitHub release.
+- Clean local Release build and package verification passed with 0 warnings and 0 errors. The local package includes the webserver config example; dedicated Torch config creation and browser access need runtime acceptance. This is not a published GitHub release.
 
 ## Public operator documentation expansion - 2026-10-06
 
