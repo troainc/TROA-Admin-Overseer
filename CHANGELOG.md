@@ -1,3 +1,8 @@
+## 2026-10-09 — Bifrost Plugin Panel operator guide
+
+- Adds an operator guide for webserver setup, owner sign-in, accounts, plugin workspaces, capability labels, data freshness, and troubleshooting.
+- Documents release-dependent availability and keeps plugin actions with their owning plugins. Documentation only; no adapter or runtime behavior change is claimed.
+
 ## v0.8.61 — Bifrost live plugin dashboards
 
 - Expanded every detected TROA plugin workspace with visual live metrics, version/state/registered-command cards, plugin-owned command shortcuts, readable formatting, and responsive desktop/mobile styling.
