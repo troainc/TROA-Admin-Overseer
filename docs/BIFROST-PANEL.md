@@ -1,5 +1,9 @@
 # Bifrost Panel - SE Torch
 
+## Legal information pages in the v0.8.89 candidate
+
+The candidate build adds public `/terms` and `/privacy` pages and footer/sign-in links. The matching [Terms of Service](TERMS-OF-SERVICE.md) and [Privacy & GDPR Notice](PRIVACY-GDPR.md) are deployment templates based on the candidate source. They are not available in the currently published binary, are not legal advice, and do not certify GDPR compliance. The Panel does not add a terms-acceptance checkbox.
+
 Bifrost Panel runs inside TROA Admin Overseer and reads the active plugin list from Torch. The panel lists plugins whose registered plugin name identifies them as TROA. AMPUtilities and other non-TROA plugins do not appear.
 
 ## Setup
