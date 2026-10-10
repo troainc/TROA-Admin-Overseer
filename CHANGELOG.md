@@ -1,3 +1,9 @@
+## 2026-10-10 — v0.8.89 legal information pages (candidate; not in published binary)
+
+- Adds deployment-draft Terms of Service and Privacy & GDPR documents modeled on the structured Bifrost Server Manager privacy notice and limited to Admin Overseer's self-hosted Panel data flows.
+- The candidate Panel adds unauthenticated `/terms` and `/privacy` pages, linked from sign-in/owner setup and the main footer. This runtime behavior is not included in the currently published binary.
+- The drafts identify current local records, session lifetime, count-based history/event caps, plugin data ownership, retention gaps, and operator security/privacy responsibilities. They require deployment verification and qualified review; they make no GDPR-compliance claim.
+
 ## 2026-10-09 — Bifrost Plugin Panel operator guide
 
 - Adds an operator guide for webserver setup, owner sign-in, accounts, plugin workspaces, capability labels, data freshness, and troubleshooting.
