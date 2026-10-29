@@ -1,6 +1,6 @@
 ## v0.8.93 candidate - Source alignment and restart coordination (not a public release)
 
-- Reconciles the closed source line with the complete v0.8.92 tree; the new package is v0.8.93 instead of the stale-base v0.8.61 prototype.
+- Documents the v0.8.93 restart-coordination candidate; the latest published package remains v0.8.56.
 - Adds a default four-hour Overseer restart schedule and owner `!ova restart status|now|cancel` controls. Overseer requests Cleaner+ deep cleanup and waits for the explicit drained state, then confirms a Torch save, sends the 60-second countdown, and requests Torch restart.
 - Failed/unavailable cleanup, timed-out cleanup, failed save, or inability to save the restart-confirmation marker cancels that cycle. Cleaner+ remains cleanup owner; Overseer owns restart timing.
 - Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the candidate.
