@@ -34,4 +34,4 @@ Owners create/remove accounts and configure role views in **Access & roles**. Ad
 - **Commands are missing or rejected:** only commands registered with Torch are eligible. Confirm plugin version, command syntax, account permissions, and plugin logs.
 - **Charts are empty/stale:** check whether that plugin exposes timestamps/history and whether the server has collected a sample in the chosen time range.
 
-See [Bifrost Plugin Panel integration contract](BIFROST-PLUGIN-PANEL-INTEGRATION.md) for developer ownership and adapter rules, and [Plugin operations audit](PLUGIN-OPERATIONS-AUDIT.md) for current documented workspace coverage. Build/package checks do not replace acceptance on the target Torch server.
+See [Bifrost Plugin Panel integration contract](BIFROST-PLUGIN-PANEL-INTEGRATION.md) for developer ownership and adapter rules, and the [public roadmap](../ROADMAP.md) for current product ownership and release priorities. Build/package checks do not replace acceptance on the target Torch server.

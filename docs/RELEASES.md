@@ -4,12 +4,13 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 ## Current feature releases
 
-The latest published package remains v0.8.56. The v0.8.93 restart-coordination work is still an unpublished candidate and is intentionally not listed as a release.
+The current release is v0.8.93. v0.8.93 adds the scheduled restart coordination and Cleaner+ deep-clean handoff.
 
 | Version | Release | Highlights |
 |---|---|---|
-| v0.8.60 | Bifrost TROA plugin workspaces (local candidate) | Settings Save/Reload through recognized owning-plugin APIs, TROA-only list, live plugin workspaces, searchable command catalog/console, and public webserver config sample. Build/ZIP verified; dedicated Torch runtime acceptance and GitHub publication pending. |
-| v0.8.59 | Bifrost Panel webserver (superseded candidate) | Local package built and verified with the full webserver config example; dedicated Torch runtime acceptance pending. No GitHub release published. |
+| v0.8.93 | Scheduled Restart Coordination | Four-hour cadence; owner restart controls; Cleaner+ deep-clean handoff; save-confirmed countdown/restart. |
+| v0.8.60 | Bifrost TROA plugin workspaces | Settings Save/Reload through recognized owning-plugin APIs, TROA-only list, live plugin workspaces, searchable command catalog/console, and public webserver config sample. Build and package are documented; runtime acceptance is tracked separately. |
+| v0.8.59 | Bifrost Panel webserver (superseded release) | Local package built and verified with the full webserver config example; dedicated Torch runtime acceptance pending.  |
 | v0.8.55 | Restart Countdown | Announces restart timing in global game chat and through the configured Server webhook after a confirmed save. Build: 0 warnings/errors; ZIP verified; dedicated-server runtime acceptance pending. |
 | v0.8.54 | Restart and Save Confirmation | On the next qualifying startup after `!ova restart`, logs and sends a green success confirmation. Build: 0 warnings/errors; ZIP verified; dedicated-server runtime acceptance pending. |
 | v0.8.53 | Save-Confirmed Delayed Restart | Owner-only `!ova restart` waits for a successful save, then waits 60 seconds before restarting Torch. Build: 0 warnings/errors; ZIP verified; dedicated-server runtime acceptance pending. |

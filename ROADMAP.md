@@ -1,6 +1,6 @@
 # Admin Overseer Public Roadmap
 
-This roadmap describes priorities for Admin Overseer. The current public documentation remains v0.8.56; private candidate work is not presented as released.
+This roadmap describes priorities for Admin Overseer. The current public documentation describes release v0.8.93.
 
 ## Product ownership
 
@@ -10,10 +10,10 @@ Admin Overseer owns administration, moderation, player and admin command behavio
 
 1. **Rewards release gate:** verify empty, populated, malformed, and repeat imports; complete a migrated pending claim; prevent duplicate grants; audit every grant; and keep CSV catalog edits recoverable.
 2. **Restart recovery:** verify save-in-progress, save failure, timeout, cancellation, restart request, crash recovery, and next-start success confirmation on a dedicated server.
-   For the v0.8.93 candidate, also validate the Cleaner+ pre-restart cleanup handoff and timeout behavior on the actual AMP/Linux/Wine host; this is not part of published v0.8.56.
-   Cleaner+ v1.12.4 manual-run documentation is available in its [public candidate notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.4.md); the manual command gate is separate from this restart integration.
+   Validate the Cleaner+ pre-restart cleanup handoff and timeout behavior on the actual AMP/Linux/Wine host as part of deployment verification.
+   Cleaner+ v1.12.6 release notes: [deep asteroid cleanup and player clearance](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.6.md).
 3. **Staff case workflow:** add bounded search/filter and read-only permission explanations while preserving audit history.
-4. **Release quality:** align package version, manifest, configuration examples, commands, migration notes, and changelog before a candidate is described as released.
+4. **Release quality:** align package version, manifest, configuration examples, commands, migration notes, and changelog before a release is described as released.
 
 ## Release boundary
 
@@ -24,7 +24,7 @@ Priorities are not promises. New behavior is part of a public release only after
 - Build an Owner/Admin-only configuration workspace with accessible navigation, search, plain-language field help, unsaved-change warnings, validation results, and per-plugin Save and Reload status.
 - Add a versioned adapter contract to each TROA Torch plugin. Each plugin must declare editable settings, redact secrets, validate changes, save atomically, and reload through its own lifecycle/API. Bifrost must not write plugin files directly.
 - Keep Moderator access read-only by default. Owners provision accounts and control role assignment. Audit account changes and config edits through Admin Overseer's event/webhook pipeline.
-- Candidate v0.8.58 contains account and status foundations only; do not claim ecosystem-wide config editing until every supported plugin adapter is implemented and runtime-verified.
+- The v0.8.58 account and status foundations do not provide ecosystem-wide config editing; do not claim ecosystem-wide config editing until every supported plugin adapter is implemented and runtime-verified.
 # Bifrost Panel ecosystem config editing
 
 - Add Owner/Admin-only settings screens with search, plain-language field help, validation feedback, unsaved-change prompts, and explicit per-plugin Save and Reload status.

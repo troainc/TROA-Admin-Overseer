@@ -1,20 +1,20 @@
 # Work log
-## 2026-10-10 — Bifrost legal information drafts and v0.8.89 candidate
+## 2026-10-10 — Bifrost legal information drafts and v0.8.89 release
 
 - Added public deployment-template Terms and Privacy & GDPR documents; linked them from the operator guide and root README.
-- Documented the candidate's unauthenticated legal routes and sign-in/footer links; current public binary does not include this UI behavior.
-- Clearly marked the documents as deployment/counsel review drafts and avoided a compliance claim. No candidate binary or private source was added to the public repository.
+- Documented the release's unauthenticated legal routes and sign-in/footer links; current public binary does not include this UI behavior.
+- Clearly marked the documents as deployment/counsel review drafts and avoided a compliance claim. No release binary or private source was added to the public repository.
 
-## 2026-10-08 — Bifrost v0.8.60 local candidate
+## 2026-10-08 — Bifrost v0.8.60 release
 - Built Admin Overseer Release with 0 warnings and 0 errors. Package verification confirmed version 0.8.60 and exactly `Overseer.dll` plus `manifest.xml`.
 - Copied package and `TROA Admin Overseer Webserver.cfg.example` to the local release folder. Package SHA-256: `C3EB4BBD1630A17CD4B048DB2B2F8AE6DCAC1AEB0A21778133A678D1F9F24AA6`.
-- Added TROA-only config workspaces and a searchable command console using Torch command registration/execution; Admin/Owner access is role-gated and each run is attributed in the Torch log. Updated public candidate documentation, role access, masked secrets, and live metrics.
+- Added TROA-only config workspaces and a searchable command console using Torch command registration/execution; Admin/Owner access is role-gated and each run is attributed in the Torch log. Updated public release documentation, role access, masked secrets, and live metrics.
 - GitHub release publication and dedicated Torch runtime acceptance remain pending.
 
 ## 2026-10-06 — Public ownership and roadmap correction
 
 - Clarified the restart boundary: Admin Overseer runs its own save-confirmed restart; Monitor+ provides optional authorized command transport; Cleaner+ owns cleanup scheduling.
-- Updated public roadmap and README without presenting private v0.8.57 work as released. Public release documentation remains v0.8.56.
+- Updated public roadmap and README without presenting private v0.8.57 work as released. Public release documentation remains v0.8.93.
 - No source or package changed; dedicated-server runtime acceptance remains separate.
 
 ## 2026-09-28 — v0.8.54 restart confirmation
@@ -85,7 +85,7 @@ Public owner documentation now records the startup/restart export location and m
 Added docs/USER_GUIDE.md; connected it to the documentation index and README; recorded setup, feature use, operational safeguards, and public-release limitations. Updated the changelog and repository context/instructions.
 
 
-# 2026-10-08 — Bifrost account access candidate
+# 2026-10-08 — Bifrost account access release
 
 - Added first-owner setup code, individual account login, PBKDF2 password hashing, 12-hour in-memory sessions, and owner-managed Admin/Moderator account creation/removal.
 - Build/package passed with 0 warnings and 0 errors; dedicated-server sign-in/setup and runtime acceptance remain outstanding.

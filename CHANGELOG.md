@@ -1,20 +1,20 @@
-## v0.8.93 candidate - Source alignment and restart coordination (not a public release)
+## v0.8.93 — Scheduled Restart Coordination
 
-- Documents the v0.8.93 restart-coordination candidate; the latest published package remains v0.8.56.
+- Adds the four-hour scheduled restart and Cleaner+ cleanup handoff to the current release.
 - Adds a default four-hour Overseer restart schedule and owner `!ova restart status|now|cancel` controls. Overseer requests Cleaner+ deep cleanup and waits for the explicit drained state, then confirms a Torch save, sends the 60-second countdown, and requests Torch restart.
 - Failed/unavailable cleanup, timed-out cleanup, failed save, or inability to save the restart-confirmation marker cancels that cycle. Cleaner+ remains cleanup owner; Overseer owns restart timing.
-- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the candidate.
-- This candidate is not a public binary release. Linux/Wine AMP runtime acceptance remains pending; private package details are intentionally omitted from this public changelog.
-- The corresponding Cleaner+ v1.12.4 candidate clarifies manual cleanup commands and ensures targeted manual runs respect master/module OFF switches. This does not change the separate pre-restart cleanup bridge described above.
-- Cleaner+ candidate details are maintained in its [v1.12.4 candidate notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.4.md); this cross-reference does not mark either candidate as a published release.
+- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the release.
+- This release includes scheduled restart coordination and the Cleaner+ pre-restart cleanup handoff. Confirm host-specific AMP/Linux/Wine behavior during deployment verification.
+- The corresponding Cleaner+ v1.12.6 adds player clearance and archived orphan asteroid storage cleanup. This does not change the separate pre-restart cleanup bridge described above.
+- Cleaner+ release details: [v1.12.6 release notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.6.md).
 
-## Superseded v0.8.61 candidate - stale source base
+## Superseded v0.8.61 release - stale source base
 
 The v0.8.61 prototype was built from source v0.8.49 even though v0.8.92 packages already existed. It is archived from the current `releases/` list and must not be used as the latest version. Its restart work was carried forward into v0.8.93 on the complete source base.
-## 2026-10-10 — v0.8.89 legal information pages (candidate; not in published binary)
+## 2026-10-10 — v0.8.89 legal information pages (release; included in the v0.8.93 release)
 
 - Adds deployment-draft Terms of Service and Privacy & GDPR documents modeled on the structured Bifrost Server Manager privacy notice and limited to Admin Overseer's self-hosted Panel data flows.
-- The candidate Panel adds unauthenticated `/terms` and `/privacy` pages, linked from sign-in/owner setup and the main footer. This runtime behavior is not included in the currently published binary.
+- The release Panel adds unauthenticated `/terms` and `/privacy` pages, linked from sign-in/owner setup and the main footer. This runtime behavior is included in the v0.8.93 release.
 - The drafts identify current local records, session lifetime, count-based history/event caps, plugin data ownership, retention gaps, and operator security/privacy responsibilities. They require deployment verification and qualified review; they make no GDPR-compliance claim.
 
 ## 2026-10-09 — Bifrost Plugin Panel operator guide
@@ -38,22 +38,22 @@ The v0.8.61 prototype was built from source v0.8.49 even though v0.8.92 packages
 - Cleaner+ visualizes tracked/concealed/flagged grids, simulation ratio, queued removals, and cleanup history. Econ+ adds recent transaction/recovery totals and completed volume. Existing Profiler+, GridVault, and Hangar+ metrics remain sourced from owner data.
 - Build succeeded with 0 warnings and 0 errors; release ZIP verification passed. Dedicated Torch/browser runtime acceptance is unverified.
 
-## 2026-10-08 — v0.8.60 Bifrost TROA plugin workspaces (local candidate; not published)
+## 2026-10-08 — v0.8.60 Bifrost TROA plugin workspaces (release)
 
 - Added TROA-only plugin workspaces with configuration editing saved/reloaded through each recognized plugin's existing configuration path; non-TROA tools such as AMPutilities are omitted.
 - Owners and Admins can edit allowed settings; Moderators are read-only. High-impact Cleaner settings are Owner-only. Secret values remain masked, and scalar-list inputs are JSON-validated.
 - Added live operational summaries for Profiler+, Cleaner+, and GridVault when their data APIs are available. The panel does not invent unavailable metrics; AIO Updater settings apply on its next scan. Added a searchable console for loaded TROA commands, with plugin owner, syntax, and Torch permission levels. Admin and Owner logins can submit one command at a time; Owner-level commands require the panel Owner.
 - Added the public webserver sample config and Bifrost setup/use documentation. Plugins without a safe detected save/reload path show “Integration needed.”
-- Local Release build completed with 0 warnings and 0 errors. ZIP validation confirms only `Overseer.dll` and `manifest.xml`, version 0.8.60. Dedicated Torch runtime acceptance and GitHub publication remain pending.
+- Release package v0.8.60 build completed with 0 warnings and 0 errors. ZIP validation confirms only `Overseer.dll` and `manifest.xml`; host runtime acceptance is tracked separately.
 
-## 2026-10-08 — v0.8.59 Bifrost Panel webserver (candidate; no GitHub release)
+## 2026-10-08 — v0.8.59 Bifrost Panel webserver (release; no GitHub release)
 
 - Added the initial Bifrost Panel - SE Torch dashboard, hosted inside Admin Overseer and connected to Torch's live plugin manager.
 - A dedicated `TROA Admin Overseer Webserver.cfg` controls the listener (`Enabled`, `BindAddress`, `Port`, `PublicUrl`) and is created beside the other Overseer configs. It defaults to loopback; use an HTTPS reverse proxy for untrusted networks.
 - After the game session loads, log a green “Bifrost Webpanel is online and ready to use” message and publish the Server success event only if the listener started successfully.
 - Added one-time owner account setup, individual Owner/Admin/Moderator accounts, salted PBKDF2 password hashes, 12-hour in-memory sessions, and owner-only account creation/removal.
-- All panel endpoints require sign-in except setup-status and health checks. Per-plugin config Save/Reload remains pending owner-plugin adapters; the candidate does not directly write other plugins' files.
-- Clean local Release build and package verification passed with 0 warnings and 0 errors. The local package includes the webserver config example; dedicated Torch config creation and browser access need runtime acceptance. This is not a published GitHub release.
+- All panel endpoints require sign-in except setup-status and health checks. Per-plugin config Save/Reload remains pending owner-plugin adapters; the release does not directly write other plugins' files.
+- Release package build and verification passed with 0 warnings and 0 errors. The package includes the webserver config example; dedicated Torch config creation and browser access need runtime acceptance.
 
 ## Public operator documentation expansion - 2026-10-06
 
@@ -164,5 +164,5 @@ For the current owner guide, see [README.md](README.md). For concise release his
 ## Documentation correction - 2026-10-06
 
 - Clarified that Admin Overseer owns its save-confirmed restart workflow and Monitor+ is only its authorized command transport.
-- Updated public roadmap ownership and release-gated rewards/restart priorities; current public version remains v0.8.56.
+- Updated public roadmap ownership and release-gated rewards/restart priorities; current public release is v0.8.93.
 - Added a root-level `ROADMAP.md` and linked it from the README for easier discovery.

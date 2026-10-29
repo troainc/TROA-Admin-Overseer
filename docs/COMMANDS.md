@@ -2,7 +2,7 @@
 
 When Monitor+ is installed, its Discord bridge can forward `!ov` and `!ova` commands to Admin Overseer and return the response. Admin Overseer still enforces Torch permissions and owns command behavior.
 
-The published v0.8.56 build documents owner-triggered `!ova restart`. The automatic four-hour restart and Cleaner+ deep-clean handoff are v0.8.93 candidate behavior only and are not available in that published build.
+The v0.8.93 release documents owner-triggered and scheduled `!ova restart` workflows. The automatic four-hour restart and Cleaner+ deep-clean handoff are included in v0.8.93.
 
 Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments are optional.
 

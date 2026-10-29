@@ -91,6 +91,6 @@ Operational records are stored separately in `Instance/TROA Admin Overseer/Overs
 
 Use !ova limit preview [grid] to verify the exact active Grid-scope rules, context, count, cap, and action for a targeted grid. Players can run !ov limitcheck on a wholly major-owned grid under their crosshair. Both are read-only: they never alter blocks or invoke enforcement.
 
-## Bifrost Panel webserver (v0.8.58 candidate)
+## Bifrost Panel webserver (v0.8.58 release)
 
 `TROA Admin Overseer Webserver.cfg` is generated beside the other Overseer configs. `BindAddress` accepts an IP literal: `127.0.0.1` keeps access on the Torch host, a specific server IPv4 binds one interface, and `0.0.0.0` listens on all IPv4 interfaces. Set `PublicUrl` to the browser-facing address or domain; DNS must point to the server. The embedded listener uses HTTP, so use an HTTPS reverse proxy for secure domain access. All panel APIs require sign-in. On first start, create the owner account using the one-time code at `TROA Admin Overseer/BifrostPanel/OwnerSetupCode.txt` under the plugin `StoragePath`. The owner can create/remove individual Admin and Moderator accounts. Password hashes are salted PBKDF2; sessions are held in memory for 12 hours. Open the green ready URL after the game session loads. Use `!ova reload` after changing this config. Current panel features are live status and account management; each plugin must implement its own validated adapter before panel-based config Save/Reload is available.
