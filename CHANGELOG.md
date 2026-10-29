@@ -1,15 +1,14 @@
-## v0.8.61 local candidate — Restart coordination (not published)
+## v0.8.93 local package candidate - Source alignment and restart coordination (not a public release)
 
-- Adds a four-hour Overseer restart schedule, Cleaner+ pre-restart deep-clean handoff, verified Torch save, and `!ova restart status|now|cancel` controls.
-- The release build completed with zero warnings/errors and the ZIP passed version/content verification. Torch calls its documented restart API; Linux/Wine AMP supervision and live behavior remain unverified. No GitHub release is published.
+- Reconciles the closed source line with the complete v0.8.92 tree; the new package is v0.8.93 instead of the stale-base v0.8.61 prototype.
+- Adds a default four-hour Overseer restart schedule and owner `!ova restart status|now|cancel` controls. Overseer requests Cleaner+ deep cleanup and waits for the explicit drained state, then confirms a Torch save, sends the 60-second countdown, and requests Torch restart.
+- Failed/unavailable cleanup, timed-out cleanup, failed save, or inability to save the restart-confirmation marker cancels that cycle. Cleaner+ remains cleanup owner; Overseer owns restart timing.
+- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the v0.8.93 private package.
+- Private ZIP: `TROA Admin Overseer v0.8.93 - Scheduled Restart Coordination.zip` (328320 bytes; SHA-256 `A5F65C86A1DE561CB5737250A34BE83F1E047B7550628FF3BE4B6090C5570F47`). Release build passed with zero warnings/errors and the ZIP contains only `Overseer.dll` and `manifest.xml`; Linux/Wine AMP runtime acceptance remains pending. No public binary release is published.
 
-## Unreleased — Conservative block-limit starter policy
+## Superseded v0.8.61 candidate - stale source base
 
-- Replaced the single placeholder rule in the Limits config example with contextual, per-player alert-only examples for large-ship thrusters, jump drives, reactors, and accelerated/helper welders; enforcement remains disabled by default.
-- Added trailing-wildcard subtype-family matching so caps can cover related modded blocks such as accelerated welder tiers without matching unrelated subtypes.
-- The matching implementation is in the private source checkout and must be merged/released before wildcard rules work in a deployed binary.
-- Documented how to review the live block subtype catalog, tune caps, and distinguish world-wide subtype counts from player-attributed evidence.
-
+The v0.8.61 prototype was built from source v0.8.49 even though v0.8.92 packages already existed. It is archived from the current `releases/` list and must not be used as the latest version. Its restart work was carried forward into v0.8.93 on the complete source base.
 ## 2026-10-10 — v0.8.89 legal information pages (candidate; not in published binary)
 
 - Adds deployment-draft Terms of Service and Privacy & GDPR documents modeled on the structured Bifrost Server Manager privacy notice and limited to Admin Overseer's self-hosted Panel data flows.
