@@ -166,6 +166,8 @@ After install, verify a fresh Torch log and test `!ov help`, `!ova status`, play
 
 After each server start or restart, the plugin writes `Instance/TROA Admin Overseer/data/block-subtypes.csv`. It lists every registered vanilla and mod block subtype plus live-use columns, so owners can prepare context-specific limits without memorising subtype IDs. `!ova limit exportcsv` refreshes it on demand.
 
+The [limits sample](TROA%20Admin%20Overseer%20Limits.cfg.example) includes disabled-by-default, alert-only starter caps for common high-impact block types and TierTech accelerated welders. Rules count blocks by owner, and match exact subtypes, subtype families with a trailing `*`, or standard block TypeIds. Add custom mod block subtype rules from the generated catalog; arbitrary mod TypeIds cannot be anticipated in a universal sample. See [limit configuration](docs/CONFIGURATION.md#context-aware-block-rules) before enabling.
+
 ## Documentation
 
 Use [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for installation, [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md) and the full configuration samples for setup, [`docs/COMMANDS.md`](docs/COMMANDS.md) for commands, [`docs/PERMISSIONS.md`](docs/PERMISSIONS.md) for access, and [`docs/WEBHOOKS.md`](docs/WEBHOOKS.md) for webhook routing. The release index and README describe current feature/version boundaries.

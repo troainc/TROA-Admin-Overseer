@@ -4,7 +4,7 @@
 - Adds the four-hour scheduled restart and Cleaner+ cleanup handoff to the current release.
 - Adds a default four-hour Overseer restart schedule and owner `!ova restart status|now|cancel` controls. Overseer requests Cleaner+ deep cleanup and waits for the explicit drained state, then confirms a Torch save, sends the 60-second countdown, and requests Torch restart.
 - Failed/unavailable cleanup, timed-out cleanup, failed save, or inability to save the restart-confirmation marker cancels that cycle. Cleaner+ remains cleanup owner; Overseer owns restart timing.
-- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the release.
+- Carries the alert-only starter limits for thrusters, gyros, jump drives, power, production tools, automation, motion blocks, sensors, weapons, and TierTech welders into the release; subtype-family wildcards can cover tiered mod variants.
 - This release includes scheduled restart coordination and the Cleaner+ pre-restart cleanup handoff. Confirm host-specific AMP/Linux/Wine behavior during deployment verification.
 - The corresponding Cleaner+ v1.12.6 adds player clearance and archived orphan asteroid storage cleanup. This does not change the separate pre-restart cleanup bridge described above.
 - Cleaner+ release details: [v1.12.6 release notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.6.md).

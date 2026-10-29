@@ -1,2 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LimitsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Enabled>false</Enabled><ScanIntervalSeconds>600</ScanIntervalSeconds><MaxAlertsPerScan>15</MaxAlertsPerScan><PlayerNearLimitPercent>80</PlayerNearLimitPercent><Limits><LimitRule><Name>Example limit - review before enabling</Name><Match>LargeBlockLargeThrust</Match><Scope>Player</Scope><Max>100</Max><Punishment>Alert</Punishment><GridKind>Any</GridKind><GridSize>Any</GridSize><WarningPercent>0</WarningPercent><ExemptRoles><string>admin</string><string>owner</string></ExemptRoles><ExemptSteamIds /></LimitRule></Limits></LimitsConfig>
+<!-- Alert-only baseline. Review caps against your server's gameplay and block-subtypes.csv before enabling. -->
+<LimitsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Enabled>false</Enabled>
+  <ScanIntervalSeconds>600</ScanIntervalSeconds>
+  <MaxAlertsPerScan>15</MaxAlertsPerScan>
+  <PlayerNearLimitPercent>80</PlayerNearLimitPercent>
+  <Limits>
+    <LimitRule>
+      <Name>Large ship large thrusters per player</Name>
+      <Match>LargeBlockLargeThrust</Match>
+      <Scope>Player</Scope>
+      <Max>100</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Ship</GridKind>
+      <GridSize>Large</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Thrusters, vanilla and mods using standard Thrust type</Name>
+      <Match>Thrust</Match>
+      <Scope>Player</Scope>
+      <Max>250</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Gyros, vanilla and mods using standard Gyro type</Name>
+      <Match>Gyro</Match>
+      <Scope>Player</Scope>
+      <Max>100</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Jump drives per player</Name>
+      <Match>JumpDrive</Match>
+      <Scope>Player</Scope>
+      <Max>12</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Reactors per player</Name>
+      <Match>Reactor</Match>
+      <Scope>Player</Scope>
+      <Max>40</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Batteries per player</Name>
+      <Match>BatteryBlock</Match>
+      <Scope>Player</Scope>
+      <Max>100</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Drills per player</Name>
+      <Match>ShipDrill</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Grinders per player</Name>
+      <Match>ShipGrinder</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Welders, vanilla and mods using standard Welder type</Name>
+      <Match>ShipWelder</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>75</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>TierTech accelerated large ship welders per player</Name>
+      <Match>LargeShipWelder*</Match>
+      <Scope>Player</Scope>
+      <Max>4</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Ship</GridKind>
+      <GridSize>Large</GridSize>
+      <WarningPercent>75</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>TierTech accelerated large ship helper welders per player</Name>
+      <Match>LargeShipWelderHelper*</Match>
+      <Scope>Player</Scope>
+      <Max>2</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Ship</GridKind>
+      <GridSize>Large</GridSize>
+      <WarningPercent>75</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Programmable blocks per player</Name>
+      <Match>ProgrammableBlock</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Timer blocks per player</Name>
+      <Match>TimerBlock</Match>
+      <Scope>Player</Scope>
+      <Max>60</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Assemblers per player</Name>
+      <Match>Assembler</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Refineries per player</Name>
+      <Match>Refinery</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Gravity generators per player</Name>
+      <Match>GravityGenerator</Match>
+      <Scope>Player</Scope>
+      <Max>20</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Projectors per player</Name>
+      <Match>Projector</Match>
+      <Scope>Player</Scope>
+      <Max>30</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Sensors per player</Name>
+      <Match>SensorBlock</Match>
+      <Scope>Player</Scope>
+      <Max>40</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Pistons per player</Name>
+      <Match>PistonBase</Match>
+      <Scope>Player</Scope>
+      <Max>100</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Rotors and hinges per player</Name>
+      <Match>MotorStator</Match>
+      <Scope>Player</Scope>
+      <Max>150</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+    <LimitRule>
+      <Name>Ship weapons using standard controllable-gun type</Name>
+      <Match>UserControllableGun</Match>
+      <Scope>Player</Scope>
+      <Max>120</Max>
+      <Punishment>Alert</Punishment>
+      <GridKind>Any</GridKind>
+      <GridSize>Any</GridSize>
+      <WarningPercent>80</WarningPercent>
+      <ExemptRoles><string>admin</string><string>owner</string></ExemptRoles>
+      <ExemptSteamIds />
+    </LimitRule>
+  </Limits>
+</LimitsConfig>
