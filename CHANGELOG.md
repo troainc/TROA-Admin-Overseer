@@ -1,3 +1,8 @@
+## v0.8.61 local candidate — Restart coordination (not published)
+
+- Adds a four-hour Overseer restart schedule, Cleaner+ pre-restart deep-clean handoff, verified Torch save, and `!ova restart status|now|cancel` controls.
+- The release build completed with zero warnings/errors and the ZIP passed version/content verification. Torch calls its documented restart API; Linux/Wine AMP supervision and live behavior remain unverified. No GitHub release is published.
+
 ## Unreleased — Conservative block-limit starter policy
 
 - Replaced the single placeholder rule in the Limits config example with contextual, per-player alert-only examples for large-ship thrusters, jump drives, reactors, and accelerated/helper welders; enforcement remains disabled by default.
