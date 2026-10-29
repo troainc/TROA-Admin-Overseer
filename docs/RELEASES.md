@@ -4,6 +4,8 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 ## Current feature releases
 
+The latest published package remains v0.8.56. The v0.8.93 restart-coordination work is still an unpublished candidate and is intentionally not listed as a release.
+
 | Version | Release | Highlights |
 |---|---|---|
 | v0.8.60 | Bifrost TROA plugin workspaces (local candidate) | Settings Save/Reload through recognized owning-plugin APIs, TROA-only list, live plugin workspaces, searchable command catalog/console, and public webserver config sample. Build/ZIP verified; dedicated Torch runtime acceptance and GitHub publication pending. |

@@ -1,10 +1,12 @@
-## v0.8.93 local package candidate - Source alignment and restart coordination (not a public release)
+## v0.8.93 candidate - Source alignment and restart coordination (not a public release)
 
 - Reconciles the closed source line with the complete v0.8.92 tree; the new package is v0.8.93 instead of the stale-base v0.8.61 prototype.
 - Adds a default four-hour Overseer restart schedule and owner `!ova restart status|now|cancel` controls. Overseer requests Cleaner+ deep cleanup and waits for the explicit drained state, then confirms a Torch save, sends the 60-second countdown, and requests Torch restart.
 - Failed/unavailable cleanup, timed-out cleanup, failed save, or inability to save the restart-confirmation marker cancels that cycle. Cleaner+ remains cleanup owner; Overseer owns restart timing.
-- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the v0.8.93 private package.
-- Private ZIP: `TROA Admin Overseer v0.8.93 - Scheduled Restart Coordination.zip` (328320 bytes; SHA-256 `A5F65C86A1DE561CB5737250A34BE83F1E047B7550628FF3BE4B6090C5570F47`). The ZIP is now synchronized to both private Overseer checkouts. Release build passed with zero warnings/errors and the ZIP contains only `Overseer.dll` and `manifest.xml`; Linux/Wine AMP runtime acceptance remains pending. No public binary release is published.
+- Carries the alert-only block-limit starter examples and subtype-family wildcard matching into the candidate.
+- This candidate is not a public binary release. Linux/Wine AMP runtime acceptance remains pending; private package details are intentionally omitted from this public changelog.
+- The corresponding Cleaner+ v1.12.4 candidate clarifies manual cleanup commands and ensures targeted manual runs respect master/module OFF switches. This does not change the separate pre-restart cleanup bridge described above.
+- Cleaner+ candidate details are maintained in its [v1.12.4 candidate notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.4.md); this cross-reference does not mark either candidate as a published release.
 
 ## Superseded v0.8.61 candidate - stale source base
 

@@ -10,6 +10,8 @@ Admin Overseer owns administration, moderation, player and admin command behavio
 
 1. **Rewards release gate:** verify empty, populated, malformed, and repeat imports; complete a migrated pending claim; prevent duplicate grants; audit every grant; and keep CSV catalog edits recoverable.
 2. **Restart recovery:** verify save-in-progress, save failure, timeout, cancellation, restart request, crash recovery, and next-start success confirmation on a dedicated server.
+   For the v0.8.93 candidate, also validate the Cleaner+ pre-restart cleanup handoff and timeout behavior on the actual AMP/Linux/Wine host; this is not part of published v0.8.56.
+   Cleaner+ v1.12.4 manual-run documentation is available in its [public candidate notes](https://github.com/troainc/TROA-Cleaner-Plus/blob/main/releases/v1.12.4.md); the manual command gate is separate from this restart integration.
 3. **Staff case workflow:** add bounded search/filter and read-only permission explanations while preserving audit history.
 4. **Release quality:** align package version, manifest, configuration examples, commands, migration notes, and changelog before a candidate is described as released.
 
