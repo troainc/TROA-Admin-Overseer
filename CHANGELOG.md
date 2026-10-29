@@ -1,4 +1,10 @@
 ## TROA-Admin-Overseer
+## v0.8.94 candidate — Bifrost Plugin Panel UX and Navigation (not yet published)
+
+- Re-audited Bifrost's 13 operator pages across visual hierarchy, navigation, task efficiency, feedback, accessibility, and responsive use. Source-review scores range from 9.1 to 9.3/10; these are not live browser or assistive-technology results.
+- Corrected plugin-workspace page-state styling, quick-view navigation recovery, and mobile sticky-header overlap. Improved small-label contrast and sizing, mobile control hit areas, and page-title announcements.
+- Preserved existing routes, role policy, command/API behavior, and plugin operations. `ownerOnly` setting validation is enforced by the server, and default reset is Owner-only.
+- A matching local v0.8.94 package was built, but it is not in the published binary. Dedicated Torch/browser/mobile/screen-reader and Linux/Wine AMP acceptance remain pending.
 ## v0.8.93 — Scheduled Restart Coordination
 
 - Adds the four-hour scheduled restart and Cleaner+ cleanup handoff to the current release.
