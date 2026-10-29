@@ -1,3 +1,10 @@
+## Unreleased — Conservative block-limit starter policy
+
+- Replaced the single placeholder rule in the Limits config example with contextual, per-player alert-only examples for large-ship thrusters, jump drives, reactors, and accelerated/helper welders; enforcement remains disabled by default.
+- Added trailing-wildcard subtype-family matching so caps can cover related modded blocks such as accelerated welder tiers without matching unrelated subtypes.
+- The matching implementation is in the private source checkout and must be merged/released before wildcard rules work in a deployed binary.
+- Documented how to review the live block subtype catalog, tune caps, and distinguish world-wide subtype counts from player-attributed evidence.
+
 ## 2026-10-10 — v0.8.89 legal information pages (candidate; not in published binary)
 
 - Adds deployment-draft Terms of Service and Privacy & GDPR documents modeled on the structured Bifrost Server Manager privacy notice and limited to Admin Overseer's self-hosted Panel data flows.
