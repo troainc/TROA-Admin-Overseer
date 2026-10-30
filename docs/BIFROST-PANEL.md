@@ -1,12 +1,12 @@
 # Bifrost Panel - SE Torch
 
-## Core Controller — v0.8.95
+## Core Controller — v0.8.96
 
-Owners can inspect logical CPU, physical-core, and socket topology, preview an allowed multi-CPU mask, apply it, or restore startup affinity from **Administration → Core controller**. Controls are Owner-only and enforced by the server. See [Core Controller](CORE-CONTROLLER.md).
+Owners can see all Linux-online logical CPUs, grouped under physical cores/sockets when available, and distinguish the Torch-allowed set. Choose allowed CPU tiles, preview, and confirm to apply affinity; current/startup/saved masks remain visible and hexadecimal masks are under Advanced. Server-side controls remain Owner-only. See [Core Controller](CORE-CONTROLLER.md).
 
 ## Legal information pages in the v0.8.89 release
 
-The release build adds public `/terms` and `/privacy` pages and footer/sign-in links. The matching [Terms of Service](TERMS-OF-SERVICE.md) and [Privacy & GDPR Notice](PRIVACY-GDPR.md) are deployment templates based on the release source. They are not available in the currently published binary, are not legal advice, and do not certify GDPR compliance. The Panel does not add a terms-acceptance checkbox.
+The release build adds public `/terms` and `/privacy` pages and footer/sign-in links. The matching [Terms of Service](TERMS-OF-SERVICE.md) and [Privacy & GDPR Notice](PRIVACY-GDPR.md) are deployment templates based on the release source. They are deployment templates, not legal advice, and do not certify GDPR compliance. The Panel does not add a terms-acceptance checkbox.
 
 Bifrost Panel runs inside TROA Admin Overseer and reads the active plugin list from Torch. The panel lists plugins whose registered plugin name identifies them as TROA. AMPUtilities and other non-TROA plugins do not appear.
 

@@ -1,19 +1,15 @@
 # Release Index
 
-TROA Admin Overseer releases are single-DLL Torch packages. Every listed package is validated to contain only `Overseer.dll` and `manifest.xml`.
+TROA Admin Overseer releases are single-DLL Torch packages containing only Overseer.dll and manifest.xml. This public repository carries release notes and operator documentation.
 
-## Candidates (not published)
-
-| Version | Release | Highlights |
-|---|---|---|
-| v0.8.94 candidate | Bifrost Plugin Panel UX and Navigation | Source-review improvements to plugin workspace navigation, quick view, mobile layout, small-text readability, touch targets, and page-title announcements. Not included in a public binary; live runtime acceptance pending. |
 ## Current feature releases
 
-The current release is v0.8.95. v0.8.93 adds scheduled restart coordination and the Cleaner+ deep-clean handoff. The v0.8.95 ZIP passed the zero-warning build and local package verification (SHA-256 `4D8BFD4D6DC285FF8BB62601DFF0EC4EBE9345EF14E47434DF29CFFB5689F8A3`); the binary is not stored in this documentation repository. Linux/Wine runtime and Profiler+ A/B acceptance remain to be completed.
+Current release: **v0.8.96**. Bifrost maps Linux-online logical processors by physical core where topology is available and distinguishes host inventory from the subset allocated to Torch. The page offers selectable CPU tiles, preview, and an advanced hexadecimal mask editor. The package built with 0 warnings/errors and passed local verification (258530 bytes; SHA-256 EBA847895740BF2AB2FDBA919987EB472EEC43D1424A7C9E4F652DC8CFF13F22). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
 
 | Version | Release | Highlights |
 |---|---|---|
-| v0.8.95 | Host-bounded Core Controller and Bifrost workspace | Owner-only multi-logical-CPU affinity bounded by Linux/AMP allocation; topology reporting; preview, verified apply, rollback, and startup restore. |
+| v0.8.96 | CPU Topology Map and Affinity Picker | Full online logical CPU map; physical-core/socket groups; Torch allocation highlighted separately; selection picker; advanced mask; fixed confirmation flow. |
+| v0.8.95 | Host-bounded Core Controller and Bifrost workspace | Owner-only multi-logical-CPU affinity bounded by Linux/AMP allocation; preview, verified apply, rollback, startup restore. |
 | v0.8.93 | Scheduled Restart Coordination | Four-hour cadence; owner restart controls; Cleaner+ deep-clean handoff; save-confirmed countdown/restart. |
 | v0.8.60 | Bifrost TROA plugin workspaces | Settings Save/Reload through recognized owning-plugin APIs, TROA-only list, live plugin workspaces, searchable command catalog/console, and public webserver config sample. Build and package are documented; runtime acceptance is tracked separately. |
 | v0.8.59 | Bifrost Panel webserver (superseded release) | Local package built and verified with the full webserver config example; dedicated Torch runtime acceptance pending.  |

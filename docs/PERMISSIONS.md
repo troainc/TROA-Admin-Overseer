@@ -15,7 +15,7 @@ A role has a name, optional chat presentation settings, a Torch promote level, d
 
 ## Core Controller permissions
 
-!ova core commands and the Bifrost Core controller workspace are Owner-only. Server-side routes enforce Owner authorization for status, preview, apply, and restore. An Admin account cannot call these operations even if it changes browser state.
+!ova core commands and the Bifrost Core controller workspace are Owner-only. Server-side routes enforce Owner authorization for CPU inventory/status, preview, apply, and restore. An Admin account cannot call these operations even if it changes browser state.
 
 ## Owner workflow
 

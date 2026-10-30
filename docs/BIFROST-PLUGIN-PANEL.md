@@ -1,8 +1,8 @@
 # Bifrost Plugin Panel — operator quick connection guide
 
-## Core Controller — v0.8.95
+## Core Controller — v0.8.96
 
-The Owner-only **Administration → Core controller** workspace provides verified CPU mask preview/apply/restore and logical-versus-physical topology reporting. See [Core Controller](CORE-CONTROLLER.md).
+The Owner-only **Administration → Core controller** workspace maps every Linux-online logical CPU by physical core/socket when available, highlights CPUs allowed to Torch, and provides a selectable CPU map with preview/apply/restore. Hexadecimal masks are an advanced option. See [Core Controller](CORE-CONTROLLER.md).
 
 Bifrost Plugin Panel is the web interface hosted by TROA Admin Overseer inside Torch. It discovers TROA plugins loaded by that Torch process. Availability depends on the installed Admin Overseer release; use a release that includes Bifrost Plugin Panel. Plugins do not connect back to a Panel URL, start a second web server, or create Panel accounts.
 

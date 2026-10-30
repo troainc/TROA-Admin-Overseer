@@ -1,3 +1,10 @@
+## v0.8.96 - Bifrost CPU topology map and affinity picker
+
+- Shows the Linux-online logical CPU inventory independently from the CPUs allocated to Torch, mapping logical threads to physical cores/sockets when sysfs exposes topology.
+- Replaces the hex-first UI with selectable CPU tiles, current/startup/saved affinity readouts, clear host-only versus Torch-allowed states, and an advanced hexadecimal mask option.
+- Corrects Apply confirmation handling. Owner-only server authorization and host-bounded affinity validation are unchanged.
+- Release package: `TROA Admin Overseer v0.8.96 - CPU Topology Map and Affinity Picker.zip` (258530 bytes; SHA-256 `EBA847895740BF2AB2FDBA919987EB472EEC43D1424A7C9E4F652DC8CFF13F22`). Build and local package verification passed; Linux/Wine browser and Profiler+ A/B validation remain operator-side.
+
 ## v0.8.95 — Host-bounded Core Controller and Bifrost workspace
 
 - Adds an Owner-only, disabled-by-default CPU affinity controller for Torch under Linux/Wine. It prefers the process cgroup cpuset and safely falls back to Linux effective allowed CPUs.
@@ -8,12 +15,12 @@
 
 
 ## TROA-Admin-Overseer
-## v0.8.94 candidate — Bifrost Plugin Panel UX and Navigation
+## v0.8.94 — Bifrost Plugin Panel UX and Navigation
 
 - Re-audited Bifrost's 13 operator pages across visual hierarchy, navigation, task efficiency, feedback, accessibility, and responsive use. Source-review scores range from 9.1 to 9.3/10; these are not live browser or assistive-technology results.
 - Corrected plugin-workspace page-state styling, quick-view navigation recovery, and mobile sticky-header overlap. Improved small-label contrast and sizing, mobile control hit areas, and page-title announcements.
 - Preserved existing routes, role policy, command/API behavior, and plugin operations. `ownerOnly` setting validation is enforced by the server, and default reset is Owner-only.
-- A matching local v0.8.94 package was built, but it is not in the published binary. Dedicated Torch/browser/mobile/screen-reader and Linux/Wine AMP acceptance remain pending.
+- The v0.8.94 release package passed local build and package verification. Dedicated Torch/browser/mobile/screen-reader and Linux/Wine AMP acceptance remain operator-side.
 ## v0.8.93 — Scheduled Restart Coordination
 
 - Adds the four-hour scheduled restart and Cleaner+ cleanup handoff to the current release.
