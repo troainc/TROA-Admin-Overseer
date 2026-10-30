@@ -1,13 +1,16 @@
-# TROA Admin Overseer documentation
+# Documentation index
 
-Start with the [detailed user and operator guide](USER_GUIDE.md). The repository README and changelog describe current release status; use only version-supported behavior and public release assets.
+- [User guide](USER_GUIDE.md)
+- [Commands](COMMANDS.md)
+- [Configuration](CONFIGURATION.md)
+- [Permissions](PERMISSIONS.md)
+- [Deployment](DEPLOYMENT.md)
+- [Bifrost service](BIFROST-PANEL.md)
+- [Bifrost operator guide](BIFROST-PLUGIN-PANEL.md)
+- [Plugin integration contract](BIFROST-PLUGIN-PANEL-INTEGRATION.md)
+- [Core Controller](CORE-CONTROLLER.md)
+- [Rewards](REWARDS.md) · [Webhooks](WEBHOOKS.md)
+- [Release index](RELEASES.md) · [Roadmap](ROADMAP.md)
+- [Privacy notice](PRIVACY-GDPR.md) · [Terms template](TERMS-OF-SERVICE.md)
 
-
-
-## Core Controller
-
-[Owner CPU-affinity controls, topology, commands, and safety limits](CORE-CONTROLLER.md)
-
-## Bifrost Plugin Panel
-
-[Connect and use the Panel workspace](BIFROST-PLUGIN-PANEL.md)
+README panel illustrations contain demonstration values only.

@@ -1,114 +1,18 @@
 # Command reference
 
-When Monitor+ is installed, its Discord bridge can forward `!ov` and `!ova` commands to Admin Overseer and return the response. Admin Overseer still enforces Torch permissions and owns command behavior.
+Use `!ov` for player-safe commands and `!ova` for staff/owner operations. Check `!ov help` and `!ova help` on the installed build for exact syntax and Torch rank requirements.
 
-The v0.8.93 release documents owner-triggered and scheduled `!ova restart` workflows. The automatic four-hour restart and Cleaner+ deep-clean handoff are included in v0.8.93.
+## Player commands
+`help`, `motd`, `ticket`, `report <player> <reason>`, `vote`, `claim`, `daily`, `rewards [progress]`, `topvoters`, `limits`, `gridcheck`, `limitcheck`, `stop`, `fixship [grid]`.
 
-Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments are optional.
+Grid actions require eligible ownership/mechanical-group checks and obey configured caps/cooldowns.
 
-## Player commands — `!ov`
+## Staff/owner groups
+- Server: `status`, `perf`, `doctor`, `modules`, `reload`, `audit`, `save`, `restart status|now|cancel`, `schedule`, `maintenance`, `opssummary`.
+- CPU: Owner-only `core status|preview <mask>|enable <mask>|disable`.
+- Moderation/support: bans, kick, mute, warn, notes, reports/cases, player lookup/history/flags.
+- Roles/permissions: role create/assign/temporary/inherit/templates; `perms check`.
+- Grids/limits: gridcheck/fixship/stop/transfer/confirm/approve; limits preview/recount/export.
+- Rewards/events: bundle list/preview/grant; event announce/check-in/attendees/export/reward.
 
-| Command | What it does |
-|---|---|
-| `!ov help` | Show player-safe commands. |
-| `!ov motd` | Show the configured message of the day. |
-| `!ov vote` | Show configured voting links. |
-| `!ov claim` | Claim a configured space-engineers.com vote reward. |
-| `!ov daily` | Claim the configured daily reward; optional milestone streak bonuses are owner-configured. |
-| `!ov rewards` | Show your recorded reward claims. |
-| `!ov topvoters` | Show the configured vote leaderboard. |
-| `!ov limits` | Show your own tracked block-limit use. |
-| `!ov ticket` | Show the configured support ticket portal link. |
-| `!ov report <player> <reason>` | Submit a report to staff. |
-| `!ov gridcheck` | Read health details for the wholly major-owned grid group under your crosshair. |
-| `!ov limitcheck` | Show active grid-scoped limits and near/over feedback for the owned grid under your crosshair. |
-| `!ov stop` | Stop motion on the wholly major-owned grid group under your crosshair; cooldown applies. |
-| `!ov fixship` | Rebuild the wholly major-owned grid group under your crosshair; cooldown and owner-configured PCU cap apply. |
-
-## Administration — `!ova`
-
-### Server and owner operations
-
-| Command | Minimum permission |
-|---|---|
-| `!ova core status` | Owner; show logical CPUs, physical cores/sockets, allowed/current masks, and capability. |
-| `!ova core preview <hex-mask>` | Owner; validate logical-CPU selection without applying. |
-| `!ova core enable <hex-mask>` | Owner; apply and persist a verified multi-CPU mask. |
-| `!ova core disable` | Owner; disable and restore startup affinity where supported. |
-
-
-| Command | Minimum permission |
-|---|---|
-| `!ova status` | Admin |
-| `!ova perf` | Admin |
-| `!ova audit [count]` | Admin |
-| `!ova doctor` | Owner | Read-only check for webhook, rewards, limits, ticket, and legacy-config issues. |
-| `!ova modules` | Owner |
-| `!ova reload` | Owner |
-| `!ova save` | Owner |
-| `!ova restart` | Owner; waits for successful save completion, announces 60/30/10/5/4/3/2/1 seconds remaining in global game chat and the configured Server webhook, then restarts 60 seconds after save completion. On the next startup, logs and sends a green success confirmation through the enabled Server webhook route. |
-| `!ova schedule status|start|stop` | Owner |
-
-### Moderation and reports
-
-| Command | Minimum permission |
-|---|---|
-| `!ova ban <player> <duration|perm> [reason]` | Admin |
-| `!ova unban <player>` · `!ova bans` | Admin |
-| `!ova kick <player> [reason]` · `!ova mute <player>` · `!ova unmute <player>` | Admin |
-| `!ova warn <player> <reason>` | Admin |
-| `!ova note <player> <text>` · `!ova notes <player>` | Admin |
-| `!ova case <player>` | Admin |
-| `!ova caseevents <player> [count]` | Admin |
-| `!ova reports` · `!ova resolvereport <id> [resolution]` | Admin |
-
-### Player and staff tools
-
-| Command | Minimum permission |
-|---|---|
-| `!ova who` · `!ova lookup <player>` · `!ova alts <player>` · `!ova history <player>` | Admin |
-| `!ova flag <player> [note]` · `!ova unflag <player>` | Admin |
-| `!ova heal [player]` · `!ova feed [player]` | Admin |
-| `!ova tp <player>` · `!ova tphere <player>` · `!ova gps <player>` | Admin |
-| `!ova promote <player>` · `!ova demote <player>` | Owner |
-| `!ova setrank <player> <rank>` | Owner |
-| `!ova rank <player>` · `!ova ranks` | Admin |
-| `!ova role diff <roleA> <roleB>` | Admin | Compare direct rank, permission nodes, and inheritance. |
-| `!ova role list|info|create|delete|grant|revoke|inherit|uninherit|assign|remove|temporary|temporarylist|style|template list|preview|apply` · `!ova role discord add|remove|list` · `!ova role scope grant|revoke|list` · `!ova roles <player>` | Admin/Owner as shown in command help |
-| `!ova perms check <player> <node>` · `!ova perms scopedcheck <player> <node> <scope> <value>` | Admin | Explain whether a custom TROA permission is granted and which effective role grants it. |
-
-### Grid tools
-
-| Command | Minimum permission |
-|---|---|
-| `!ova gridcheck [grid]` | Admin | Read identity, block, owner, motion, and mechanical-group health without changing a grid. |
-| `!ova fixship [grid]` | Admin |
-| `!ova stop [grid]` | Admin |
-| `!ova gridtransfer <player> [grid]` | Admin |
-| `!ova confirm` | Admin | Confirms the requester preview only when two-staff approval is disabled. |
-| `!ova approve <requesterSteamId>` | Admin | A different administrator approves a pending transfer when `RequireSecondStaffApprovalForTransfers` is enabled. |
-| `!ova gridlist <player>` | Admin |
-| `!ova reportassign <id>` | Admin | Assign an unresolved report to yourself. |
-| `!ova reportstatus <id> <open|investigating|waiting>` | Admin | Set case workflow status. |
-| `!ova reportdue <id> <hours|clear>` | Admin | Set or clear a case deadline. |
-| `!ova reportupdate <id> <text>` | Admin | Add a durable internal staff update. |
-
-### Broadcast, limits, and rewards
-
-| Command | Minimum permission |
-|---|---|
-| `!ova broadcast <message>` | Admin |
-| `!ova limits [player]` · `!ova limit recount` · `!ova limit preview [grid]` · `!ova limit exportcsv` (Owner; all registered subtypes) | Admin/Moderator as shown in command help |
-| `!ova reward <player>` | Admin |
-
-## Discord vote reservations
-
-Link Discord users to Steam IDs in `DiscordSteamMappings` and configure the reward bot and command
-channel. In that channel, linked users can reserve an eligible vote with `!reward` or
-`/adminoverseer reward`; the mapped player then claims it in-game with `!ov claim`. The bot also
-provides `!votelink`, `!topvoters`, `/adminoverseer votelink`, and `/adminoverseer topvoters`.
-Reservations, completed claims, and vote history are persisted by Admin Overseer.
-
-## Legacy migration
-
-Old `!ov` admin spellings are redirect-only. They cannot trigger privileged behavior; use the matching `!ova` command instead.
+Legacy `!ov` admin spellings redirect and do not grant privileges. Monitor+ may transport authorized commands; Overseer remains the command owner.
