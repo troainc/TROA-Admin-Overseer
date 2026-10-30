@@ -1,3 +1,9 @@
+## v0.8.97 - Core Controller request encoding fix
+
+- Fixed Bifrost Core Controller preview, apply, and restore requests to use the panel API's Base64-encoded JSON request body. Plain JSON was rejected as `invalid_request`.
+- Preserves the v0.8.96 logical CPU map, Torch-allocation display, picker, and Owner-only server enforcement.
+- Release package passed the zero-warning build and package verifier: `TROA Admin Overseer v0.8.97 - CPU Picker Request Encoding Fix.zip` (258573 bytes; SHA-256 `1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B`).
+- Linux/Wine panel and Profiler+ acceptance remain operator-side.
 ## v0.8.96 - Bifrost CPU topology map and affinity picker
 
 - Shows the Linux-online logical CPU inventory independently from the CPUs allocated to Torch, mapping logical threads to physical cores/sockets when sysfs exposes topology.

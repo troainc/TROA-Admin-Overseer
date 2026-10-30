@@ -92,3 +92,9 @@ Added docs/USER_GUIDE.md; connected it to the documentation index and README; re
 ## 2026-10-29 - v0.8.96 Core Controller topology map
 
 - Updated public release documentation for the CPU topology map, logical-versus-physical distinctions, Torch-allowed CPU set, selection picker, and package verification.
+
+
+## 2026-10-30 - v0.8.97 Core Controller request fix
+
+- Fixed the request body mismatch that caused Core Controller preview/apply/restore to return invalid_request; payloads now use Bifrost's Base64 JSON encoding helper.
+- Build succeeded with 0 warnings/errors; release package and embedded panel syntax checks passed. Package TROA Admin Overseer v0.8.97 - CPU Picker Request Encoding Fix.zip (258573 bytes; SHA-256 1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B).

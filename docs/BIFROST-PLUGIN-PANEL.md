@@ -1,6 +1,6 @@
 # Bifrost Plugin Panel — operator quick connection guide
 
-## Core Controller — v0.8.96
+## Core Controller — v0.8.97
 
 The Owner-only **Administration → Core controller** workspace maps every Linux-online logical CPU by physical core/socket when available, highlights CPUs allowed to Torch, and provides a selectable CPU map with preview/apply/restore. Hexadecimal masks are an advanced option. See [Core Controller](CORE-CONTROLLER.md).
 

@@ -1,13 +1,18 @@
+## v0.8.97 - Core Controller request encoding fix
+
+- Fixes the Bifrost POST payload for Core Controller preview/apply/restore by using the panel's Base64-encoded JSON request format.
+- Package: `TROA Admin Overseer v0.8.97 - CPU Picker Request Encoding Fix.zip` (258573 bytes; SHA-256 `1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B`). Build and package verification passed; Linux/Wine validation remains operator-side.
 # Release Index
 
 TROA Admin Overseer releases are single-DLL Torch packages containing only Overseer.dll and manifest.xml. This public repository carries release notes and operator documentation.
 
 ## Current feature releases
 
-Current release: **v0.8.96**. Bifrost maps Linux-online logical processors by physical core where topology is available and distinguishes host inventory from the subset allocated to Torch. The page offers selectable CPU tiles, preview, and an advanced hexadecimal mask editor. The package built with 0 warnings/errors and passed local verification (258592 bytes; SHA-256 337464022D5A4222ABA8BE6D907A901412FCF7F51B49C7893C99D9CFE1D5EB9F). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
+Current release: **v0.8.97**. This includes the v0.8.96 Linux-online logical CPU map and picker, plus the Core Controller request-encoding fix. Preview/apply/restore now use Bifrost Base64-encoded JSON. Package build and verification passed (258573 bytes; SHA-256 `1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B`). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.97 | Core Controller request encoding fix | Preview/apply/restore use the Bifrost API payload encoding, fixing `invalid_request`. |
 | v0.8.96 | CPU Topology Map and Affinity Picker | Full online logical CPU map; physical-core/socket groups; Torch allocation highlighted separately; selection picker; advanced mask; fixed confirmation flow. |
 | v0.8.95 | Host-bounded Core Controller and Bifrost workspace | Owner-only multi-logical-CPU affinity bounded by Linux/AMP allocation; preview, verified apply, rollback, startup restore. |
 | v0.8.93 | Scheduled Restart Coordination | Four-hour cadence; owner restart controls; Cleaner+ deep-clean handoff; save-confirmed countdown/restart. |

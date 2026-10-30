@@ -1,6 +1,6 @@
 # Admin Overseer Public Roadmap
 
-This roadmap describes priorities for Admin Overseer. The current public documentation describes release v0.8.96.
+This roadmap describes priorities for Admin Overseer. The current public documentation describes release v0.8.97.
 
 ## Product ownership
 

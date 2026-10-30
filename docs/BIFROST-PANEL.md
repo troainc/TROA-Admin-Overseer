@@ -1,6 +1,6 @@
 # Bifrost Panel - SE Torch
 
-## Core Controller — v0.8.96
+## Core Controller — v0.8.97
 
 Owners can see all Linux-online logical CPUs, grouped under physical cores/sockets when available, and distinguish the Torch-allowed set. Choose allowed CPU tiles, preview, and confirm to apply affinity; current/startup/saved masks remain visible and hexadecimal masks are under Advanced. Server-side controls remain Owner-only. See [Core Controller](CORE-CONTROLLER.md).
 
