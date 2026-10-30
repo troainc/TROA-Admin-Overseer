@@ -5,7 +5,29 @@
 Documented state-aware Core Controller Enable/Update and Disable/Restore controls and corrected Disable confirmation. Package verification passed. Live Linux/Wine acceptance remains operator-side.
 
 Recent milestones: v0.8.97 request encoding; v0.8.96 CPU topology map/picker; v0.8.95 host-bounded controller; v0.8.93 restart coordination with Cleaner+ deep-clean handoff. See [release index](docs/RELEASES.md).
+
+## 2026-10-30 — Public v0.8.102 Phase 3
+
+- Documented grid dossiers and aggregate-only read-only Cleaner+ preview; package metadata and v1.12.7 dependency are in the release index.
+
+## 2026-10-30 — Public v0.8.103 Phase 4
+
+- Documented redacted config history, role preview, maintenance readiness, and Owner-confirmed restart workflow.
+
+## 2026-10-30 — Public v0.8.104 Phase 5
+
+- Documented baseline comparisons, incident replay, plugin capability inventory, and opt-in browser-local generic notifications.
+- Added an illustrative Operations panel SVG preview with demonstration data; no live server data is shown.
 ## 2026-10-30 — Public v0.8.99 docs
 
 - Documented capability/freshness cards and Bifrost Operations timeline in release notes, README, and roadmap.
 - Kept public panel art labeled illustrative; it does not show the new operations view.
+
+## 2026-10-30 — Public v0.8.100 Phase 1
+
+- Documented source-sample versus panel-check freshness and sequential package gates.
+
+## 2026-10-30 — Public v0.8.101 Phase 2
+
+- Documented observed Torch session-load interval and late-attachment limitation.
+- Recorded package size/hash and explicit exclusions for AMP, world-load, Linux/Wine, storage, and full server readiness timing.

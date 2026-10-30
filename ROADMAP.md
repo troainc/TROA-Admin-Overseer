@@ -1,7 +1,7 @@
 # Roadmap
 
-The current documented package is v0.8.99. It includes capability/freshness states and an Operations timeline for source-attributed events and Profiler+ incidents.
+Phase delivery was sequential: every phase was completed and packaged before the next began. Phases 1–5 are complete in v0.8.100–v0.8.104.
 
-Remaining priorities: reliable startup-stage timings, structured grid and Cleaner+ preview APIs, redacted config change history/impact preview, scoped alerts, incident replay, compatibility mapping, global search, and accessibility.
+Delivered scope includes grid dossiers and Cleaner+ read-only preview, safer config/permission workflows, operational baselines, replay, compatibility inventory, and opt-in notifications. See [the detailed phase roadmap](docs/BIFROST-PRODUCT-ROADMAP.md).
 
-Overseer must not replace Cleaner+, GridVault, or Hangar ownership. Roadmap items are proposals until released. See [detailed Bifrost roadmap](docs/BIFROST-PRODUCT-ROADMAP.md).
+Overseer must preserve Cleaner+, GridVault, and Hangar ownership.

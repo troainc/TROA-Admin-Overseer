@@ -1,7 +1,5 @@
-# Repository snapshot
+# Repository context
 
-Latest documented package: **v0.8.99**. The package adds capability/freshness cards and a role-gated Operations timeline for plugin/audit events and Profiler+ incidents. Public documentation covers released behavior; see the roadmap for remaining integrations.
+Latest build: v0.8.104 — Operational Insight and Incident Replay (Phase 5). Phases 1–5 are complete and each has its own package. The Operations timeline measures only the observed Overseer-init to Torch-Loaded interval; late attachment means load time unavailable.
 
-Bifrost is hosted inside Torch. It discovers TROA plugins and uses supported plugin-owned APIs for settings and live data. Player commands use `!ov`; staff/owner commands use `!ova`. Overseer owns its staff features, rewards, webhooks, and restart coordination. Cleaner+, GridVault, and Hangar retain cleanup, backup/recovery, and storage ownership.
-
-Core Controller is optional, disabled by default, Owner-only, and bounded by verified process CPU allowance. It does not parallelize the SE simulation thread. README illustrations use demonstration values only.
+The public repository contains public-safe documentation, release notes, and illustrative panel previews. Cleaner+ owns cleanup; its Bifrost integration is aggregate-only and read-only. GridVault owns backup/recovery; Hangar owns storage. Overseer does not infer AMP/world-load timing or claim complete readiness duration. Runtime acceptance on Linux/Wine remains an operator check.
