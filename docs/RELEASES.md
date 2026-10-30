@@ -2,6 +2,11 @@
 
 TROA Admin Overseer releases are single-DLL Torch packages. Every listed package is validated to contain only `Overseer.dll` and `manifest.xml`.
 
+## Candidates (not published)
+
+| Version | Release | Highlights |
+|---|---|---|
+| v0.8.94 candidate | Bifrost Plugin Panel UX and Navigation | Source-review improvements to plugin workspace navigation, quick view, mobile layout, small-text readability, touch targets, and page-title announcements. Not included in a public binary; live runtime acceptance pending. |
 ## Current feature releases
 
 The current release is v0.8.95. v0.8.93 adds scheduled restart coordination and the Cleaner+ deep-clean handoff. The v0.8.95 ZIP passed the zero-warning build and local package verification (SHA-256 `4D8BFD4D6DC285FF8BB62601DFF0EC4EBE9345EF14E47434DF29CFFB5689F8A3`); the binary is not stored in this documentation repository. Linux/Wine runtime and Profiler+ A/B acceptance remain to be completed.
