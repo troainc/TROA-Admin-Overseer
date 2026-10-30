@@ -1,6 +1,6 @@
 # Core Controller
 
-Overseer v0.8.97 provides an Owner-only Bifrost CPU topology map and affinity picker, building on the disabled-by-default CPU-affinity controller introduced in v0.8.95 for Torch on Linux/Wine hosts. It changes which logical processors the Torch process may run on; it cannot grant CPU time, alter AMP quotas, or make a single-threaded simulation task parallel.
+Overseer v0.8.98 provides an Owner-only Bifrost CPU topology map and affinity picker, building on the disabled-by-default CPU-affinity controller introduced in v0.8.95 for Torch on Linux/Wine hosts. It changes which logical processors the Torch process may run on; it cannot grant CPU time, alter AMP quotas, or make a single-threaded simulation task parallel.
 
 ## CPU layout and safety
 
@@ -23,6 +23,6 @@ All actions are Torch Owner-only:
 
 Bit 0 selects logical CPU 0; `0x000F` selects logical CPUs 0–3, if all are allowed. Preview first. A multi-CPU mask makes Torch eligible to schedule on multiple logical processors; it does not promise parallel simulation or higher SimSpeed.
 
-Bifrost under **Administration → Core controller** is the recommended workflow. Its CPU map labels CPUs as allowed to Torch or outside the Torch allocation. Select the allowed logical CPU tiles, preview, then confirm apply. Current, startup, and saved affinity are shown separately. A collapsed Advanced section provides hexadecimal masks; IDs 0–63 are supported by the current affinity mask. Preview/apply/restore POSTs use the same Base64-encoded JSON body as the rest of Bifrost; plain JSON causes `invalid_request`. The page remains Owner-only, enforced by the server.
+Bifrost under **Administration → Core controller** is the recommended workflow. Its CPU map labels CPUs as allowed to Torch or outside the Torch allocation. When disabled, choose **Enable controller with selection**; when enabled, choose **Update selected CPUs**. To turn it off, choose **Disable and restore startup affinity** and confirm. Cancel leaves the current state unchanged. Current, startup, and saved affinity are shown separately. A collapsed Advanced section provides hexadecimal masks; IDs 0–63 are supported by the current affinity mask. Preview/apply/restore POSTs use the same Base64-encoded JSON body as the rest of Bifrost; plain JSON causes `invalid_request`. The page remains Owner-only, enforced by the server.
 
 There is no periodic enforcement loop. Overseer will not continuously fight AMP or external affinity changes. Compare similar Profiler+ observation windows before and after applying one mask; disable it if results do not support keeping it.

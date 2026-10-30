@@ -8,10 +8,11 @@ TROA Admin Overseer releases are single-DLL Torch packages containing only Overs
 
 ## Current feature releases
 
-Current release: **v0.8.97**. This includes the v0.8.96 Linux-online logical CPU map and picker, plus the Core Controller request-encoding fix. Preview/apply/restore now use Bifrost Base64-encoded JSON. Package build and verification passed (258573 bytes; SHA-256 `1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B`). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
+Current release: **v0.8.98**. This adds explicit state-aware Enable/Update and Disable/Restore controls and fixes the inverted Disable confirmation. Preview/apply/restore retain the Bifrost Base64-encoded JSON request format. Package build and verification passed (258649 bytes; SHA-256 `8832C47C4B4E52CE0C27E67DD13CA0140F65E936972BF219C855E6F50B66CBB5`). Linux/Wine runtime acceptance remains operator-side.
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.98 | Core Controller on/off controls | Explicit enable/update and disable/restore; confirmation works in both directions. |
 | v0.8.97 | Core Controller request encoding fix | Preview/apply/restore use the Bifrost API payload encoding, fixing `invalid_request`. |
 | v0.8.96 | CPU Topology Map and Affinity Picker | Full online logical CPU map; physical-core/socket groups; Torch allocation highlighted separately; selection picker; advanced mask; fixed confirmation flow. |
 | v0.8.95 | Host-bounded Core Controller and Bifrost workspace | Owner-only multi-logical-CPU affinity bounded by Linux/AMP allocation; preview, verified apply, rollback, startup restore. |

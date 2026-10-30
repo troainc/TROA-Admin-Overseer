@@ -98,3 +98,9 @@ Added docs/USER_GUIDE.md; connected it to the documentation index and README; re
 
 - Fixed the request body mismatch that caused Core Controller preview/apply/restore to return invalid_request; payloads now use Bifrost's Base64 JSON encoding helper.
 - Build succeeded with 0 warnings/errors; release package and embedded panel syntax checks passed. Package TROA Admin Overseer v0.8.97 - CPU Picker Request Encoding Fix.zip (258573 bytes; SHA-256 1ADD855839F6097CC75C313B0AC513834A8254990C96DB2E06FBD0794FAC533B).
+
+## 2026-10-30 - v0.8.98 Core Controller state controls
+
+- Added explicit state-aware Enable/Update and Disable/Restore actions.
+- Fixed the Disable confirmation branch so cancellation performs no request.
+- Build and package verification passed. Package TROA Admin Overseer v0.8.98 - Core Controller On Off Controls.zip (258649 bytes; SHA-256 8832C47C4B4E52CE0C27E67DD13CA0140F65E936972BF219C855E6F50B66CBB5).

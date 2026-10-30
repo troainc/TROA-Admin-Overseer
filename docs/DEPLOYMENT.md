@@ -19,9 +19,9 @@
 - `!ova gridtransfer <player> [grid]` previews only. With default settings, `!ova confirm` applies it; with two-staff approval enabled, a different admin must use `!ova approve <requesterSteamId>`.
 - After a Torch restart, verify JSON-backed roles, claims, bans, reports, notes, and audit history remain.
 
-## CPU topology and affinity acceptance — v0.8.97
+## CPU topology and affinity acceptance — v0.8.98
 
-On Linux/Wine, sign in to Bifrost as Owner, compare host-online logical CPU count against the Torch-allowed count and inspect the physical-core/socket map. Select allowed CPUs, preview, and apply only CPUs in the verified allocation. Confirm preview/apply/restore return a successful response; v0.8.97 corrects the API request encoding that previously returned invalid_request. Compare Profiler+ data under similar load. Disable to restore startup affinity if the results do not support the change. If capability is unavailable, no affinity changes are made. Dedicated AMP/Wine runtime acceptance is required.
+On Linux/Wine, sign in to Bifrost as Owner, compare host-online logical CPU count against the Torch-allowed count and inspect the physical-core/socket map. Select allowed CPUs, preview, and apply only CPUs in the verified allocation. Confirm preview/apply/restore return a successful response; v0.8.97 corrects the API request encoding that previously returned invalid_request. Confirm Enable turns the controller on; confirm Disable restores startup affinity; cancel the confirmation and verify no request is made. Compare Profiler+ data under similar load. Disable to restore startup affinity if the results do not support the change. If capability is unavailable, no affinity changes are made. Dedicated AMP/Wine runtime acceptance is required.
 
 ## Rewards and Monitor+ migration
 

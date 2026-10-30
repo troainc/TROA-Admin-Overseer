@@ -1,3 +1,8 @@
+## v0.8.98 - Core Controller on/off controls
+
+- Adds clear state-aware **Enable controller / Update selected CPUs** and **Disable and restore startup affinity** actions in Bifrost.
+- Fixes the inverted Disable confirmation. Cancel leaves the controller and affinity unchanged; confirming invokes disable and restores startup affinity.
+- Package build and verification passed: `TROA Admin Overseer v0.8.98 - Core Controller On Off Controls.zip` (258649 bytes; SHA-256 `8832C47C4B4E52CE0C27E67DD13CA0140F65E936972BF219C855E6F50B66CBB5`). Linux/Wine runtime acceptance remains operator-side.
 ## v0.8.97 - Core Controller request encoding fix
 
 - Fixed Bifrost Core Controller preview, apply, and restore requests to use the panel API's Base64-encoded JSON request body. Plain JSON was rejected as `invalid_request`.
