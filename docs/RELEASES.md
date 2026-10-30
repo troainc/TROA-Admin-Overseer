@@ -4,7 +4,7 @@ TROA Admin Overseer releases are single-DLL Torch packages containing only Overs
 
 ## Current feature releases
 
-Current release: **v0.8.96**. Bifrost maps Linux-online logical processors by physical core where topology is available and distinguishes host inventory from the subset allocated to Torch. The page offers selectable CPU tiles, preview, and an advanced hexadecimal mask editor. The package built with 0 warnings/errors and passed local verification (258530 bytes; SHA-256 EBA847895740BF2AB2FDBA919987EB472EEC43D1424A7C9E4F652DC8CFF13F22). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
+Current release: **v0.8.96**. Bifrost maps Linux-online logical processors by physical core where topology is available and distinguishes host inventory from the subset allocated to Torch. The page offers selectable CPU tiles, preview, and an advanced hexadecimal mask editor. The package built with 0 warnings/errors and passed local verification (258592 bytes; SHA-256 337464022D5A4222ABA8BE6D907A901412FCF7F51B49C7893C99D9CFE1D5EB9F). Linux/Wine browser rendering and Profiler+ A/B acceptance remain operator-side.
 
 | Version | Release | Highlights |
 |---|---|---|

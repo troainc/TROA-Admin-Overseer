@@ -3,7 +3,7 @@
 - Shows the Linux-online logical CPU inventory independently from the CPUs allocated to Torch, mapping logical threads to physical cores/sockets when sysfs exposes topology.
 - Replaces the hex-first UI with selectable CPU tiles, current/startup/saved affinity readouts, clear host-only versus Torch-allowed states, and an advanced hexadecimal mask option.
 - Corrects Apply confirmation handling. Owner-only server authorization and host-bounded affinity validation are unchanged.
-- Release package: `TROA Admin Overseer v0.8.96 - CPU Topology Map and Affinity Picker.zip` (258530 bytes; SHA-256 `EBA847895740BF2AB2FDBA919987EB472EEC43D1424A7C9E4F652DC8CFF13F22`). Build and local package verification passed; Linux/Wine browser and Profiler+ A/B validation remain operator-side.
+- Release package: `TROA Admin Overseer v0.8.96 - CPU Topology Map and Affinity Picker.zip` (258592 bytes; SHA-256 `337464022D5A4222ABA8BE6D907A901412FCF7F51B49C7893C99D9CFE1D5EB9F`). Build and local package verification passed; Linux/Wine browser and Profiler+ A/B validation remain operator-side.
 
 ## v0.8.95 — Host-bounded Core Controller and Bifrost workspace
 
