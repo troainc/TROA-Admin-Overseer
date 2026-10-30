@@ -1,3 +1,4 @@
+## TROA-Admin-Overseer
 ## v0.8.95 — Host-bounded Core Controller and Bifrost workspace
 
 - Adds an Owner-only, disabled-by-default CPU affinity controller for Torch under Linux/Wine. It prefers the process cgroup cpuset and safely falls back to Linux effective allowed CPUs.
@@ -6,8 +7,6 @@
 - Adds `!ova core status|preview|enable|disable` and an Owner-only Bifrost Core controller workspace. Affinity does not grant CPU capacity or guarantee higher SimSpeed.
 - Release build passed with 0 warnings and 0 errors; the package was locally verified with `Overseer.dll` and `manifest.xml` only (254295 bytes; SHA-256 `4D8BFD4D6DC285FF8BB62601DFF0EC4EBE9345EF14E47434DF29CFFB5689F8A3`). Linux/Wine runtime and Profiler+ A/B acceptance remain required.
 
-
-## TROA-Admin-Overseer
 ## v0.8.94 candidate — Bifrost Plugin Panel UX and Navigation
 
 - Re-audited Bifrost's 13 operator pages across visual hierarchy, navigation, task efficiency, feedback, accessibility, and responsive use. Source-review scores range from 9.1 to 9.3/10; these are not live browser or assistive-technology results.
