@@ -12,17 +12,15 @@ Each phase was completed and packaged before the next began. **Phases 1–5 are 
 
 ## Bifrost panel previews
 
-The following SVGs are illustrative UI previews with demonstration values, not live-server screenshots.
+These updated screen previews follow the current Bifrost page structure and supported actions. Every displayed name, ID, metric, and event is synthetic sample data; these are not captures from a live server. The public release version is stated at the top of this README; panel features shown depend on the installed build and loaded plugin APIs.
 
-![Bifrost overview preview](docs/images/bifrost-overview.svg)
-
-![Bifrost capability and freshness preview](docs/images/bifrost-capabilities.svg)
-
-![Bifrost Core Controller preview](docs/images/bifrost-core-controller.svg)
-
-![Bifrost plugin workspace preview](docs/images/bifrost-plugin-workspace.svg)
-
-![Bifrost Operations preview](docs/images/bifrost-operations.svg)
+<table>
+<tr><td width="50%"><strong>Server overview</strong><br><img src="docs/images/bifrost-overview.svg" width="100%" alt="Illustrative Bifrost server overview with sample SimSpeed, Torch, Space Engineers Steam build, and grid count"></td><td width="50%"><strong>Active world grids</strong><br><img src="docs/images/bifrost-world-overview.svg" width="100%" alt="Illustrative searchable active-grid list with owner metadata and GridVault, Hangar, and remove controls"></td></tr>
+<tr><td width="50%"><strong>Operations and Cleaner+</strong><br><img src="docs/images/bifrost-operations.svg" width="100%" alt="Illustrative operations timeline and Cleaner+ module preview and manual queue controls"></td><td width="50%"><strong>GridVault inventory</strong><br><img src="docs/images/bifrost-gridvault.svg" width="100%" alt="Illustrative GridVault backup list and details with owner name, SteamID, Keen ID, and metadata availability"></td></tr>
+<tr><td width="50%"><strong>Startup and world-save diagnostics</strong><br><img src="docs/images/bifrost-diagnostics.svg" width="100%" alt="Illustrative startup evidence and read-only world save health scan"></td><td width="50%"><strong>Incidents and reports</strong><br><img src="docs/images/bifrost-reports-incidents.svg" width="100%" alt="Illustrative SimSpeed incident review and selectable JSON report evidence"></td></tr>
+<tr><td width="50%"><strong>Core Controller</strong><br><img src="docs/images/bifrost-core-controller.svg" width="100%" alt="Illustrative host-bounded logical CPU selection with preview, apply, and restore actions"></td><td width="50%"><strong>Plugin health and capabilities</strong><br><img src="docs/images/bifrost-capabilities.svg" width="100%" alt="Illustrative plugin inventory showing runtime and API capabilities"></td></tr>
+<tr><td width="50%"><strong>Plugin workspace</strong><br><img src="docs/images/bifrost-plugin-workspace.svg" width="100%" alt="Illustrative plugin workspace with source-timestamped metrics and event history"></td><td width="50%"></td></tr>
+</table>
 
 ## Features
 
