@@ -4,10 +4,11 @@ TROA Admin Overseer releases are single-DLL Torch packages. Every listed package
 
 ## Current feature releases
 
-The current release is v0.8.93. v0.8.93 adds the scheduled restart coordination and Cleaner+ deep-clean handoff.
+The current release is v0.8.95. v0.8.93 adds scheduled restart coordination and the Cleaner+ deep-clean handoff. The v0.8.95 ZIP passed the zero-warning build and local package verification (SHA-256 `4D8BFD4D6DC285FF8BB62601DFF0EC4EBE9345EF14E47434DF29CFFB5689F8A3`); the binary is not stored in this documentation repository. Linux/Wine runtime and Profiler+ A/B acceptance remain to be completed.
 
 | Version | Release | Highlights |
 |---|---|---|
+| v0.8.95 | Host-bounded Core Controller and Bifrost workspace | Owner-only multi-logical-CPU affinity bounded by Linux/AMP allocation; topology reporting; preview, verified apply, rollback, and startup restore. |
 | v0.8.93 | Scheduled Restart Coordination | Four-hour cadence; owner restart controls; Cleaner+ deep-clean handoff; save-confirmed countdown/restart. |
 | v0.8.60 | Bifrost TROA plugin workspaces | Settings Save/Reload through recognized owning-plugin APIs, TROA-only list, live plugin workspaces, searchable command catalog/console, and public webserver config sample. Build and package are documented; runtime acceptance is tracked separately. |
 | v0.8.59 | Bifrost Panel webserver (superseded release) | Local package built and verified with the full webserver config example; dedicated Torch runtime acceptance pending.  |

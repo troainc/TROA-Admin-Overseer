@@ -13,6 +13,10 @@ A role has a name, optional chat presentation settings, a Torch promote level, d
 - Removing a role removes it from player assignments and every child role's inherited-parent list.
 - A role may carry a display prefix/color label and one or more Discord role IDs. IDs are durable mappings, not Discord credentials.
 
+## Core Controller permissions
+
+!ova core commands and the Bifrost Core controller workspace are Owner-only. Server-side routes enforce Owner authorization for status, preview, apply, and restore. An Admin account cannot call these operations even if it changes browser state.
+
 ## Owner workflow
 
 Create a base role, grant its common nodes, then create a more specific role and inherit the base role:

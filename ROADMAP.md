@@ -1,10 +1,14 @@
 # Admin Overseer Public Roadmap
 
-This roadmap describes priorities for Admin Overseer. The current public documentation describes release v0.8.93.
+This roadmap describes priorities for Admin Overseer. The current public documentation describes release v0.8.95.
 
 ## Product ownership
 
 Admin Overseer owns administration, moderation, player and admin command behavior, rewards and voting, configured webhook routes, audit records, and the save-confirmed `!ova restart` workflow. Monitor+ may transport authorized commands and replies, but does not own or re-post Overseer behavior. Econ+ owns balances and settlement. GridVault+ owns grid backup and recovery. Cleaner+ owns cleanup scheduling.
+
+## Delivered in v0.8.95
+
+Owner-only CPU affinity controls with cgroup-bounded masks, physical/logical topology reporting, preview/apply/rollback, and Bifrost controls. Validate on Linux/Wine and compare Profiler+ samples before making performance claims.
 
 ## Priorities
 

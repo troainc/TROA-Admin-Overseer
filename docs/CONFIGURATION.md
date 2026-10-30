@@ -23,6 +23,10 @@ Secret-free examples for all nine configuration files are available in the repos
 | `TROA Admin Overseer Audit.cfg` | Command/chat auditing | Command auditing on; chat off |
 | `TROA Admin Overseer Webserver.cfg` | Bifrost Panel web server | Loopback only; port 18750 |
 
+## Core Controller configuration
+
+`TROA Admin Overseer Core Controller.cfg` is generated automatically. It starts disabled with no mask. Configure through Bifrost **Administration → Core controller** or `!ova core`; see [the operator guide](CORE-CONTROLLER.md). Masks refer to logical CPU IDs and are validated against cgroup cpuset where available, otherwise `/proc/self/status`. Do not treat logical threads as physical cores.
+
 ## Master config
 
 Set `ServerName` to the branding you want players to see. It does not rename the plugin, release package, data folder, or configuration files.

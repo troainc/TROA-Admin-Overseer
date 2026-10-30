@@ -14,7 +14,7 @@
 ## 2026-10-06 — Public ownership and roadmap correction
 
 - Clarified the restart boundary: Admin Overseer runs its own save-confirmed restart; Monitor+ provides optional authorized command transport; Cleaner+ owns cleanup scheduling.
-- Updated public roadmap and README without presenting private v0.8.57 work as released. Public release documentation remains v0.8.93.
+- Updated public roadmap and README without presenting private v0.8.57 work as released. Public release documentation now targets v0.8.95.
 - No source or package changed; dedicated-server runtime acceptance remains separate.
 
 ## 2026-09-28 — v0.8.54 restart confirmation

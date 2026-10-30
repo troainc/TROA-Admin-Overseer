@@ -2,6 +2,10 @@
 
 Admin Overseer is the Torch-side administration suite for Space Engineers. It is the command and feature owner for staff operations and the Rewards module. Monitor+ may forward commands through Discord, but Overseer owns the command behavior and its webhooks. Install the versioned package through Torch, start once to generate configuration and persistent data, then use the root [configuration guide](CONFIGURATION.md), [permissions guide](PERMISSIONS.md), and [webhook guide](WEBHOOKS.md).
 
+## Core Controller (v0.8.95)
+
+Owners can inspect CPU layout and manage process affinity through Bifrost **Administration → Core controller** or !ova core. The mask selects logical processor IDs, not physical core numbers. Preview before applying; disable restores the affinity captured at plugin startup. Use [Core Controller](CORE-CONTROLLER.md) for the full procedure and limits.
+
 ## Main capabilities
 
 - **Operations:** status, loaded modules, health/performance summary, reload and configuration doctor checks; save and staged restart workflows with player notices and save verification; rotating announcements and maintenance mode.

@@ -4,6 +4,10 @@ Start with the [detailed user and operator guide](USER_GUIDE.md). The repository
 
 
 
+## Core Controller
+
+[Owner CPU-affinity controls, topology, commands, and safety limits](CORE-CONTROLLER.md)
+
 ## Bifrost Plugin Panel
 
 [Connect and use the Panel workspace](BIFROST-PLUGIN-PANEL.md)

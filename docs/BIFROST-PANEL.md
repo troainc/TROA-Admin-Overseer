@@ -1,5 +1,9 @@
 # Bifrost Panel - SE Torch
 
+## Core Controller — v0.8.95
+
+Owners can inspect logical CPU, physical-core, and socket topology, preview an allowed multi-CPU mask, apply it, or restore startup affinity from **Administration → Core controller**. Controls are Owner-only and enforced by the server. See [Core Controller](CORE-CONTROLLER.md).
+
 ## Legal information pages in the v0.8.89 release
 
 The release build adds public `/terms` and `/privacy` pages and footer/sign-in links. The matching [Terms of Service](TERMS-OF-SERVICE.md) and [Privacy & GDPR Notice](PRIVACY-GDPR.md) are deployment templates based on the release source. They are not available in the currently published binary, are not legal advice, and do not certify GDPR compliance. The Panel does not add a terms-acceptance checkbox.

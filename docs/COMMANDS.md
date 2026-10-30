@@ -31,6 +31,14 @@ Use exactly one command root. Arguments in `< >` are required; `[ ]` arguments a
 
 | Command | Minimum permission |
 |---|---|
+| `!ova core status` | Owner; show logical CPUs, physical cores/sockets, allowed/current masks, and capability. |
+| `!ova core preview <hex-mask>` | Owner; validate logical-CPU selection without applying. |
+| `!ova core enable <hex-mask>` | Owner; apply and persist a verified multi-CPU mask. |
+| `!ova core disable` | Owner; disable and restore startup affinity where supported. |
+
+
+| Command | Minimum permission |
+|---|---|
 | `!ova status` | Admin |
 | `!ova perf` | Admin |
 | `!ova audit [count]` | Admin |

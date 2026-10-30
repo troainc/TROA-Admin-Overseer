@@ -1,5 +1,9 @@
 # Bifrost Plugin Panel integration contract
 
+## Overseer Core Controller
+
+The v0.8.95 Owner-only Core controller is an Overseer-owned process-affinity operation, not a generic plugin adapter. Its server routes enforce Owner authorization and constrain masks to the verified Linux cgroup CPU set, with /proc/self/status fallback. See [Core Controller](CORE-CONTROLLER.md).
+
 **Bifrost Plugin Panel** is the rebranded name for the operator interface hosted by TROA Admin Overseer inside Torch. The rebrand changes the product name; it does not change the existing reflection method names, Torch command ownership, or plugin config formats.
 
 ## Communication model
