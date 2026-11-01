@@ -1,3 +1,11 @@
+## v0.8.140 - Block Limits Enforcement Activation Fix
+
+- Duplicate rule labels no longer reject saving existing limit policies; each rule remains independently evaluated.
+- Enabling a valid policy queues the first scan immediately and continues at the configured interval.
+- Bifrost shows pending-save state before persistence and confirms actual enforcement state after read-back.
+- Clarified that scans do not prevent placement: Alert reports violations; TurnOff disables excess functional blocks on scan.
+- Package: TROA Admin Overseer v0.8.140 - Block Limits Enforcement Activation Fix.zip; 400423 bytes; SHA-256 `D97CEB0ECCD943A8AD14E96BC113A27A9EFD8492A5D764A6EA4C37B870C91483`.
+
 # Changelog
 
 ## v0.8.104 — Operational Insight and Incident Replay (Phase 5)

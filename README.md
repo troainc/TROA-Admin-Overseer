@@ -1,8 +1,8 @@
 # TROA Admin Overseer
 
-**Current build: v0.8.104 — Operational Insight and Incident Replay (Phase 5)**
+**Current build: v0.8.140 — Block Limits Enforcement Activation Fix**
 
-A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel.
+A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build fixes Block Limits saves with duplicate rule names, queues an immediate scan when enabled, and shows pending versus persisted enforcement state. Limit actions are scan-based and do not prevent block placement.
 
 The Operations timeline reports the observed interval from Overseer initialization to Torch's `Loaded` event. If Overseer attaches after load, Bifrost reports current state and marks the original load time unavailable. This is Torch lifecycle timing, not AMP, world-load, Linux/Wine, storage, or full server readiness timing. Phases 1–5 are complete and separately packaged as v0.8.100–v0.8.104.
 
