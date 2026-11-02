@@ -1,3 +1,10 @@
+## v0.8.142 — Gridwatch Pressure Triage and Reliable Saves
+
+Fixed Gridwatch state/alert serialization so saved monitoring state displays and remains enabled after refresh. Monitoring changes auto-save with explicit confirmation/error state; Discord route edits show separate unsaved/saved state. Redesigned the page around pressure component profiles, clear score decomposition, ranked grid review, and investigation guidance. Candidate review flags adjacent fresh samples where a grid's Profiler+ pressure rises by at least 10 points while server SimSpeed drops at least 0.03×. This is correlation to prioritize review, not proof of causation or per-grid tick measurement. Pressure scores are normalized estimates, not milliseconds or tick counters.
+
+ZIP: [TROA Admin Overseer v0.8.142 - Gridwatch Pressure Triage and Reliable Saves.zip](../releases/TROA%20Admin%20Overseer%20v0.8.142%20-%20Gridwatch%20Pressure%20Triage%20and%20Reliable%20Saves.zip)
+Size: 418402 bytes
+SHA-256: `C7A85B131A32F702D66922BAFC69802549B1170469FA69662A39FF46FEBBE1F1`
 ## v0.8.141 — Expanded Gridwatch Per-Grid Telemetry
 
 Expanded active-grid and alert details with sampled functional/powered blocks, mechanical and conveyor counts, automation/tools/production, projectors, motion, mass, position, Keen/Steam ownership IDs, and Profiler+ pressure components. Search now includes all returned grid telemetry. Conveyor totals represent recognized conveyor blocks, not network links or throughput; Gridwatch risk and Profiler+ pressure remain estimates, not measured per-grid tick time.

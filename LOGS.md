@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.142 Gridwatch Pressure Triage and Reliable Saves
+
+Published the v0.8.142 package and public notes. Corrected Gridwatch response casing and save feedback, redesigned the pressure/triage view, and exposed adjacent-sample pressure rises coincident with a SimSpeed drop as an investigation hint. The release labels pressure as estimated and coincidence as non-causal. Package SHA-256: C7A85B131A32F702D66922BAFC69802549B1170469FA69662A39FF46FEBBE1F1.
 ## 2026-11-01 — Public v0.8.141 Expanded Gridwatch Per-Grid Telemetry
 
 Published the v0.8.141 package and public release notes. Gridwatch now presents sampled per-grid system inventories and Profiler+ pressure components. Documentation distinguishes conveyor block totals from network links/throughput and keeps estimates distinct from measured tick time. Package SHA-256: 70ECAB729372479CE09D9BB75A3476171DE04BA710FA4EE8853B6B1D02444449.

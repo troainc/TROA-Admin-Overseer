@@ -1,3 +1,11 @@
+## v0.8.142 — Gridwatch Pressure Triage and Reliable Saves
+
+- Fixed Gridwatch JSON casing for monitoring configuration, grid telemetry, and alerts; added confirmed save state and automatic persistence for the monitoring switch.
+- Separated Discord route save status from telemetry refresh, so a successful save no longer disappears when data reloads.
+- Reworked Gridwatch around an estimated Profiler+ pressure profile, explanatory score breakdown, triage summary, and sortable grid review candidates.
+- Split shared server SimSpeed points (0–35) from per-grid signal points (0–65). Flags adjacent fresh samples with a ≥10-point per-grid pressure increase and ≥0.03× server SimSpeed drop as correlation for investigation only.
+- Pressure components are normalized estimates, not milliseconds or per-grid tick counters; correlation does not prove grid causality.
+- Package: TROA Admin Overseer v0.8.142 - Gridwatch Pressure Triage and Reliable Saves.zip; 418402 bytes; SHA-256 `C7A85B131A32F702D66922BAFC69802549B1170469FA69662A39FF46FEBBE1F1`.
 ## v0.8.141 — Expanded Gridwatch Per-Grid Telemetry
 
 - Expanded per-grid and alert details with sampled functional/powered blocks, mechanical and conveyor inventory, automation, tools, production, projectors, motion, mass, position, and owner IDs.
