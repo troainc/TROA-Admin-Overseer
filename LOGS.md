@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.141 Expanded Gridwatch Per-Grid Telemetry
+
+Published the v0.8.141 package and public release notes. Gridwatch now presents sampled per-grid system inventories and Profiler+ pressure components. Documentation distinguishes conveyor block totals from network links/throughput and keeps estimates distinct from measured tick time. Package SHA-256: 70ECAB729372479CE09D9BB75A3476171DE04BA710FA4EE8853B6B1D02444449.
 ## 2026-11-01 — Public v0.8.140 Block Limits Enforcement Activation Fix
 
 Published the release package and public notes. Save rejection was caused by duplicate existing rule labels; the config validator now permits them because rules are evaluated independently. Enabled policies scan immediately. The UI separates pending edits from persisted state and documents scan-based behavior. Package SHA-256: D97CEB0ECCD943A8AD14E96BC113A27A9EFD8492A5D764A6EA4C37B870C91483.

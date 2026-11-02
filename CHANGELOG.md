@@ -1,3 +1,9 @@
+## v0.8.141 — Expanded Gridwatch Per-Grid Telemetry
+
+- Expanded per-grid and alert details with sampled functional/powered blocks, mechanical and conveyor inventory, automation, tools, production, projectors, motion, mass, position, and owner IDs.
+- Exposed Profiler+ pressure estimate components alongside the separate Gridwatch risk score and sample time.
+- Added broad telemetry search and clear explanations of sampled data, conveyor count limits, and estimated values.
+- Package: TROA Admin Overseer v0.8.141 - Expanded Gridwatch Per-Grid Telemetry.zip; 409803 bytes; SHA-256 `70ECAB729372479CE09D9BB75A3476171DE04BA710FA4EE8853B6B1D02444449`.
 ## v0.8.140 - Block Limits Enforcement Activation Fix
 
 - Duplicate rule labels no longer reject saving existing limit policies; each rule remains independently evaluated.

@@ -1,3 +1,10 @@
+## v0.8.141 — Expanded Gridwatch Per-Grid Telemetry
+
+Expanded active-grid and alert details with sampled functional/powered blocks, mechanical and conveyor counts, automation/tools/production, projectors, motion, mass, position, Keen/Steam ownership IDs, and Profiler+ pressure components. Search now includes all returned grid telemetry. Conveyor totals represent recognized conveyor blocks, not network links or throughput; Gridwatch risk and Profiler+ pressure remain estimates, not measured per-grid tick time.
+
+ZIP: [TROA Admin Overseer v0.8.141 - Expanded Gridwatch Per-Grid Telemetry.zip](../releases/TROA%20Admin%20Overseer%20v0.8.141%20-%20Expanded%20Gridwatch%20Per-Grid%20Telemetry.zip)
+Size: 409803 bytes
+SHA-256: `70ECAB729372479CE09D9BB75A3476171DE04BA710FA4EE8853B6B1D02444449`
 ## v0.8.140 - Block Limits Enforcement Activation Fix
 
 Fixed the duplicate-rule-label save rejection that kept Enabled from persisting. Enabling a valid policy queues an immediate first scan, then scans at the configured interval. Bifrost distinguishes unsaved pending settings from persisted enforcement state. This is scan-based enforcement, not build placement prevention: Alert reports; TurnOff disables excess functional blocks on scan.
