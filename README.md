@@ -1,8 +1,8 @@
 # TROA Admin Overseer
 
-**Current build: v0.8.147 — Gridwatch Style and Preview Fix**
+**Current build: v0.8.148 — Gridwatch Full-Width Queue Redesign**
 
-A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build places Gridwatch and Configs dialog overrides in the main panel stylesheet and rebuilds the queue preview from that complete stylesheet, preventing the preview from omitting layout rules.
+**v0.8.148 - Gridwatch Full-Width Queue Redesign.** Gridwatch review and alert dossiers now span the available panel width, keeping names, identifiers, health, risk evidence, pressure, and system counts readable. Search and sort controls adapt to narrower panels; scoring and alert behavior are unchanged.
 
 The Operations timeline reports the observed interval from Overseer initialization to Torch's `Loaded` event. If Overseer attaches after load, Bifrost reports current state and marks the original load time unavailable. This is Torch lifecycle timing, not AMP, world-load, Linux/Wine, storage, or full server readiness timing. Phases 1–5 are complete and separately packaged as v0.8.100–v0.8.104.
 

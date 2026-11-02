@@ -1,4 +1,4 @@
-Latest build: v0.8.147 — Gridwatch Style and Preview Fix. Gridwatch and config dialog overrides live in the main stylesheet, and the standalone preview uses the full panel styles.
+Latest build: v0.8.148 — Gridwatch Full-Width Queue Redesign. Gridwatch and config dialog overrides live in the main stylesheet, and the standalone preview uses the full panel styles.
 
 Latest build: v0.8.146 — Gridwatch Grid Dossier Redesign. Candidate cards separate identity, health/risk, core metrics, score composition, and sampled systems; missing detail is labeled instead of shown as zero.
 

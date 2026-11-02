@@ -1,3 +1,10 @@
+## v0.8.148 — Gridwatch Full-Width Queue Redesign
+
+Gridwatch review and alert dossiers now use a readable full-width queue. Responsive filters and sort controls use the panel width; grid identity, score, health, pressure, system counts, and details no longer collapse into narrow columns. Telemetry, scoring, and automatic warning behavior are unchanged.
+
+ZIP: [TROA Admin Overseer v0.8.148 - Gridwatch Full-Width Queue Redesign.zip](../releases/TROA%20Admin%20Overseer%20v0.8.148%20-%20Gridwatch%20Full-Width%20Queue%20Redesign.zip)
+Size: 423214 bytes
+SHA-256: `10BFECA2B7B077C15014B2E16351E6E3940D365FCB58091C83841C3A2EAF159C`
 ## v0.8.147 — Gridwatch Style and Preview Fix
 
 Moved Gridwatch dossier and Configs dialog overrides into the main stylesheet, and rebuilt the standalone queue preview using the complete panel CSS. This corrects the previous preview where layout overrides were omitted. No telemetry, score, command, or grid-action behavior changed.
