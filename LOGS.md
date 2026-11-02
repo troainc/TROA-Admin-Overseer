@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.145 Gridwatch Queue Card Layout Fix
+
+Published the card layout fix and updated public release notes. Candidate and alert cards now remain legible with separate badges and full-width details. SHA-256: 20DC7BF807ECCC1940E49BCB45B335D14CC2E183E5F5B6C5884609A168B5181A.
 ## 2026-11-01 — Public v0.8.144 Polished Config Dialog and Themed Scrollbars
 
 Published the v0.8.144 package and public notes. The Configs popup now has compact cards, a responsive layout, and themed scrollbars. SHA-256: BEE8B8A762133E40410685E838597F5B8FBEABE0834D44D69E22882F8BAE2D19.

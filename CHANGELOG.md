@@ -1,3 +1,10 @@
+## v0.8.145 — Gridwatch Queue Card Layout Fix
+
+Fixed the Gridwatch candidate/alert cards: score and health badges no longer overlap, score detail and long IDs use the card's full readable width, and the queue uses two columns on wide layouts and one column on narrow screens.
+
+ZIP: [TROA Admin Overseer v0.8.145 - Gridwatch Queue Card Layout Fix.zip](../releases/TROA%20Admin%20Overseer%20v0.8.145%20-%20Gridwatch%20Queue%20Card%20Layout%20Fix.zip)
+Size: 420896 bytes
+SHA-256: `20DC7BF807ECCC1940E49BCB45B335D14CC2E183E5F5B6C5884609A168B5181A`
 ## v0.8.144 — Polished Config Dialog and Themed Scrollbars
 
 Polished the plugin Configs popup with more balanced spacing, content-sized setting cards, an improved responsive layout, and slim Bifrost-themed scrollbars on the dialog and JSON fields. Configuration behavior and permissions are unchanged.
