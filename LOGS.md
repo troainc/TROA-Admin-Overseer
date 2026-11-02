@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.146 Gridwatch Grid Dossier Redesign
+
+Published the redesigned Gridwatch dossier cards and updated public release notes. SHA-256: 2231E0E16D35024499B10B8424E9F786722B7AB7253178706A670C74C927D9F5.
 ## 2026-11-01 — Public v0.8.145 Gridwatch Queue Card Layout Fix
 
 Published the card layout fix and updated public release notes. Candidate and alert cards now remain legible with separate badges and full-width details. SHA-256: 20DC7BF807ECCC1940E49BCB45B335D14CC2E183E5F5B6C5884609A168B5181A.

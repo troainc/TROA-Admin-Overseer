@@ -1,3 +1,10 @@
+## v0.8.146 — Gridwatch Grid Dossier Redesign
+
+Redesigned Gridwatch candidate cards around grid identity, owner, health/risk, block/PCU/Profiler+ pressure metrics, score composition, and connector/conveyor/mechanical/projector summaries. Missing detailed Profiler+ telemetry is labeled Not sampled. Expanded evidence remains available in each card.
+
+ZIP: [TROA Admin Overseer v0.8.146 - Gridwatch Grid Dossier Redesign.zip](../releases/TROA%20Admin%20Overseer%20v0.8.146%20-%20Gridwatch%20Grid%20Dossier%20Redesign.zip)
+Size: 422780 bytes
+SHA-256: `2231E0E16D35024499B10B8424E9F786722B7AB7253178706A670C74C927D9F5`
 ## v0.8.145 — Gridwatch Queue Card Layout Fix
 
 Fixed the Gridwatch candidate/alert cards: score and health badges no longer overlap, score detail and long IDs use the card's full readable width, and the queue uses two columns on wide layouts and one column on narrow screens.

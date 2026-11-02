@@ -1,3 +1,5 @@
+Latest build: v0.8.146 — Gridwatch Grid Dossier Redesign. Candidate cards separate identity, health/risk, core metrics, score composition, and sampled systems; missing detail is labeled instead of shown as zero.
+
 Latest build: v0.8.145 — Gridwatch Queue Card Layout Fix. Gridwatch review and alert cards now use a single content column, separate score/health badges, and responsive queue columns. Long IDs and score evidence are no longer forced into narrow tracks.
 
 Latest build: v0.8.144 — Polished Config Dialog and Themed Scrollbars. The Bifrost Configs popup uses compact content-sized cards, responsive settings groups, and styled scrollbars; config APIs and role permissions are unchanged.

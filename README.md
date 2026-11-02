@@ -1,8 +1,8 @@
 # TROA Admin Overseer
 
-**Current build: v0.8.145 — Gridwatch Queue Card Layout Fix**
+**Current build: v0.8.146 — Gridwatch Grid Dossier Redesign**
 
-A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build fixes Gridwatch queue cards: badges no longer overlap, long score details have room to wrap naturally, and the candidate list adapts between desktop and narrow layouts.
+A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build restructures Gridwatch cards into separate identity, health/risk, metrics, score evidence, and system-summary sections. It labels missing detailed telemetry clearly and keeps full evidence available on expansion.
 
 The Operations timeline reports the observed interval from Overseer initialization to Torch's `Loaded` event. If Overseer attaches after load, Bifrost reports current state and marks the original load time unavailable. This is Torch lifecycle timing, not AMP, world-load, Linux/Wine, storage, or full server readiness timing. Phases 1–5 are complete and separately packaged as v0.8.100–v0.8.104.
 
