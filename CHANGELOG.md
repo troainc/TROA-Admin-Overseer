@@ -1,3 +1,10 @@
+## v0.8.143 — Plugin Configs Modal and Settings Access
+
+Added a **Configs** button beside **Reload plugin** in every Bifrost plugin workspace. The dialog contains each plugin's exposed settings, search and groups, load, review/validation, save/apply, and default restore when supported. Existing role permissions and plugin-owned config APIs remain authoritative. Plugins that expose no fields receive an explicit integration message.
+
+ZIP: [TROA Admin Overseer v0.8.143 - Plugin Configs Modal and Settings Access.zip](../releases/TROA%20Admin%20Overseer%20v0.8.143%20-%20Plugin%20Configs%20Modal%20and%20Settings%20Access.zip)
+Size: 419821 bytes
+SHA-256: `DEFB8E2249019A12D9D8970F4BF08F366BDD7A175E9231D04163C1E8CA06D5C3`
 ## v0.8.142 — Gridwatch Pressure Triage and Reliable Saves
 
 - Fixed Gridwatch JSON casing for monitoring configuration, grid telemetry, and alerts; added confirmed save state and automatic persistence for the monitoring switch.

@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.143 Plugin Configs Modal and Settings Access
+
+Published the v0.8.143 package and public release notes. Added the per-plugin Configs dialog beside Reload plugin, preserving supported plugin-owned settings APIs and role permissions. Package SHA-256: DEFB8E2249019A12D9D8970F4BF08F366BDD7A175E9231D04163C1E8CA06D5C3.
 ## 2026-11-01 — Public v0.8.142 Gridwatch Pressure Triage and Reliable Saves
 
 Published the v0.8.142 package and public notes. Corrected Gridwatch response casing and save feedback, redesigned the pressure/triage view, and exposed adjacent-sample pressure rises coincident with a SimSpeed drop as an investigation hint. The release labels pressure as estimated and coincidence as non-causal. Package SHA-256: C7A85B131A32F702D66922BAFC69802549B1170469FA69662A39FF46FEBBE1F1.

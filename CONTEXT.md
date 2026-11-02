@@ -1,3 +1,5 @@
+Latest build: v0.8.143 — Plugin Configs Modal and Settings Access. Bifrost plugin workspaces have a Configs dialog beside Reload plugin. It hosts plugin-exposed settings, search/groups, load, review/validation, save/apply, and default restore where supported; existing plugin-owned APIs and role restrictions govern edits. Empty config integrations display the needed action clearly.
+
 # Repository context
 
 Latest build: v0.8.142 — Gridwatch Pressure Triage and Reliable Saves. Gridwatch response JSON now matches the panel contract; monitoring saves are confirmed and auto-save. The redesigned panel explains the normalized Profiler+ pressure profile, separates shared serverwide SimSpeed (0–35 points) from grid-specific signals (0–65), and prioritizes adjacent-sample pressure rises coincident with SimSpeed drops as leads for operator review. The coincidence does not prove causation or per-grid tick attribution. Conveyor values are block counts, not network throughput.

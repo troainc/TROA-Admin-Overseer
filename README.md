@@ -1,8 +1,8 @@
 # TROA Admin Overseer
 
-**Current build: v0.8.142 — Gridwatch Pressure Triage and Reliable Saves**
+**Current build: v0.8.143 — Plugin Configs Modal and Settings Access**
 
-A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build fixes Gridwatch persistence feedback, clarifies the Profiler+ pressure profile, and ranks grid review candidates when per-grid pressure rises alongside server SimSpeed drops. These signals are estimates and correlation, not measured per-grid tick time or proof of cause.
+A Torch administration plugin for Space Engineers dedicated servers, with the Bifrost Plugin Panel. The latest build adds a **Configs** button beside **Reload plugin** in every plugin workspace. The dialog provides access to each plugin’s exposed settings through its existing owner API and permissions.
 
 The Operations timeline reports the observed interval from Overseer initialization to Torch's `Loaded` event. If Overseer attaches after load, Bifrost reports current state and marks the original load time unavailable. This is Torch lifecycle timing, not AMP, world-load, Linux/Wine, storage, or full server readiness timing. Phases 1–5 are complete and separately packaged as v0.8.100–v0.8.104.
 
