@@ -1,3 +1,10 @@
+## v0.8.144 — Polished Config Dialog and Themed Scrollbars
+
+Polished the plugin Configs popup with more balanced spacing, content-sized setting cards, an improved responsive layout, and slim Bifrost-themed scrollbars on the dialog and JSON fields. Configuration behavior and permissions are unchanged.
+
+ZIP: [TROA Admin Overseer v0.8.144 - Polished Config Dialog and Themed Scrollbars.zip](../releases/TROA%20Admin%20Overseer%20v0.8.144%20-%20Polished%20Config%20Dialog%20and%20Themed%20Scrollbars.zip)
+Size: 420624 bytes
+SHA-256: `BEE8B8A762133E40410685E838597F5B8FBEABE0834D44D69E22882F8BAE2D19`
 ## v0.8.143 — Plugin Configs Modal and Settings Access
 
 Added a **Configs** button beside **Reload plugin** in every Bifrost plugin workspace. The dialog contains each plugin's exposed settings, search and groups, load, review/validation, save/apply, and default restore when supported. Existing role permissions and plugin-owned config APIs remain authoritative. Plugins that expose no fields receive an explicit integration message.

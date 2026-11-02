@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.144 Polished Config Dialog and Themed Scrollbars
+
+Published the v0.8.144 package and public notes. The Configs popup now has compact cards, a responsive layout, and themed scrollbars. SHA-256: BEE8B8A762133E40410685E838597F5B8FBEABE0834D44D69E22882F8BAE2D19.
 ## 2026-11-01 — Public v0.8.143 Plugin Configs Modal and Settings Access
 
 Published the v0.8.143 package and public release notes. Added the per-plugin Configs dialog beside Reload plugin, preserving supported plugin-owned settings APIs and role permissions. Package SHA-256: DEFB8E2249019A12D9D8970F4BF08F366BDD7A175E9231D04163C1E8CA06D5C3.

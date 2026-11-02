@@ -1,3 +1,5 @@
+Latest build: v0.8.144 — Polished Config Dialog and Themed Scrollbars. The Bifrost Configs popup uses compact content-sized cards, responsive settings groups, and styled scrollbars; config APIs and role permissions are unchanged.
+
 Latest build: v0.8.143 — Plugin Configs Modal and Settings Access. Bifrost plugin workspaces have a Configs dialog beside Reload plugin. It hosts plugin-exposed settings, search/groups, load, review/validation, save/apply, and default restore where supported; existing plugin-owned APIs and role restrictions govern edits. Empty config integrations display the needed action clearly.
 
 # Repository context
