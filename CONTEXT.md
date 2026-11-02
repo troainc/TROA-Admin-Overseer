@@ -1,3 +1,5 @@
+Latest build: v0.8.147 — Gridwatch Style and Preview Fix. Gridwatch and config dialog overrides live in the main stylesheet, and the standalone preview uses the full panel styles.
+
 Latest build: v0.8.146 — Gridwatch Grid Dossier Redesign. Candidate cards separate identity, health/risk, core metrics, score composition, and sampled systems; missing detail is labeled instead of shown as zero.
 
 Latest build: v0.8.145 — Gridwatch Queue Card Layout Fix. Gridwatch review and alert cards now use a single content column, separate score/health badges, and responsive queue columns. Long IDs and score evidence are no longer forced into narrow tracks.

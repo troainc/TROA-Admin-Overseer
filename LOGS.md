@@ -1,3 +1,6 @@
+## 2026-11-01 — Public v0.8.147 Gridwatch Style and Preview Fix
+
+Published the stylesheet consolidation and corrected preview package with updated public notes. SHA-256: B276EFDC72AC3B77F27654450469A604875EB7CD11C733F538B8B38CC3B0BAB4.
 ## 2026-11-01 — Public v0.8.146 Gridwatch Grid Dossier Redesign
 
 Published the redesigned Gridwatch dossier cards and updated public release notes. SHA-256: 2231E0E16D35024499B10B8424E9F786722B7AB7253178706A670C74C927D9F5.

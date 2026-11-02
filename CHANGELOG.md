@@ -1,3 +1,10 @@
+## v0.8.147 — Gridwatch Style and Preview Fix
+
+Moved Gridwatch dossier and Configs dialog overrides into the main stylesheet, and rebuilt the standalone queue preview using the complete panel CSS. This corrects the previous preview where layout overrides were omitted. No telemetry, score, command, or grid-action behavior changed.
+
+ZIP: [TROA Admin Overseer v0.8.147 - Gridwatch Style and Preview Fix.zip](../releases/TROA%20Admin%20Overseer%20v0.8.147%20-%20Gridwatch%20Style%20and%20Preview%20Fix.zip)
+Size: 422774 bytes
+SHA-256: `B276EFDC72AC3B77F27654450469A604875EB7CD11C733F538B8B38CC3B0BAB4`
 ## v0.8.146 — Gridwatch Grid Dossier Redesign
 
 Redesigned Gridwatch candidate cards around grid identity, owner, health/risk, block/PCU/Profiler+ pressure metrics, score composition, and connector/conveyor/mechanical/projector summaries. Missing detailed Profiler+ telemetry is labeled Not sampled. Expanded evidence remains available in each card.
