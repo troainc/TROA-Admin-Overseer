@@ -1,6 +1,16 @@
 # Implementation history reconciliation — November 24, 2026
 
-Documents recorded implementation through v0.8.267. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+Documents recorded implementation through v0.8.268. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+
+## v0.8.268 — Interactive dataset explorer
+
+Server Monitor now opens one searchable investigation workspace, replacing the default stack of chart cards. The catalog exposes 47 existing-source datasets across simulation, host resources, OS threads, world construction/ownership, players, network outcomes and recorded profiling. Saved boards retains existing personal multi-panel layouts as an optional view.
+
+Owners can choose line, area, bars, compact heatmap, sample-frequency pie/donut, source table or current reading where supported. Grouped sources offer bars, pie, donut and table. Inspect includes independent visualization, density, group-count and heatmap-row controls. Numeric slices filter actual retained measurements; interactive legends preserve same-name entity identities. Missing samples and long gaps break both line and area plots.
+
+Player datasets include roster, factions, individual ping, observed session duration, recorded completed playtime/session counts, and optional existing country/sector observations. Grid datasets include blocks, PCU, linear/angular motion, size, static/mobile status, concealment flags, definitions and owner/faction footprint. Profiler views add measured owner, faction, entity and network-handler groupings. No Discord message/status/presence data or new IP lookups are collected by this feature. Existing administrative authorization remains enforced.
+
+Local Docker validation used a private recorded server export with 18 grids and 15,505 blocks: all 47 dataset Inspect actions opened, interactive legend totals changed and reset correctly, and phone/tablet layouts stayed within the viewport. The recording had zero online players and no profiler capture/OS-thread detail; populated roster and optional source mappings were verified with explicit fixtures. 178 browser tests and 335 backend checks passed; Release compilation had zero warnings/errors. The standard two-file Torch package was verified privately. This update was not deployed to the live server; no captures or server settings changes were made.
 
 ## v0.8.267 — Verified session reconnection and actual-data validation
 
@@ -929,3 +939,15 @@ Snapshot of all commits reachable from the private implementation branch and pub
 | Private implementation | `ce4ec26db7f57763b416d21d6d1d53c83d8836e8` | 2026-11-24 | Package verified Overseer v0.8.267 Verified Session Reconnection |
 | Private implementation | `c7c03f3c741a3ba21c19941fa27a3b4b80fa2d60` | 2026-11-24 | Add Overseer v0.8.267 Verified Session Reconnection |
 | Private implementation | `1fd3088f7e44c4bc57999216d68159c5667d9594` | 2026-11-24 | Package verified Overseer v0.8.267 Verified Session Reconnection |
+
+## v0.8.268 implementation commit index
+
+Index is through the listed predecessor commits; the current public documentation commit cannot include its own hash.
+
+| History | Commit | Date | Change |
+| --- | --- | --- | --- |
+| Private implementation | `a89e353d48f32af59d083fcb278cefd1fc969405` | 2026-11-24 | Record v0.8.268 dataset explorer validation and release index |
+| Private implementation | `b5b4de2fd0005aae388b408214695999e734cd44` | 2026-11-24 | Package verified Overseer v0.8.268 Interactive Dataset Explorer |
+| Private implementation | `87a5deef73b2e49daf1d3d05c4fefd641ca59057` | 2026-11-24 | Add Overseer v0.8.268 Interactive Dataset Explorer |
+| Private implementation | `ea57b42a17440186f051ce35c5b2ca210fa8fc14` | 2026-11-24 | Record actual-server monitor validation and recovery package history |
+| Public documentation | `1b5dc3e` | 2026-11-24 | Document verified session recovery and real-data monitor checks |

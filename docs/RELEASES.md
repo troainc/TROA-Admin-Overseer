@@ -1,6 +1,6 @@
 # Release documentation status
 
-Implementation history through v0.8.267 and its complete commit index are now documented in [CHANGELOG.md](../CHANGELOG.md). Existing binary links below are unchanged. Additional documentation is not a claim that a new public binary has been published or deployed.
+Implementation history through v0.8.268 and its complete commit index are now documented in [CHANGELOG.md](../CHANGELOG.md). Existing binary links below are unchanged. Additional documentation is not a claim that a new public binary has been published or deployed.
 
 ## v0.8.147 — Gridwatch Style and Preview Fix
 

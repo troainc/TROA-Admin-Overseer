@@ -56,3 +56,7 @@ Recent milestones: v0.8.97 request encoding; v0.8.96 CPU topology map/picker; v0
 
 - Documented observed Torch session-load interval and late-attachment limitation.
 - Recorded package size/hash and explicit exclusions for AMP, world-load, Linux/Wine, storage, and full server readiness timing.
+
+## November 24, 2026 — v0.8.268 documentation
+
+Documented the 47-dataset Server Monitor explorer, selectable Inspect charts, player data sources, responsive local actual-export validation and verified private package. Public binary remains v0.8.148; live server unchanged. See CHANGELOG.md.
