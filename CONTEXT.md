@@ -20,3 +20,7 @@ The public repository contains public-safe documentation, release notes, and ill
 ## November 24, 2026 — v0.8.268 documentation
 
 Documented the 47-dataset Server Monitor explorer, selectable Inspect charts, player data sources, responsive local actual-export validation and verified private package. Public binary remains v0.8.148; live server unchanged. See CHANGELOG.md.
+
+## November 24, 2026 — README documentation refresh
+
+Rebuilt README around current product/setup information and release boundaries; updated linked deployment/release guidance. Documentation only: private package remains v0.8.268, public artifact remains v0.8.148. No binaries or server changes. See CHANGELOG.md.

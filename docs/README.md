@@ -1,5 +1,7 @@
 # Documentation index
 
+Start with the [current product README](../README.md) and [changelog](../CHANGELOG.md). Implementation history is documented through v0.8.268; the latest binary committed publicly is v0.8.148. Older guides and command tables describe their labeled versions.
+
 - [User guide](USER_GUIDE.md)
 - [Commands](COMMANDS.md)
 - [Configuration](CONFIGURATION.md)
@@ -13,4 +15,4 @@
 - [Release index](RELEASES.md) · [Roadmap](ROADMAP.md)
 - [Privacy notice](PRIVACY-GDPR.md) · [Terms template](TERMS-OF-SERVICE.md)
 
-README panel illustrations contain demonstration values only.
+The historical panel illustrations in images/ contain synthetic demonstration values only; they are not current live-panel screenshots.

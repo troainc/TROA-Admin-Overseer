@@ -2,6 +2,16 @@
 
 Implementation history through v0.8.268 and its complete commit index are now documented in [CHANGELOG.md](../CHANGELOG.md). Existing binary links below are unchanged. Additional documentation is not a claim that a new public binary has been published or deployed.
 
+## Latest committed public binary: v0.8.148
+
+[Download Gridwatch Full-Width Queue Redesign](../releases/TROA%20Admin%20Overseer%20v0.8.148%20-%20Gridwatch%20Full-Width%20Queue%20Redesign.zip).
+
+Size: 423,214 bytes. SHA-256: `10BFECA2B7B077C15014B2E16351E6E3940D365FCB58091C83841C3A2EAF159C`.
+
+This is the public artifact, not the separately verified private v0.8.268 build. See the [README](../README.md) for the current feature map and explicit availability boundaries.
+
+## Historical release entries
+
 ## v0.8.147 — Gridwatch Style and Preview Fix
 
 Moved Gridwatch dossier and Configs dialog overrides into the main stylesheet, and rebuilt the standalone queue preview using the complete panel CSS. This corrects the previous preview where layout overrides were omitted. No telemetry, score, command, or grid-action behavior changed.

@@ -1,6 +1,18 @@
+## November 24, 2026 — Complete README refresh
+
+Product: TROA Admin Overseer / Bifrost. Replaced the stale release-history README with a current product, feature, setup and documentation guide. Documented the current menu families, 47-dataset Server Monitor explorer, live/Observe inspection, grid/conveyor diagnostics, World Radar/toolkit, integrated Monitor+, independent rewards, limits, plugin ownership, roles, responsive appearance and source limitations. Clearly separated private v0.8.268 from the public v0.8.148 artifact and live installation status. Updated linked deployment/release guidance and marked historical previews/versioned guides accurately.
+
+Documentation-only change; no plugin version bump, rebuilt artifact, runtime behavior or live-server update. Local links, version references and existing package hashes were checked. Runtime test totals quoted are the existing v0.8.268 release results, not new tests run for prose edits.
+
 # Implementation history reconciliation — November 24, 2026
 
 Documents recorded implementation through v0.8.268. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+
+## README refresh commit references
+
+- Private release-branch documentation: `f1159de` — rewrite current product README and linked setup/release guides.
+- Private default-branch documentation: `e1bc7a6` — refresh the repository front page with explicit links to the current release branch; no runtime merge.
+- Previous public documentation: `13eadcb` — v0.8.268 dataset explorer and validation notes.
 
 ## v0.8.268 — Interactive dataset explorer
 
