@@ -1,6 +1,14 @@
 # Implementation history reconciliation — November 24, 2026
 
-Documents recorded implementation through v0.8.266. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+Documents recorded implementation through v0.8.267. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+
+## v0.8.267 — Verified session reconnection and actual-data validation
+
+Added explicit reconnection for a changed server instance, verified account/role synchronization after access failures, and trusted login metadata before redirecting an existing session. Received inspection data remains available; administrative commands are never automatically replayed. Proxy or unrelated-service responses cannot masquerade as successful authentication.
+
+Actual authenticated development-panel reads on the existing v0.8.266 deployment were verified: all 55 Inspect actions across six layouts, runtime detail, chart legend filtering/reset, sample selection, trend zoom/reset and fresh Live polling. The v0.8.267 recovery UI is a separate packaged update and was not deployed during those checks. Existing profiler/frame graphs still require recorded evidence; no captures were started to fill missing data.
+
+Corrected independent legend filtering for same-name grids and owners using their identifiers, and corrected world-composition source timestamps. Local Docker supports a read-only replay of a private real monitor export without substituting fixtures or publishing its data. 155 browser regressions passed and the final two-file release build had zero warnings/errors. Initial unpublished v0.8.267 package candidates were superseded by the final verified artifact.
 
 ## v0.8.266 — Interactive visual dashboards and source recovery
 
@@ -912,3 +920,12 @@ Snapshot of all commits reachable from the private implementation branch and pub
 | Private implementation | `cc17afaaa5ed62929679b7a71890b0a088c6d89d` | 2026-11-24 | Add Overseer v0.8.266 Interactive Visual Dashboards |
 | Private implementation | `3a8898ce5c57e4da52e70d2056bff8f497012779` | 2026-11-24 | Package verified Overseer v0.8.266 Interactive Visual Dashboards |
 | Private implementation | `bb1e08a80d96f3bf066e4735eb01291c2b06351c` | 2026-11-24 | Record local Docker dashboard delivery and release commit index |
+
+## Latest implementation commit index
+
+| History | Commit | Date | Change |
+| --- | --- | --- | --- |
+| Private implementation | `1610f2fa1bced1e2dd5ba5a77e19a95d43970933` | 2026-11-24 | Add Overseer v0.8.267 Verified Session Reconnection |
+| Private implementation | `ce4ec26db7f57763b416d21d6d1d53c83d8836e8` | 2026-11-24 | Package verified Overseer v0.8.267 Verified Session Reconnection |
+| Private implementation | `c7c03f3c741a3ba21c19941fa27a3b4b80fa2d60` | 2026-11-24 | Add Overseer v0.8.267 Verified Session Reconnection |
+| Private implementation | `1fd3088f7e44c4bc57999216d68159c5667d9594` | 2026-11-24 | Package verified Overseer v0.8.267 Verified Session Reconnection |
