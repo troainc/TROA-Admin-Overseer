@@ -1,3 +1,7 @@
+# Release documentation status
+
+Implementation history through v0.8.266 and its complete commit index are now documented in [CHANGELOG.md](../CHANGELOG.md). Existing binary links below are unchanged. Additional documentation is not a claim that a new public binary has been published or deployed.
+
 ## v0.8.147 — Gridwatch Style and Preview Fix
 
 Moved Gridwatch dossier and Configs dialog overrides into the main stylesheet, and rebuilt the standalone queue preview using the complete panel CSS. This corrects the previous preview where layout overrides were omitted. No telemetry, score, command, or grid-action behavior changed.

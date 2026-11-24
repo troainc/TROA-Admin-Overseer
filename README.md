@@ -1,6 +1,8 @@
 # TROA Admin Overseer
 
-**Current build: v0.8.148 — Gridwatch Full-Width Queue Redesign**
+**Published binary: v0.8.148 — Gridwatch Full-Width Queue Redesign**
+
+**Implementation history documented through v0.8.266.** See [CHANGELOG.md](CHANGELOG.md) for the reconciled feature history and complete commit index. Documentation does not imply an additional public binary or live deployment.
 
 **v0.8.148 - Gridwatch Full-Width Queue Redesign.** Gridwatch review and alert dossiers now span the available panel width, keeping names, identifiers, health, risk evidence, pressure, and system counts readable. Search and sort controls adapt to narrower panels; scoring and alert behavior are unchanged.
 
