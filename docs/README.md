@@ -1,6 +1,6 @@
 # Documentation index
 
-Start with the [current product README](../README.md) and [changelog](../CHANGELOG.md). Implementation history is documented through v0.8.268; the latest binary committed publicly is v0.8.148. Older guides and command tables describe their labeled versions.
+Start with the [current product README](../README.md) and [changelog](../CHANGELOG.md). Implementation history is documented through v0.8.269; the latest binary committed publicly is v0.8.148. Older guides and command tables describe their labeled versions.
 
 - [User guide](USER_GUIDE.md)
 - [Commands](COMMANDS.md)

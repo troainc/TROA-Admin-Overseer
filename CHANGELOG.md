@@ -6,13 +6,23 @@ Documentation-only change; no plugin version bump, rebuilt artifact, runtime beh
 
 # Implementation history reconciliation — November 24, 2026
 
-Documents recorded implementation through v0.8.268. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
+Documents recorded implementation through v0.8.269. Historical notes describe the state at that release; later notes may supersede earlier flows. These notes do not publish additional binaries, certify deployment, prove production performance, or establish legal enforceability. The previous public binary remains v0.8.148 unless a separate verified artifact is published. Versions without a supported recorded release entry are not invented. Private implementation and server data remain private.
 
 ## README refresh commit references
 
 - Private release-branch documentation: `f1159de` — rewrite current product README and linked setup/release guides.
 - Private default-branch documentation: `e1bc7a6` — refresh the repository front page with explicit links to the current release branch; no runtime merge.
 - Previous public documentation: `13eadcb` — v0.8.268 dataset explorer and validation notes.
+
+## v0.8.269 — Red fault explanations
+
+Added a Why this block is red panel with exact snapshot/capture triggers, supported impact, cause-known-so-far, next checks, cell identity and timestamp. The grid banner separates measured performance findings from additional health/construction-only red blocks. Grouped reason filters, contributor review, previous/next-red navigation, occupied-cell hover/perspective selection and privileged fault-evidence JSON make the markers actionable.
+
+Incomplete construction is distinguished from damage; missing build-integrity evidence remains uncertain. Red health flags, conveyor loops and shared SimSpeed do not become unsupported lag accusations. New supported captures retain at most four validated exception type names per block while counting additional/unclassified faults. Messages, stacks and script text are excluded; original exceptions are rethrown.
+
+191 browser regressions and 340 backend checks passed, with a zero-warning release build and verified two-file private package. Local synthetic Docker checks covered reasons, exact threshold evidence, filtering/navigation, perspective cell selection and phone/tablet bounds. No live private-server deployment, native capture or diagnosis of the pictured ship is claimed. Geometry/transforms are unchanged.
+
+Implementation `100988b`; verified package `99a025e`; current release documentation `c0522c6`. The public committed binary remains v0.8.148.
 
 ## v0.8.268 — Interactive dataset explorer
 

@@ -15,11 +15,11 @@ Documentation reviewed November 24, 2026.
 | Track | Status |
 | --- | --- |
 | Latest binary committed to this public repository | **v0.8.148 — Gridwatch Full-Width Queue Redesign** |
-| Current documented private implementation | **v0.8.268 — Interactive Dataset Explorer** |
-| Private v0.8.268 package | Built and verified separately; not included in this repository |
+| Current documented private implementation | **v0.8.269 — Red Fault Explanations** |
+| Private v0.8.269 package | Built and verified separately; not included in this repository |
 | Live server deployment | Depends on the operator's installed package; documentation does not update a server |
 
-**The feature map below describes the current v0.8.268 implementation. The older public v0.8.148 download does not include all of these features.** Check your installed build in the panel footer or `!ova status`, and use the [changelog](CHANGELOG.md) to identify when a capability was added. The [public command reference](docs/COMMANDS.md) is explicitly scoped to v0.8.148.
+**The feature map below describes the current v0.8.269 implementation. The older public v0.8.148 download does not include all of these features.** Check your installed build in the panel footer or `!ova status`, and use the [changelog](CHANGELOG.md) to identify when a capability was added. The [public command reference](docs/COMMANDS.md) is explicitly scoped to v0.8.148.
 
 ## Explore the platform
 
@@ -68,7 +68,7 @@ The dedicated inspector keeps the selected grid in a persistent workspace with *
 - Select blocks and inspect supported weapons, power, propulsion, production, inventory and operational data.
 - Review conveyor components, ports, physical connections, isolated sections, branches, paths and loops in a dedicated visual map.
 - Use available installed models/materials and actual paint values; unresolved or unsupported assets remain visible in diagnostics.
-- Review reported faults and explicit supported timing captures, construction comparisons, saved views and exports.
+- Select red fault cells for exact trigger evidence, supported grid impact, cause known so far and next checks. Filter grouped reasons, step through red blocks, review measured contributors and export fault evidence. Health/construction faults remain distinct from measured performance findings; new captures expose bounded exception type names without messages, stacks or script contents.
 - Change grids without allowing obsolete inspection work to reopen the previous selection.
 
 Rendering depends on authorized game/mod assets accessible to the server. Game assets are not included in the plugin ZIP. Complete in-game visual parity remains dependent on supported materials, assets and target-server validation.
@@ -129,11 +129,13 @@ Treat player/grid identities, inventories and diagnostic exports as administrati
 
 ## Verification and known limits
 
+The private v0.8.269 release passed a zero-warning build, **191 browser tests and 340 backend checks**. A separate local Docker fixture verified red-cell explanations, reason filtering, measured threshold displays, previous/next navigation, perspective selection and phone/tablet bounds. It did not diagnose the pictured real ship, activate a native live probe or deploy a server update.
+
 The private v0.8.268 package passed a zero-warning Release build, **178 browser tests and 335 backend checks**. Local Docker UI validation replayed a real private server export with 18 grids and 15,505 blocks. All 47 dataset Inspect actions opened; legend filtering/reset and phone/tablet layouts were checked.
 
 That export had zero online players and no profiler capture/OS-thread detail. Populated roster and optional-source mappings were checked with explicit test fixtures. These checks did not deploy the release, start server captures or establish production profiling overhead, native per-grid physics attribution or complete ship-texture parity.
 
-A previous authenticated check on an existing v0.8.266 server verified actual received telemetry and runtime Inspect responses. It does not mean v0.8.268 is installed on that server.
+A previous authenticated check on an existing v0.8.266 server verified actual received telemetry and runtime Inspect responses. It does not mean the current private release is installed on that server.
 
 ## Documentation and historical previews
 
